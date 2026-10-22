@@ -1,0 +1,10 @@
+kelas,n_label_sebenarnya,n_prediksi,selisih
+backdoor,2134,2,-2132
+ddos,13931,12792,-1139
+dos,9893,14858,4965
+injection,10206,3466,-6740
+normal,7226,4453,-2773
+password,6367,1659,-4708
+ransomware,6302,9157,2855
+scanning,4901,5951,1050
+xss,14320,22942,8622

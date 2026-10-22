@@ -1,0 +1,122 @@
+[
+ {
+  "n_estimators": 90,
+  "max_depth": 13,
+  "learning_rate": 0.13727474752809518,
+  "subsample": 0.9292989599556912
+ },
+ {
+  "n_estimators": 88,
+  "max_depth": 12,
+  "learning_rate": 0.03731143088741836,
+  "subsample": 0.987811175818378
+ },
+ {
+  "n_estimators": 381,
+  "max_depth": 12,
+  "learning_rate": 0.2379586485303166,
+  "subsample": 0.5640568163377729
+ },
+ {
+  "n_estimators": 428,
+  "max_depth": 8,
+  "learning_rate": 0.11753142702744855,
+  "subsample": 0.9633824944243009
+ },
+ {
+  "n_estimators": 402,
+  "max_depth": 11,
+  "learning_rate": 0.24860086784854069,
+  "subsample": 0.7217070994136656
+ },
+ {
+  "n_estimators": 253,
+  "max_depth": 5,
+  "learning_rate": 0.1708295882345921,
+  "subsample": 0.5319086280520877
+ },
+ {
+  "n_estimators": 437,
+  "max_depth": 13,
+  "learning_rate": 0.1931826757453988,
+  "subsample": 0.8790438700426869
+ },
+ {
+  "n_estimators": 365,
+  "max_depth": 7,
+  "learning_rate": 0.29150242707452195,
+  "subsample": 0.9465605606610988
+ },
+ {
+  "n_estimators": 355,
+  "max_depth": 13,
+  "learning_rate": 0.06644522527707059,
+  "subsample": 0.7333605018635171
+ },
+ {
+  "n_estimators": 274,
+  "max_depth": 3,
+  "learning_rate": 0.05474395269958887,
+  "subsample": 0.8415244766212273
+ },
+ {
+  "n_estimators": 466,
+  "max_depth": 12,
+  "learning_rate": 0.2905778224059209,
+  "subsample": 0.662912679069076
+ },
+ {
+  "n_estimators": 458,
+  "max_depth": 7,
+  "learning_rate": 0.1461711852699843,
+  "subsample": 0.5947356795421428
+ },
+ {
+  "n_estimators": 258,
+  "max_depth": 4,
+  "learning_rate": 0.14795442860552077,
+  "subsample": 0.6134546745254421
+ },
+ {
+  "n_estimators": 304,
+  "max_depth": 11,
+  "learning_rate": 0.1367740564729759,
+  "subsample": 0.9163390980289188
+ },
+ {
+  "n_estimators": 334,
+  "max_depth": 12,
+  "learning_rate": 0.1005863260007919,
+  "subsample": 0.9161299006976005
+ },
+ {
+  "n_estimators": 246,
+  "max_depth": 13,
+  "learning_rate": 0.12236872991875059,
+  "subsample": 0.644164051965122
+ },
+ {
+  "n_estimators": 158,
+  "max_depth": 11,
+  "learning_rate": 0.05052822024669985,
+  "subsample": 0.5999541012375542
+ },
+ {
+  "n_estimators": 413,
+  "max_depth": 3,
+  "learning_rate": 0.23820806947562012,
+  "subsample": 0.8324254282960161
+ },
+ {
+  "n_estimators": 262,
+  "max_depth": 12,
+  "learning_rate": 0.2364114189963707,
+  "subsample": 0.72945788776917
+ },
+ {
+  "n_estimators": 278,
+  "max_depth": 10,
+  "learning_rate": 0.05054112945702066,
+  "subsample": 0.5572650367679868
+ }
+]

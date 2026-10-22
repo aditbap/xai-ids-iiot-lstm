@@ -1,0 +1,1182 @@
+2026-10-19 20:34:15 | MULAI c1_tests.py 
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:599: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+2026-10-19 20:37:20 | C1 selesai (184s)
+2026-10-19 20:37:20 | driver selesai: c1
+2026-10-19 20:37:21 | MULAI c2_train_one.py {"name": "main_s43", "arch": "lstm2", "inputs": "main", "w": 10, "seed": 43}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5662 val_f1_macro=0.8818
+epoch 2/12 loss=0.4330 val_f1_macro=0.6312
+epoch 3/12 loss=0.3385 val_f1_macro=0.7609
+epoch 4/12 loss=0.3630 val_f1_macro=0.9241
+epoch 5/12 loss=0.3768 val_f1_macro=0.9354
+epoch 6/12 loss=0.2690 val_f1_macro=0.7877
+epoch 7/12 loss=0.2893 val_f1_macro=0.8771
+epoch 8/12 loss=0.2971 val_f1_macro=0.9284
+epoch 9/12 loss=0.2593 val_f1_macro=0.9284
+epoch 10/12 loss=0.2677 val_f1_macro=0.9454
+epoch 11/12 loss=0.1481 val_f1_macro=0.7074
+epoch 12/12 loss=0.1984 val_f1_macro=0.7881
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 20:52:05 | C2 main_s43: epoch 10, F1 val 0.9454, 879s
+2026-10-19 20:52:06 | MULAI c2_train_one.py {"name": "main_s44", "arch": "lstm2", "inputs": "main", "w": 10, "seed": 44}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5162 val_f1_macro=0.9035
+epoch 2/12 loss=0.2921 val_f1_macro=0.8566
+epoch 3/12 loss=0.2946 val_f1_macro=0.9091
+epoch 4/12 loss=0.2395 val_f1_macro=0.9302
+epoch 5/12 loss=0.2087 val_f1_macro=0.9335
+epoch 6/12 loss=0.1781 val_f1_macro=0.9515
+epoch 7/12 loss=0.1881 val_f1_macro=0.7216
+epoch 8/12 loss=0.1735 val_f1_macro=0.9370
+epoch 9/12 loss=0.1533 val_f1_macro=0.7117
+epoch 10/12 loss=0.1790 val_f1_macro=0.9409
+epoch 11/12 loss=0.1247 val_f1_macro=0.9495
+epoch 12/12 loss=0.1275 val_f1_macro=0.8803
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 21:08:02 | C2 main_s44: epoch 6, F1 val 0.9515, 951s
+2026-10-19 21:08:03 | MULAI c2_train_one.py {"name": "t6_urut_s45", "arch": "lstm2", "inputs": "main", "w": 10, "seed": 45}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5851 val_f1_macro=0.8530
+epoch 2/12 loss=0.3599 val_f1_macro=0.9203
+epoch 3/12 loss=0.2987 val_f1_macro=0.7094
+epoch 4/12 loss=0.2629 val_f1_macro=0.7086
+epoch 5/12 loss=0.2202 val_f1_macro=0.9193
+epoch 6/12 loss=0.1662 val_f1_macro=0.9343
+epoch 7/12 loss=0.1495 val_f1_macro=0.9498
+epoch 8/12 loss=0.1441 val_f1_macro=0.9271
+epoch 9/12 loss=0.1359 val_f1_macro=0.9564
+epoch 10/12 loss=0.1530 val_f1_macro=0.9455
+epoch 11/12 loss=0.1451 val_f1_macro=0.9450
+epoch 12/12 loss=0.1155 val_f1_macro=0.9442
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 21:24:19 | C2 t6_urut_s45: epoch 9, F1 val 0.9564, 972s
+2026-10-19 21:24:20 | MULAI c2_train_one.py {"name": "t6_urut_s46", "arch": "lstm2", "inputs": "main", "w": 10, "seed": 46}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5476 val_f1_macro=0.7628
+epoch 2/12 loss=0.3887 val_f1_macro=0.9096
+epoch 3/12 loss=0.3124 val_f1_macro=0.9348
+epoch 4/12 loss=0.2913 val_f1_macro=0.9339
+epoch 5/12 loss=0.1771 val_f1_macro=0.9352
+epoch 6/12 loss=0.1589 val_f1_macro=0.9404
+epoch 7/12 loss=0.1654 val_f1_macro=0.9406
+epoch 8/12 loss=0.1548 val_f1_macro=0.9597
+epoch 9/12 loss=0.1589 val_f1_macro=0.9542
+epoch 10/12 loss=0.1242 val_f1_macro=0.9557
+epoch 11/12 loss=0.1140 val_f1_macro=0.9571
+epoch 12/12 loss=0.1112 val_f1_macro=0.9440
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 21:39:59 | C2 t6_urut_s46: epoch 8, F1 val 0.9597, 935s
+2026-10-19 21:40:00 | MULAI c2_train_one.py {"name": "t6_acak_s42", "arch": "lstm2", "inputs": "main", "w": 10, "seed": 42, "shuffle": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5296 val_f1_macro=0.8136
+epoch 2/12 loss=0.3323 val_f1_macro=0.7172
+epoch 3/12 loss=0.3327 val_f1_macro=0.9217
+epoch 4/12 loss=0.2122 val_f1_macro=0.9087
+epoch 5/12 loss=0.2093 val_f1_macro=0.9171
+epoch 6/12 loss=0.1509 val_f1_macro=0.9286
+epoch 7/12 loss=0.1786 val_f1_macro=0.9282
+epoch 8/12 loss=0.1437 val_f1_macro=0.9417
+epoch 9/12 loss=0.1068 val_f1_macro=0.9542
+epoch 10/12 loss=0.0986 val_f1_macro=0.9534
+epoch 11/12 loss=0.0894 val_f1_macro=0.9558
+epoch 12/12 loss=0.1025 val_f1_macro=0.9441
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 21:55:45 | C2 t6_acak_s42: epoch 11, F1 val 0.9558, 940s
+2026-10-19 21:55:46 | MULAI c2_train_one.py {"name": "t6_acak_s43", "arch": "lstm2", "inputs": "main", "w": 10, "seed": 43, "shuffle": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5646 val_f1_macro=0.6932
+epoch 2/12 loss=0.4138 val_f1_macro=0.9261
+epoch 3/12 loss=0.2796 val_f1_macro=0.8510
+epoch 4/12 loss=0.2891 val_f1_macro=0.8599
+epoch 5/12 loss=0.3098 val_f1_macro=0.7922
+epoch 6/12 loss=0.2886 val_f1_macro=0.9302
+epoch 7/12 loss=0.2561 val_f1_macro=0.7740
+epoch 8/12 loss=0.2436 val_f1_macro=0.9358
+epoch 9/12 loss=0.2138 val_f1_macro=0.9363
+epoch 10/12 loss=0.1481 val_f1_macro=0.9491
+epoch 11/12 loss=0.1462 val_f1_macro=0.7259
+epoch 12/12 loss=0.2352 val_f1_macro=0.9572
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 22:11:22 | C2 t6_acak_s43: epoch 12, F1 val 0.9572, 931s
+2026-10-19 22:11:22 | MULAI c2_train_one.py {"name": "t6_acak_s44", "arch": "lstm2", "inputs": "main", "w": 10, "seed": 44, "shuffle": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5592 val_f1_macro=0.8775
+epoch 2/12 loss=0.2844 val_f1_macro=0.9007
+epoch 3/12 loss=0.2624 val_f1_macro=0.8291
+epoch 4/12 loss=0.2378 val_f1_macro=0.9211
+epoch 5/12 loss=0.2346 val_f1_macro=0.9305
+epoch 6/12 loss=0.2315 val_f1_macro=0.9419
+epoch 7/12 loss=0.1974 val_f1_macro=0.9401
+epoch 8/12 loss=0.1473 val_f1_macro=0.7593
+epoch 9/12 loss=0.2188 val_f1_macro=0.9427
+epoch 10/12 loss=0.1627 val_f1_macro=0.8145
+epoch 11/12 loss=0.1483 val_f1_macro=0.9376
+epoch 12/12 loss=0.0987 val_f1_macro=0.9587
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 22:28:59 | C2 t6_acak_s44: epoch 12, F1 val 0.9587, 1051s
+2026-10-19 22:28:59 | MULAI c2_train_one.py {"name": "t6_acak_s45", "arch": "lstm2", "inputs": "main", "w": 10, "seed": 45, "shuffle": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5596 val_f1_macro=0.7144
+epoch 2/12 loss=0.4093 val_f1_macro=0.8955
+epoch 3/12 loss=0.2656 val_f1_macro=0.9130
+epoch 4/12 loss=0.2466 val_f1_macro=0.9147
+epoch 5/12 loss=0.2237 val_f1_macro=0.9290
+epoch 6/12 loss=0.2488 val_f1_macro=0.9256
+epoch 7/12 loss=0.2655 val_f1_macro=0.7112
+epoch 8/12 loss=0.1723 val_f1_macro=0.9296
+epoch 9/12 loss=0.1302 val_f1_macro=0.9391
+epoch 10/12 loss=0.1420 val_f1_macro=0.9505
+epoch 11/12 loss=0.1332 val_f1_macro=0.9524
+epoch 12/12 loss=0.0995 val_f1_macro=0.9440
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 22:44:29 | C2 t6_acak_s45: epoch 11, F1 val 0.9524, 925s
+2026-10-19 22:44:30 | MULAI c2_train_one.py {"name": "t6_acak_s46", "arch": "lstm2", "inputs": "main", "w": 10, "seed": 46, "shuffle": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5659 val_f1_macro=0.8085
+epoch 2/12 loss=0.3389 val_f1_macro=0.7484
+epoch 3/12 loss=0.3302 val_f1_macro=0.7477
+epoch 4/12 loss=0.3311 val_f1_macro=0.9395
+epoch 5/12 loss=0.3218 val_f1_macro=0.9324
+epoch 6/12 loss=0.3407 val_f1_macro=0.7283
+epoch 7/12 loss=0.3564 val_f1_macro=0.7827
+epoch 8/12 loss=0.3039 val_f1_macro=0.8052
+epoch 9/12 loss=0.1967 val_f1_macro=0.9344
+epoch 10/12 loss=0.1576 val_f1_macro=0.9385
+epoch 11/12 loss=0.1214 val_f1_macro=0.9417
+epoch 12/12 loss=0.1089 val_f1_macro=0.9418
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 23:00:11 | C2 t6_acak_s46: epoch 12, F1 val 0.9418, 936s
+2026-10-19 23:00:11 | MULAI c2_train_one.py {"name": "control_s42", "arch": "lstm2", "inputs": "control", "w": 10, "seed": 42}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.3685 val_f1_macro=0.8796
+epoch 2/12 loss=0.2165 val_f1_macro=0.9387
+epoch 3/12 loss=0.1701 val_f1_macro=0.9544
+epoch 4/12 loss=0.1475 val_f1_macro=0.9520
+epoch 5/12 loss=0.1115 val_f1_macro=0.9377
+epoch 6/12 loss=0.1033 val_f1_macro=0.9359
+epoch 7/12 loss=0.0835 val_f1_macro=0.9605
+epoch 8/12 loss=0.0795 val_f1_macro=0.9323
+epoch 9/12 loss=0.0785 val_f1_macro=0.9662
+epoch 10/12 loss=0.0801 val_f1_macro=0.9685
+epoch 11/12 loss=0.0692 val_f1_macro=0.9724
+epoch 12/12 loss=0.0657 val_f1_macro=0.9771
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 23:16:20 | C2 control_s42: epoch 12, F1 val 0.9771, 964s
+2026-10-19 23:16:21 | MULAI c2_train_one.py {"name": "control_s43", "arch": "lstm2", "inputs": "control", "w": 10, "seed": 43}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.3618 val_f1_macro=0.9065
+epoch 2/12 loss=0.2025 val_f1_macro=0.9186
+epoch 3/12 loss=0.1676 val_f1_macro=0.9376
+epoch 4/12 loss=0.1347 val_f1_macro=0.9561
+epoch 5/12 loss=0.1050 val_f1_macro=0.9632
+epoch 6/12 loss=0.0900 val_f1_macro=0.9612
+epoch 7/12 loss=0.0800 val_f1_macro=0.9683
+epoch 8/12 loss=0.0804 val_f1_macro=0.9390
+epoch 9/12 loss=0.0753 val_f1_macro=0.9600
+epoch 10/12 loss=0.0741 val_f1_macro=0.9755
+epoch 11/12 loss=0.0713 val_f1_macro=0.9544
+epoch 12/12 loss=0.0620 val_f1_macro=0.9811
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 23:30:56 | C2 control_s43: epoch 12, F1 val 0.9811, 871s
+2026-10-19 23:30:57 | MULAI c2_train_one.py {"name": "control_s44", "arch": "lstm2", "inputs": "control", "w": 10, "seed": 44}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.3712 val_f1_macro=0.9037
+epoch 2/12 loss=0.2215 val_f1_macro=0.9047
+epoch 3/12 loss=0.1815 val_f1_macro=0.8933
+epoch 4/12 loss=0.1476 val_f1_macro=0.9385
+epoch 5/12 loss=0.1112 val_f1_macro=0.9551
+epoch 6/12 loss=0.0960 val_f1_macro=0.9322
+epoch 7/12 loss=0.0956 val_f1_macro=0.9383
+epoch 8/12 loss=0.0904 val_f1_macro=0.9674
+epoch 9/12 loss=0.0741 val_f1_macro=0.9548
+epoch 10/12 loss=0.0717 val_f1_macro=0.9325
+epoch 11/12 loss=0.0672 val_f1_macro=0.9600
+epoch 12/12 loss=0.0633 val_f1_macro=0.9437
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 23:46:56 | C2 control_s44: epoch 8, F1 val 0.9674, 955s
+2026-10-19 23:46:57 | MULAI c2_train_one.py {"name": "abl_w1_s42", "arch": "lstm2", "inputs": "main", "w": 1, "seed": 42, "ablation_subset": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.7340 val_f1_macro=0.8013
+epoch 2/12 loss=0.3349 val_f1_macro=0.8464
+epoch 3/12 loss=0.2857 val_f1_macro=0.8807
+epoch 4/12 loss=0.2612 val_f1_macro=0.8802
+epoch 5/12 loss=0.2454 val_f1_macro=0.8752
+epoch 6/12 loss=0.2320 val_f1_macro=0.8606
+epoch 7/12 loss=0.2263 val_f1_macro=0.8783
+epoch 8/12 loss=0.2156 val_f1_macro=0.8763
+epoch 9/12 loss=0.2116 val_f1_macro=0.8876
+epoch 10/12 loss=0.2037 val_f1_macro=0.8874
+epoch 11/12 loss=0.2014 val_f1_macro=0.8856
+epoch 12/12 loss=0.1956 val_f1_macro=0.8945
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 23:50:18 | C2 abl_w1_s42: epoch 12, F1 val 0.8945, 196s
+2026-10-19 23:50:18 | MULAI c2_train_one.py {"name": "abl_w1_s43", "arch": "lstm2", "inputs": "main", "w": 1, "seed": 43, "ablation_subset": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.7395 val_f1_macro=0.8089
+epoch 2/12 loss=0.3378 val_f1_macro=0.8501
+epoch 3/12 loss=0.2888 val_f1_macro=0.8199
+epoch 4/12 loss=0.2621 val_f1_macro=0.8847
+epoch 5/12 loss=0.2462 val_f1_macro=0.8842
+epoch 6/12 loss=0.2367 val_f1_macro=0.8829
+epoch 7/12 loss=0.2250 val_f1_macro=0.8261
+epoch 8/12 loss=0.2181 val_f1_macro=0.8857
+epoch 9/12 loss=0.2154 val_f1_macro=0.8288
+epoch 10/12 loss=0.2109 val_f1_macro=0.8277
+epoch 11/12 loss=0.2033 val_f1_macro=0.8878
+epoch 12/12 loss=0.1986 val_f1_macro=0.8873
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 23:53:44 | C2 abl_w1_s43: epoch 11, F1 val 0.8878, 202s
+2026-10-19 23:53:45 | MULAI c2_train_one.py {"name": "abl_w1_s44", "arch": "lstm2", "inputs": "main", "w": 1, "seed": 44, "ablation_subset": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.7321 val_f1_macro=0.8065
+epoch 2/12 loss=0.3285 val_f1_macro=0.8494
+epoch 3/12 loss=0.2823 val_f1_macro=0.8756
+epoch 4/12 loss=0.2624 val_f1_macro=0.8516
+epoch 5/12 loss=0.2482 val_f1_macro=0.8845
+epoch 6/12 loss=0.2357 val_f1_macro=0.8286
+epoch 7/12 loss=0.2306 val_f1_macro=0.8091
+epoch 8/12 loss=0.2208 val_f1_macro=0.8671
+epoch 9/12 loss=0.2144 val_f1_macro=0.8868
+epoch 10/12 loss=0.2106 val_f1_macro=0.8876
+epoch 11/12 loss=0.2060 val_f1_macro=0.8383
+epoch 12/12 loss=0.2006 val_f1_macro=0.8892
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-19 23:57:28 | C2 abl_w1_s44: epoch 12, F1 val 0.8892, 219s
+2026-10-19 23:57:29 | MULAI c2_train_one.py {"name": "abl_w5_s42", "arch": "lstm2", "inputs": "main", "w": 5, "seed": 42, "ablation_subset": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5893 val_f1_macro=0.7170
+epoch 2/12 loss=0.4718 val_f1_macro=0.8465
+epoch 3/12 loss=0.3896 val_f1_macro=0.8576
+epoch 4/12 loss=0.3140 val_f1_macro=0.6431
+epoch 5/12 loss=0.3005 val_f1_macro=0.6183
+epoch 6/12 loss=0.3070 val_f1_macro=0.8774
+epoch 7/12 loss=0.2532 val_f1_macro=0.8763
+epoch 8/12 loss=0.1923 val_f1_macro=0.9239
+epoch 9/12 loss=0.2041 val_f1_macro=0.8877
+epoch 10/12 loss=0.1740 val_f1_macro=0.8847
+epoch 11/12 loss=0.1777 val_f1_macro=0.9198
+epoch 12/12 loss=0.1832 val_f1_macro=0.8930
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 00:07:33 | C2 abl_w5_s42: epoch 8, F1 val 0.9239, 600s
+2026-10-20 00:07:34 | MULAI c2_train_one.py {"name": "abl_w5_s43", "arch": "lstm2", "inputs": "main", "w": 5, "seed": 43, "ablation_subset": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5306 val_f1_macro=0.8306
+epoch 2/12 loss=0.3680 val_f1_macro=0.8603
+epoch 3/12 loss=0.2449 val_f1_macro=0.8583
+epoch 4/12 loss=0.2271 val_f1_macro=0.9084
+epoch 5/12 loss=0.1862 val_f1_macro=0.9159
+epoch 6/12 loss=0.1536 val_f1_macro=0.9125
+epoch 7/12 loss=0.1565 val_f1_macro=0.9298
+epoch 8/12 loss=0.1462 val_f1_macro=0.9291
+epoch 9/12 loss=0.1446 val_f1_macro=0.8902
+epoch 10/12 loss=0.1327 val_f1_macro=0.9325
+epoch 11/12 loss=0.1339 val_f1_macro=0.9364
+epoch 12/12 loss=0.1272 val_f1_macro=0.9350
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 00:17:34 | C2 abl_w5_s43: epoch 11, F1 val 0.9364, 595s
+2026-10-20 00:17:35 | MULAI c2_train_one.py {"name": "abl_w5_s44", "arch": "lstm2", "inputs": "main", "w": 5, "seed": 44, "ablation_subset": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5469 val_f1_macro=0.8575
+epoch 2/12 loss=0.3059 val_f1_macro=0.8871
+epoch 3/12 loss=0.2464 val_f1_macro=0.8790
+epoch 4/12 loss=0.2274 val_f1_macro=0.8657
+epoch 5/12 loss=0.1819 val_f1_macro=0.8940
+epoch 6/12 loss=0.1958 val_f1_macro=0.9308
+epoch 7/12 loss=0.1676 val_f1_macro=0.8700
+epoch 8/12 loss=0.1396 val_f1_macro=0.9297
+epoch 9/12 loss=0.1355 val_f1_macro=0.9315
+epoch 10/12 loss=0.1238 val_f1_macro=0.9343
+epoch 11/12 loss=0.1497 val_f1_macro=0.9292
+epoch 12/12 loss=0.1218 val_f1_macro=0.9270
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 00:27:49 | C2 abl_w5_s44: epoch 10, F1 val 0.9343, 609s
+2026-10-20 00:27:49 | MULAI c2_train_one.py {"name": "abl_w20_s42", "arch": "lstm2", "inputs": "main", "w": 20, "seed": 42, "ablation_subset": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.8119 val_f1_macro=0.6430
+epoch 2/12 loss=0.5522 val_f1_macro=0.6873
+epoch 3/12 loss=0.4941 val_f1_macro=0.6976
+epoch 4/12 loss=0.4731 val_f1_macro=0.6596
+epoch 5/12 loss=0.4037 val_f1_macro=0.8927
+epoch 6/12 loss=0.3297 val_f1_macro=0.9001
+epoch 7/12 loss=0.3413 val_f1_macro=0.9090
+epoch 8/12 loss=0.3863 val_f1_macro=0.7288
+epoch 9/12 loss=0.4375 val_f1_macro=0.6117
+epoch 10/12 loss=0.3579 val_f1_macro=0.7223
+epoch 11/12 loss=0.3415 val_f1_macro=0.8372
+epoch 12/12 loss=0.3577 val_f1_macro=0.8669
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 00:47:16 | C2 abl_w20_s42: epoch 7, F1 val 0.9090, 1160s
+2026-10-20 00:47:17 | MULAI c2_train_one.py {"name": "abl_w20_s43", "arch": "lstm2", "inputs": "main", "w": 20, "seed": 43, "ablation_subset": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.9890 val_f1_macro=0.5707
+epoch 2/12 loss=0.6062 val_f1_macro=0.6850
+epoch 3/12 loss=0.5043 val_f1_macro=0.8094
+epoch 4/12 loss=0.4347 val_f1_macro=0.6313
+epoch 5/12 loss=0.4365 val_f1_macro=0.8303
+epoch 6/12 loss=0.3979 val_f1_macro=0.6950
+epoch 7/12 loss=0.3619 val_f1_macro=0.8896
+epoch 8/12 loss=0.3273 val_f1_macro=0.7932
+epoch 9/12 loss=0.2689 val_f1_macro=0.8963
+epoch 10/12 loss=0.2417 val_f1_macro=0.9068
+epoch 11/12 loss=0.2894 val_f1_macro=0.5457
+epoch 12/12 loss=0.4210 val_f1_macro=0.8784
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 01:06:35 | C2 abl_w20_s43: epoch 10, F1 val 0.9068, 1152s
+2026-10-20 01:06:36 | MULAI c2_train_one.py {"name": "abl_w20_s44", "arch": "lstm2", "inputs": "main", "w": 20, "seed": 44, "ablation_subset": true}
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.9377 val_f1_macro=0.5833
+epoch 2/12 loss=0.5947 val_f1_macro=0.6596
+epoch 3/12 loss=0.4923 val_f1_macro=0.6612
+epoch 4/12 loss=0.4567 val_f1_macro=0.8879
+epoch 5/12 loss=0.4247 val_f1_macro=0.6811
+epoch 6/12 loss=0.4002 val_f1_macro=0.8470
+epoch 7/12 loss=0.3676 val_f1_macro=0.9128
+epoch 8/12 loss=0.2957 val_f1_macro=0.8954
+epoch 9/12 loss=0.2888 val_f1_macro=0.6358
+epoch 10/12 loss=0.3652 val_f1_macro=0.7181
+epoch 11/12 loss=0.2526 val_f1_macro=0.6626
+epoch 12/12 loss=0.2595 val_f1_macro=0.9085
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 01:26:37 | C2 abl_w20_s44: epoch 7, F1 val 0.9128, 1195s
+2026-10-20 01:26:37 | MULAI c2_tree_one.py {"name": "search_rf_00", "model": "rf", "seed": 42, "params": {"n_estimators": 90, "max_depth": 40, "min_samples_leaf": 
+2026-10-20 01:27:01 | C2 search_rf_00: F1 val 0.9407, 22s
+2026-10-20 01:27:01 | MULAI c2_tree_one.py {"name": "search_rf_01", "model": "rf", "seed": 42, "params": {"n_estimators": 247, "max_depth": 24, "min_samples_leaf":
+2026-10-20 01:28:02 | C2 search_rf_01: F1 val 0.9368, 60s
+2026-10-20 01:28:02 | MULAI c2_tree_one.py {"name": "search_rf_02", "model": "rf", "seed": 42, "params": {"n_estimators": 88, "max_depth": 37, "min_samples_leaf": 
+2026-10-20 01:28:27 | C2 search_rf_02: F1 val 0.9625, 23s
+2026-10-20 01:28:27 | MULAI c2_tree_one.py {"name": "search_rf_03", "model": "rf", "seed": 42, "params": {"n_estimators": 92, "max_depth": 29, "min_samples_leaf": 
+2026-10-20 01:28:51 | C2 search_rf_03: F1 val 0.9347, 23s
+2026-10-20 01:28:51 | MULAI c2_tree_one.py {"name": "search_rf_04", "model": "rf", "seed": 42, "params": {"n_estimators": 381, "max_depth": 40, "min_samples_leaf":
+2026-10-20 01:30:31 | C2 search_rf_04: F1 val 0.9392, 98s
+2026-10-20 01:30:31 | MULAI c2_tree_one.py {"name": "search_rf_05", "model": "rf", "seed": 42, "params": {"n_estimators": 404, "max_depth": 28, "min_samples_leaf":
+2026-10-20 01:32:19 | C2 search_rf_05: F1 val 0.9656, 106s
+2026-10-20 01:32:19 | MULAI c2_tree_one.py {"name": "search_rf_06", "model": "rf", "seed": 42, "params": {"n_estimators": 428, "max_depth": 25, "min_samples_leaf":
+2026-10-20 01:34:10 | C2 search_rf_06: F1 val 0.9465, 110s
+2026-10-20 01:34:10 | MULAI c2_tree_one.py {"name": "search_rf_07", "model": "rf", "seed": 42, "params": {"n_estimators": 217, "max_depth": 13, "min_samples_leaf":
+2026-10-20 01:35:01 | C2 search_rf_07: F1 val 0.9301, 48s
+2026-10-20 01:35:01 | MULAI c2_tree_one.py {"name": "search_rf_08", "model": "rf", "seed": 42, "params": {"n_estimators": 402, "max_depth": 34, "min_samples_leaf":
+2026-10-20 01:36:47 | C2 search_rf_08: F1 val 0.9538, 104s
+2026-10-20 01:36:47 | MULAI c2_tree_one.py {"name": "search_rf_09", "model": "rf", "seed": 42, "params": {"n_estimators": 421, "max_depth": 30, "min_samples_leaf":
+2026-10-20 01:38:38 | C2 search_rf_09: F1 val 0.9543, 109s
+2026-10-20 01:38:38 | MULAI c2_tree_one.py {"name": "search_rf_10", "model": "rf", "seed": 42, "params": {"n_estimators": 253, "max_depth": 15, "min_samples_leaf":
+2026-10-20 01:39:40 | C2 search_rf_10: F1 val 0.9500, 60s
+2026-10-20 01:39:40 | MULAI c2_tree_one.py {"name": "search_rf_11", "model": "rf", "seed": 42, "params": {"n_estimators": 300, "max_depth": 45, "min_samples_leaf":
+2026-10-20 01:41:02 | C2 search_rf_11: F1 val 0.9670, 81s
+2026-10-20 01:41:03 | MULAI c2_tree_one.py {"name": "search_rf_12", "model": "rf", "seed": 42, "params": {"n_estimators": 437, "max_depth": 43, "min_samples_leaf":
+2026-10-20 01:42:59 | C2 search_rf_12: F1 val 0.9628, 114s
+2026-10-20 01:42:59 | MULAI c2_tree_one.py {"name": "search_rf_13", "model": "rf", "seed": 42, "params": {"n_estimators": 334, "max_depth": 12, "min_samples_leaf":
+2026-10-20 01:44:15 | C2 search_rf_13: F1 val 0.9297, 74s
+2026-10-20 01:44:15 | MULAI c2_tree_one.py {"name": "search_rf_14", "model": "rf", "seed": 42, "params": {"n_estimators": 365, "max_depth": 21, "min_samples_leaf":
+2026-10-20 01:45:50 | C2 search_rf_14: F1 val 0.9657, 93s
+2026-10-20 01:45:50 | MULAI c2_tree_one.py {"name": "search_rf_15", "model": "rf", "seed": 42, "params": {"n_estimators": 487, "max_depth": 25, "min_samples_leaf":
+2026-10-20 01:47:55 | C2 search_rf_15: F1 val 0.9365, 122s
+2026-10-20 01:47:55 | MULAI c2_tree_one.py {"name": "search_rf_16", "model": "rf", "seed": 42, "params": {"n_estimators": 355, "max_depth": 40, "min_samples_leaf":
+2026-10-20 01:49:28 | C2 search_rf_16: F1 val 0.9389, 91s
+2026-10-20 01:49:28 | MULAI c2_tree_one.py {"name": "search_rf_17", "model": "rf", "seed": 42, "params": {"n_estimators": 137, "max_depth": 21, "min_samples_leaf":
+2026-10-20 01:50:04 | C2 search_rf_17: F1 val 0.9458, 35s
+2026-10-20 01:50:04 | MULAI c2_tree_one.py {"name": "search_rf_18", "model": "rf", "seed": 42, "params": {"n_estimators": 274, "max_depth": 7, "min_samples_leaf": 
+2026-10-20 01:50:53 | C2 search_rf_18: F1 val 0.9004, 47s
+2026-10-20 01:50:53 | MULAI c2_tree_one.py {"name": "search_rf_19", "model": "rf", "seed": 42, "params": {"n_estimators": 119, "max_depth": 39, "min_samples_leaf":
+2026-10-20 01:51:25 | C2 search_rf_19: F1 val 0.9418, 31s
+2026-10-20 01:51:26 | MULAI c2_tree_one.py {"name": "rf_s42", "model": "rf", "seed": 42, "params": {"n_estimators": 300, "max_depth": 45, "min_samples_leaf": 2}, "
+2026-10-20 01:52:51 | C2 rf_s42: F1 val 0.9670, 81s
+2026-10-20 01:52:51 | MULAI c2_tree_one.py {"name": "rf_s43", "model": "rf", "seed": 43, "params": {"n_estimators": 300, "max_depth": 45, "min_samples_leaf": 2}, "
+2026-10-20 01:54:15 | C2 rf_s43: F1 val 0.9671, 80s
+2026-10-20 01:54:15 | MULAI c2_tree_one.py {"name": "rf_s44", "model": "rf", "seed": 44, "params": {"n_estimators": 300, "max_depth": 45, "min_samples_leaf": 2}, "
+2026-10-20 01:55:40 | C2 rf_s44: F1 val 0.9669, 81s
+2026-10-20 01:55:40 | MULAI c2_tree_one.py {"name": "search_xgb_00", "model": "xgb", "seed": 42, "params": {"n_estimators": 90, "max_depth": 13, "learning_rate": 0
+2026-10-20 01:56:20 | C2 search_xgb_00: F1 val 0.9776, 39s
+2026-10-20 01:56:20 | MULAI c2_tree_one.py {"name": "search_xgb_01", "model": "xgb", "seed": 42, "params": {"n_estimators": 88, "max_depth": 12, "learning_rate": 0
+2026-10-20 01:56:59 | C2 search_xgb_01: F1 val 0.9670, 37s
+2026-10-20 01:56:59 | MULAI c2_tree_one.py {"name": "search_xgb_02", "model": "xgb", "seed": 42, "params": {"n_estimators": 381, "max_depth": 12, "learning_rate": 
+2026-10-20 01:59:48 | C2 search_xgb_02: F1 val 0.9780, 166s
+2026-10-20 01:59:48 | MULAI c2_tree_one.py {"name": "search_xgb_03", "model": "xgb", "seed": 42, "params": {"n_estimators": 428, "max_depth": 8, "learning_rate": 0
+2026-10-20 02:02:35 | C2 search_xgb_03: F1 val 0.9785, 165s
+2026-10-20 02:02:35 | MULAI c2_tree_one.py {"name": "search_xgb_04", "model": "xgb", "seed": 42, "params": {"n_estimators": 402, "max_depth": 11, "learning_rate": 
+2026-10-20 02:05:30 | C2 search_xgb_04: F1 val 0.9780, 172s
+2026-10-20 02:05:30 | MULAI c2_tree_one.py {"name": "search_xgb_05", "model": "xgb", "seed": 42, "params": {"n_estimators": 253, "max_depth": 5, "learning_rate": 0
+2026-10-20 02:07:00 | C2 search_xgb_05: F1 val 0.9770, 88s
+2026-10-20 02:07:00 | MULAI c2_tree_one.py {"name": "search_xgb_06", "model": "xgb", "seed": 42, "params": {"n_estimators": 437, "max_depth": 13, "learning_rate": 
+2026-10-20 02:10:12 | C2 search_xgb_06: F1 val 0.9778, 189s
+2026-10-20 02:10:12 | MULAI c2_tree_one.py {"name": "search_xgb_07", "model": "xgb", "seed": 42, "params": {"n_estimators": 365, "max_depth": 7, "learning_rate": 0
+2026-10-20 02:12:29 | C2 search_xgb_07: F1 val 0.9781, 135s
+2026-10-20 02:12:29 | MULAI c2_tree_one.py {"name": "search_xgb_08", "model": "xgb", "seed": 42, "params": {"n_estimators": 355, "max_depth": 13, "learning_rate": 
+2026-10-20 02:15:13 | C2 search_xgb_08: F1 val 0.9782, 162s
+2026-10-20 02:15:14 | MULAI c2_tree_one.py {"name": "search_xgb_09", "model": "xgb", "seed": 42, "params": {"n_estimators": 274, "max_depth": 3, "learning_rate": 0
+2026-10-20 02:16:31 | C2 search_xgb_09: F1 val 0.9273, 76s
+2026-10-20 02:16:31 | MULAI c2_tree_one.py {"name": "search_xgb_10", "model": "xgb", "seed": 42, "params": {"n_estimators": 466, "max_depth": 12, "learning_rate": 
+2026-10-20 02:19:52 | C2 search_xgb_10: F1 val 0.9777, 198s
+2026-10-20 02:19:52 | MULAI c2_tree_one.py {"name": "search_xgb_11", "model": "xgb", "seed": 42, "params": {"n_estimators": 458, "max_depth": 7, "learning_rate": 0
+2026-10-20 02:22:56 | C2 search_xgb_11: F1 val 0.9780, 182s
+2026-10-20 02:22:56 | MULAI c2_tree_one.py {"name": "search_xgb_12", "model": "xgb", "seed": 42, "params": {"n_estimators": 258, "max_depth": 4, "learning_rate": 0
+2026-10-20 02:24:19 | C2 search_xgb_12: F1 val 0.9706, 81s
+2026-10-20 02:24:19 | MULAI c2_tree_one.py {"name": "search_xgb_13", "model": "xgb", "seed": 42, "params": {"n_estimators": 304, "max_depth": 11, "learning_rate": 
+2026-10-20 02:26:32 | C2 search_xgb_13: F1 val 0.9783, 131s
+2026-10-20 02:26:32 | MULAI c2_tree_one.py {"name": "search_xgb_14", "model": "xgb", "seed": 42, "params": {"n_estimators": 334, "max_depth": 12, "learning_rate": 
+2026-10-20 02:29:01 | C2 search_xgb_14: F1 val 0.9782, 146s
+2026-10-20 02:29:01 | MULAI c2_tree_one.py {"name": "search_xgb_15", "model": "xgb", "seed": 42, "params": {"n_estimators": 246, "max_depth": 13, "learning_rate": 
+2026-10-20 02:30:58 | C2 search_xgb_15: F1 val 0.9782, 115s
+2026-10-20 02:30:58 | MULAI c2_tree_one.py {"name": "search_xgb_16", "model": "xgb", "seed": 42, "params": {"n_estimators": 158, "max_depth": 11, "learning_rate": 
+2026-10-20 02:32:05 | C2 search_xgb_16: F1 val 0.9736, 66s
+2026-10-20 02:32:06 | MULAI c2_tree_one.py {"name": "search_xgb_17", "model": "xgb", "seed": 42, "params": {"n_estimators": 413, "max_depth": 3, "learning_rate": 0
+2026-10-20 02:34:00 | C2 search_xgb_17: F1 val 0.9738, 113s
+2026-10-20 02:34:00 | MULAI c2_tree_one.py {"name": "search_xgb_18", "model": "xgb", "seed": 42, "params": {"n_estimators": 262, "max_depth": 12, "learning_rate": 
+2026-10-20 02:36:00 | C2 search_xgb_18: F1 val 0.9780, 117s
+2026-10-20 02:36:00 | MULAI c2_tree_one.py {"name": "search_xgb_19", "model": "xgb", "seed": 42, "params": {"n_estimators": 278, "max_depth": 10, "learning_rate": 
+2026-10-20 02:38:00 | C2 search_xgb_19: F1 val 0.9771, 118s
+2026-10-20 02:38:00 | MULAI c2_tree_one.py {"name": "xgb_s42", "model": "xgb", "seed": 42, "params": {"n_estimators": 428, "max_depth": 8, "learning_rate": 0.11753
+2026-10-20 02:40:47 | C2 xgb_s42: F1 val 0.9785, 165s
+2026-10-20 02:40:47 | MULAI c2_tree_one.py {"name": "xgb_s43", "model": "xgb", "seed": 43, "params": {"n_estimators": 428, "max_depth": 8, "learning_rate": 0.11753
+2026-10-20 02:43:34 | C2 xgb_s43: F1 val 0.9784, 164s
+2026-10-20 02:43:34 | MULAI c2_tree_one.py {"name": "xgb_s44", "model": "xgb", "seed": 44, "params": {"n_estimators": 428, "max_depth": 8, "learning_rate": 0.11753
+2026-10-20 02:46:21 | C2 xgb_s44: F1 val 0.9784, 165s
+2026-10-20 02:46:22 | MULAI c2_train_one.py {"name": "search_mlp_00", "model": "mlp", "seed": 42, "params": {"layers": 1, "units": 206, "dropout": 0.275551375900820
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.6665 val_f1_macro=0.7965
+epoch 2/12 loss=0.5004 val_f1_macro=0.7987
+epoch 3/12 loss=0.5518 val_f1_macro=0.8143
+epoch 4/12 loss=0.4999 val_f1_macro=0.7991
+epoch 5/12 loss=0.5385 val_f1_macro=0.8179
+epoch 6/12 loss=0.5068 val_f1_macro=0.7367
+epoch 7/12 loss=0.5268 val_f1_macro=0.7733
+epoch 8/12 loss=0.5514 val_f1_macro=0.6714
+epoch 9/12 loss=0.5599 val_f1_macro=0.8331
+epoch 10/12 loss=0.5257 val_f1_macro=0.6711
+epoch 11/12 loss=0.5603 val_f1_macro=0.7232
+epoch 12/12 loss=0.5602 val_f1_macro=0.6709
+2026-10-20 02:47:22 | C2 search_mlp_00: epoch 9, F1 val 0.8331, 56s
+2026-10-20 02:47:23 | MULAI c2_train_one.py {"name": "search_mlp_01", "model": "mlp", "seed": 42, "params": {"layers": 1, "units": 188, "dropout": 0.137670939155059
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.6778 val_f1_macro=0.6685
+epoch 2/12 loss=0.5757 val_f1_macro=0.8001
+epoch 3/12 loss=0.4852 val_f1_macro=0.6834
+epoch 4/12 loss=0.5906 val_f1_macro=0.6317
+epoch 5/12 loss=0.5947 val_f1_macro=0.6533
+epoch 6/12 loss=0.5471 val_f1_macro=0.7130
+epoch 7/12 loss=0.5800 val_f1_macro=0.8030
+epoch 8/12 loss=0.6093 val_f1_macro=0.6554
+epoch 9/12 loss=0.6578 val_f1_macro=0.7172
+epoch 10/12 loss=0.6403 val_f1_macro=0.6481
+epoch 11/12 loss=0.6497 val_f1_macro=0.7016
+epoch 12/12 loss=0.6369 val_f1_macro=0.6619
+2026-10-20 02:48:20 | C2 search_mlp_01: epoch 7, F1 val 0.8030, 53s
+2026-10-20 02:48:20 | MULAI c2_train_one.py {"name": "search_mlp_02", "model": "mlp", "seed": 42, "params": {"layers": 3, "units": 203, "dropout": 0.414425722110781
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.8435 val_f1_macro=0.7704
+epoch 2/12 loss=0.4378 val_f1_macro=0.8686
+epoch 3/12 loss=0.3184 val_f1_macro=0.8933
+epoch 4/12 loss=0.2842 val_f1_macro=0.9123
+epoch 5/12 loss=0.2750 val_f1_macro=0.9165
+epoch 6/12 loss=0.2841 val_f1_macro=0.8633
+epoch 7/12 loss=0.2968 val_f1_macro=0.9394
+epoch 8/12 loss=0.3217 val_f1_macro=0.9334
+epoch 9/12 loss=0.3355 val_f1_macro=0.8793
+epoch 10/12 loss=0.3564 val_f1_macro=0.9436
+epoch 11/12 loss=0.3255 val_f1_macro=0.8783
+epoch 12/12 loss=0.3477 val_f1_macro=0.8785
+2026-10-20 02:50:14 | C2 search_mlp_02: epoch 10, F1 val 0.9436, 109s
+2026-10-20 02:50:14 | MULAI c2_train_one.py {"name": "search_mlp_03", "model": "mlp", "seed": 42, "params": {"layers": 3, "units": 133, "dropout": 0.248319209693032
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=1.1212 val_f1_macro=0.5071
+epoch 2/12 loss=1.1954 val_f1_macro=0.5316
+epoch 3/12 loss=1.2703 val_f1_macro=0.4077
+epoch 4/12 loss=1.1895 val_f1_macro=0.4535
+epoch 5/12 loss=1.1374 val_f1_macro=0.4102
+epoch 6/12 loss=1.0795 val_f1_macro=0.4023
+epoch 7/12 loss=1.1102 val_f1_macro=0.3351
+epoch 8/12 loss=1.0523 val_f1_macro=0.5456
+epoch 9/12 loss=1.1253 val_f1_macro=0.3088
+epoch 10/12 loss=1.1550 val_f1_macro=0.4214
+epoch 11/12 loss=1.1745 val_f1_macro=0.2998
+epoch 12/12 loss=1.1408 val_f1_macro=0.3212
+2026-10-20 02:51:43 | C2 search_mlp_03: epoch 8, F1 val 0.5456, 84s
+2026-10-20 02:51:43 | MULAI c2_train_one.py {"name": "search_mlp_04", "model": "mlp", "seed": 42, "params": {"layers": 3, "units": 176, "dropout": 0.429104645308332
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.7572 val_f1_macro=0.6154
+epoch 2/12 loss=0.5518 val_f1_macro=0.8117
+epoch 3/12 loss=0.5320 val_f1_macro=0.8257
+epoch 4/12 loss=0.5461 val_f1_macro=0.7323
+epoch 5/12 loss=0.5425 val_f1_macro=0.6749
+epoch 6/12 loss=0.5189 val_f1_macro=0.7454
+epoch 7/12 loss=0.5227 val_f1_macro=0.7064
+epoch 8/12 loss=0.5177 val_f1_macro=0.6986
+epoch 9/12 loss=0.5115 val_f1_macro=0.7454
+epoch 10/12 loss=0.4971 val_f1_macro=0.7174
+epoch 11/12 loss=0.5017 val_f1_macro=0.6910
+epoch 12/12 loss=0.4903 val_f1_macro=0.6923
+2026-10-20 02:53:24 | C2 search_mlp_04: epoch 3, F1 val 0.8257, 97s
+2026-10-20 02:53:24 | MULAI c2_train_one.py {"name": "search_mlp_05", "model": "mlp", "seed": 42, "params": {"layers": 2, "units": 83, "dropout": 0.3218339148063339
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=1.0511 val_f1_macro=0.6479
+epoch 2/12 loss=0.6887 val_f1_macro=0.7808
+epoch 3/12 loss=0.5270 val_f1_macro=0.7880
+epoch 4/12 loss=0.4007 val_f1_macro=0.8570
+epoch 5/12 loss=0.3294 val_f1_macro=0.8709
+epoch 6/12 loss=0.2863 val_f1_macro=0.8897
+epoch 7/12 loss=0.2575 val_f1_macro=0.8961
+epoch 8/12 loss=0.2382 val_f1_macro=0.9027
+epoch 9/12 loss=0.2222 val_f1_macro=0.8999
+epoch 10/12 loss=0.2093 val_f1_macro=0.9036
+epoch 11/12 loss=0.1991 val_f1_macro=0.9058
+epoch 12/12 loss=0.1916 val_f1_macro=0.9137
+2026-10-20 02:54:23 | C2 search_mlp_05: epoch 12, F1 val 0.9137, 55s
+2026-10-20 02:54:24 | MULAI c2_train_one.py {"name": "search_mlp_06", "model": "mlp", "seed": 42, "params": {"layers": 3, "units": 218, "dropout": 0.352665759648825
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.8547 val_f1_macro=0.5805
+epoch 2/12 loss=0.7768 val_f1_macro=0.4231
+epoch 3/12 loss=0.8728 val_f1_macro=0.5082
+epoch 4/12 loss=0.8375 val_f1_macro=0.4389
+epoch 5/12 loss=0.8749 val_f1_macro=0.3949
+epoch 6/12 loss=0.9172 val_f1_macro=0.3734
+epoch 7/12 loss=0.8492 val_f1_macro=0.4132
+epoch 8/12 loss=0.8095 val_f1_macro=0.5132
+epoch 9/12 loss=0.8383 val_f1_macro=0.4701
+epoch 10/12 loss=0.8425 val_f1_macro=0.4810
+epoch 11/12 loss=0.7554 val_f1_macro=0.4791
+epoch 12/12 loss=0.7609 val_f1_macro=0.4627
+2026-10-20 02:56:26 | C2 search_mlp_06: epoch 1, F1 val 0.5805, 118s
+2026-10-20 02:56:26 | MULAI c2_train_one.py {"name": "search_mlp_07", "model": "mlp", "seed": 42, "params": {"layers": 3, "units": 111, "dropout": 0.488279209757961
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=1.5321 val_f1_macro=0.2391
+epoch 2/12 loss=1.5976 val_f1_macro=0.1242
+epoch 3/12 loss=1.7315 val_f1_macro=0.1471
+epoch 4/12 loss=1.6967 val_f1_macro=0.1207
+epoch 5/12 loss=1.7102 val_f1_macro=0.1766
+epoch 6/12 loss=1.8575 val_f1_macro=0.1976
+epoch 7/12 loss=1.8043 val_f1_macro=0.0931
+epoch 8/12 loss=1.7556 val_f1_macro=0.0827
+epoch 9/12 loss=1.7866 val_f1_macro=0.2039
+epoch 10/12 loss=1.8614 val_f1_macro=0.1488
+epoch 11/12 loss=1.8286 val_f1_macro=0.1429
+epoch 12/12 loss=1.8947 val_f1_macro=0.1644
+2026-10-20 02:57:42 | C2 search_mlp_07: epoch 1, F1 val 0.2391, 72s
+2026-10-20 02:57:43 | MULAI c2_train_one.py {"name": "search_mlp_08", "model": "mlp", "seed": 42, "params": {"layers": 3, "units": 207, "dropout": 0.177855483140787
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5104 val_f1_macro=0.8410
+epoch 2/12 loss=0.3471 val_f1_macro=0.8828
+epoch 3/12 loss=0.3624 val_f1_macro=0.9101
+epoch 4/12 loss=0.2982 val_f1_macro=0.7857
+epoch 5/12 loss=0.4106 val_f1_macro=0.6960
+epoch 6/12 loss=0.4445 val_f1_macro=0.7804
+epoch 7/12 loss=0.4306 val_f1_macro=0.7893
+epoch 8/12 loss=0.3942 val_f1_macro=0.7043
+epoch 9/12 loss=0.4153 val_f1_macro=0.7683
+epoch 10/12 loss=0.4171 val_f1_macro=0.8777
+epoch 11/12 loss=0.4071 val_f1_macro=0.7076
+epoch 12/12 loss=0.3892 val_f1_macro=0.7295
+2026-10-20 02:59:44 | C2 search_mlp_08: epoch 3, F1 val 0.9101, 118s
+2026-10-20 02:59:45 | MULAI c2_train_one.py {"name": "search_mlp_09", "model": "mlp", "seed": 42, "params": {"layers": 2, "units": 41, "dropout": 0.1617157968270191
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.6231 val_f1_macro=0.8568
+epoch 2/12 loss=0.4177 val_f1_macro=0.6410
+epoch 3/12 loss=0.4450 val_f1_macro=0.8728
+epoch 4/12 loss=0.4255 val_f1_macro=0.7397
+epoch 5/12 loss=0.4573 val_f1_macro=0.6663
+epoch 6/12 loss=0.4672 val_f1_macro=0.8267
+epoch 7/12 loss=0.4785 val_f1_macro=0.8199
+epoch 8/12 loss=0.5163 val_f1_macro=0.6603
+epoch 9/12 loss=0.5098 val_f1_macro=0.8872
+epoch 10/12 loss=0.4466 val_f1_macro=0.7398
+epoch 11/12 loss=0.5100 val_f1_macro=0.7378
+epoch 12/12 loss=0.4779 val_f1_macro=0.8233
+2026-10-20 03:00:31 | C2 search_mlp_09: epoch 9, F1 val 0.8872, 43s
+2026-10-20 03:00:32 | MULAI c2_train_one.py {"name": "search_mlp_10", "model": "mlp", "seed": 42, "params": {"layers": 3, "units": 199, "dropout": 0.487003892973684
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.8099 val_f1_macro=0.7780
+epoch 2/12 loss=0.5511 val_f1_macro=0.8080
+epoch 3/12 loss=0.4816 val_f1_macro=0.8231
+epoch 4/12 loss=0.4995 val_f1_macro=0.7497
+epoch 5/12 loss=0.5063 val_f1_macro=0.6837
+epoch 6/12 loss=0.4881 val_f1_macro=0.7079
+epoch 7/12 loss=0.5080 val_f1_macro=0.7730
+epoch 8/12 loss=0.4948 val_f1_macro=0.7058
+epoch 9/12 loss=0.4894 val_f1_macro=0.7783
+epoch 10/12 loss=0.4903 val_f1_macro=0.7143
+epoch 11/12 loss=0.4889 val_f1_macro=0.8664
+epoch 12/12 loss=0.4812 val_f1_macro=0.7191
+2026-10-20 03:02:26 | C2 search_mlp_10: epoch 11, F1 val 0.8664, 110s
+2026-10-20 03:02:27 | MULAI c2_train_one.py {"name": "search_mlp_11", "model": "mlp", "seed": 42, "params": {"layers": 3, "units": 115, "dropout": 0.287822324510323
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.8135 val_f1_macro=0.7801
+epoch 2/12 loss=0.3551 val_f1_macro=0.8835
+epoch 3/12 loss=0.2655 val_f1_macro=0.8436
+epoch 4/12 loss=0.2442 val_f1_macro=0.9156
+epoch 5/12 loss=0.2322 val_f1_macro=0.9350
+epoch 6/12 loss=0.2455 val_f1_macro=0.9360
+epoch 7/12 loss=0.2388 val_f1_macro=0.9436
+epoch 8/12 loss=0.2242 val_f1_macro=0.9392
+epoch 9/12 loss=0.2507 val_f1_macro=0.9390
+epoch 10/12 loss=0.2666 val_f1_macro=0.9435
+epoch 11/12 loss=0.2603 val_f1_macro=0.9436
+epoch 12/12 loss=0.2543 val_f1_macro=0.9424
+2026-10-20 03:03:51 | C2 search_mlp_11: epoch 7, F1 val 0.9436, 80s
+2026-10-20 03:03:51 | MULAI c2_train_one.py {"name": "search_mlp_12", "model": "mlp", "seed": 42, "params": {"layers": 2, "units": 61, "dropout": 0.2902819704903735
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.9551 val_f1_macro=0.6804
+epoch 2/12 loss=0.6053 val_f1_macro=0.7803
+epoch 3/12 loss=0.4273 val_f1_macro=0.8069
+epoch 4/12 loss=0.3421 val_f1_macro=0.8786
+epoch 5/12 loss=0.3007 val_f1_macro=0.8701
+epoch 6/12 loss=0.2761 val_f1_macro=0.8912
+epoch 7/12 loss=0.2587 val_f1_macro=0.8861
+epoch 8/12 loss=0.2456 val_f1_macro=0.8971
+epoch 9/12 loss=0.2361 val_f1_macro=0.8956
+epoch 10/12 loss=0.2290 val_f1_macro=0.9059
+epoch 11/12 loss=0.2271 val_f1_macro=0.9068
+epoch 12/12 loss=0.2208 val_f1_macro=0.9094
+2026-10-20 03:04:46 | C2 search_mlp_12: epoch 12, F1 val 0.9094, 50s
+2026-10-20 03:04:46 | MULAI c2_train_one.py {"name": "search_mlp_13", "model": "mlp", "seed": 42, "params": {"layers": 2, "units": 182, "dropout": 0.274860767548932
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.7044 val_f1_macro=0.7690
+epoch 2/12 loss=0.6433 val_f1_macro=0.7863
+epoch 3/12 loss=0.6256 val_f1_macro=0.7166
+epoch 4/12 loss=0.6090 val_f1_macro=0.7863
+epoch 5/12 loss=0.5722 val_f1_macro=0.7867
+epoch 6/12 loss=0.6003 val_f1_macro=0.7038
+epoch 7/12 loss=0.5817 val_f1_macro=0.7063
+epoch 8/12 loss=0.5748 val_f1_macro=0.8568
+epoch 9/12 loss=0.5478 val_f1_macro=0.6868
+epoch 10/12 loss=0.5686 val_f1_macro=0.7187
+epoch 11/12 loss=0.5549 val_f1_macro=0.6313
+epoch 12/12 loss=0.5756 val_f1_macro=0.7031
+2026-10-20 03:06:08 | C2 search_mlp_13: epoch 8, F1 val 0.8568, 78s
+2026-10-20 03:06:08 | MULAI c2_train_one.py {"name": "search_mlp_14", "model": "mlp", "seed": 42, "params": {"layers": 2, "units": 189, "dropout": 0.224946656552816
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.6674 val_f1_macro=0.7833
+epoch 2/12 loss=0.5877 val_f1_macro=0.6360
+epoch 3/12 loss=0.5733 val_f1_macro=0.7292
+epoch 4/12 loss=0.5661 val_f1_macro=0.7187
+epoch 5/12 loss=0.5430 val_f1_macro=0.6074
+epoch 6/12 loss=0.5306 val_f1_macro=0.7197
+epoch 7/12 loss=0.5123 val_f1_macro=0.7148
+epoch 8/12 loss=0.5117 val_f1_macro=0.7032
+epoch 9/12 loss=0.5161 val_f1_macro=0.8642
+epoch 10/12 loss=0.5088 val_f1_macro=0.8716
+epoch 11/12 loss=0.5168 val_f1_macro=0.7196
+epoch 12/12 loss=0.5221 val_f1_macro=0.6467
+2026-10-20 03:07:39 | C2 search_mlp_14: epoch 10, F1 val 0.8716, 87s
+2026-10-20 03:07:39 | MULAI c2_train_one.py {"name": "search_mlp_15", "model": "mlp", "seed": 42, "params": {"layers": 2, "units": 213, "dropout": 0.254991351612069
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.6032 val_f1_macro=0.8826
+epoch 2/12 loss=0.2419 val_f1_macro=0.9263
+epoch 3/12 loss=0.1819 val_f1_macro=0.9382
+epoch 4/12 loss=0.1627 val_f1_macro=0.9358
+epoch 5/12 loss=0.1571 val_f1_macro=0.9366
+epoch 6/12 loss=0.1506 val_f1_macro=0.9390
+epoch 7/12 loss=0.1443 val_f1_macro=0.9417
+epoch 8/12 loss=0.1425 val_f1_macro=0.9502
+epoch 9/12 loss=0.1395 val_f1_macro=0.9434
+epoch 10/12 loss=0.1365 val_f1_macro=0.9425
+epoch 11/12 loss=0.1374 val_f1_macro=0.9435
+epoch 12/12 loss=0.1323 val_f1_macro=0.9495
+2026-10-20 03:09:11 | C2 search_mlp_15: epoch 8, F1 val 0.9502, 88s
+2026-10-20 03:09:11 | MULAI c2_train_one.py {"name": "search_mlp_16", "model": "mlp", "seed": 42, "params": {"layers": 1, "units": 185, "dropout": 0.155900993443723
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.8539 val_f1_macro=0.6686
+epoch 2/12 loss=0.5514 val_f1_macro=0.7843
+epoch 3/12 loss=0.4173 val_f1_macro=0.8208
+epoch 4/12 loss=0.3263 val_f1_macro=0.8356
+epoch 5/12 loss=0.2640 val_f1_macro=0.8497
+epoch 6/12 loss=0.2224 val_f1_macro=0.9139
+epoch 7/12 loss=0.1958 val_f1_macro=0.9318
+epoch 8/12 loss=0.1774 val_f1_macro=0.9141
+epoch 9/12 loss=0.1632 val_f1_macro=0.9359
+epoch 10/12 loss=0.1526 val_f1_macro=0.9322
+epoch 11/12 loss=0.1447 val_f1_macro=0.9370
+epoch 12/12 loss=0.1386 val_f1_macro=0.9379
+2026-10-20 03:10:12 | C2 search_mlp_16: epoch 12, F1 val 0.9379, 56s
+2026-10-20 03:10:12 | MULAI c2_train_one.py {"name": "search_mlp_17", "model": "mlp", "seed": 42, "params": {"layers": 3, "units": 33, "dropout": 0.4147697510008553
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=1.1708 val_f1_macro=0.6216
+epoch 2/12 loss=1.0240 val_f1_macro=0.6270
+epoch 3/12 loss=0.9950 val_f1_macro=0.5657
+epoch 4/12 loss=0.9724 val_f1_macro=0.6295
+epoch 5/12 loss=0.9883 val_f1_macro=0.7028
+epoch 6/12 loss=0.9889 val_f1_macro=0.5992
+epoch 7/12 loss=0.9699 val_f1_macro=0.5664
+epoch 8/12 loss=0.9771 val_f1_macro=0.5533
+epoch 9/12 loss=0.9705 val_f1_macro=0.6287
+epoch 10/12 loss=0.9847 val_f1_macro=0.5630
+epoch 11/12 loss=0.9626 val_f1_macro=0.6280
+epoch 12/12 loss=0.9752 val_f1_macro=0.6223
+2026-10-20 03:11:00 | C2 search_mlp_17: epoch 5, F1 val 0.7028, 44s
+2026-10-20 03:11:00 | MULAI c2_train_one.py {"name": "search_mlp_18", "model": "mlp", "seed": 42, "params": {"layers": 2, "units": 190, "dropout": 0.412291612408787
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.6624 val_f1_macro=0.8045
+epoch 2/12 loss=0.4163 val_f1_macro=0.8871
+epoch 3/12 loss=0.3834 val_f1_macro=0.8940
+epoch 4/12 loss=0.3882 val_f1_macro=0.8296
+epoch 5/12 loss=0.4120 val_f1_macro=0.8419
+epoch 6/12 loss=0.4097 val_f1_macro=0.8981
+epoch 7/12 loss=0.4386 val_f1_macro=0.8382
+epoch 8/12 loss=0.4367 val_f1_macro=0.6749
+epoch 9/12 loss=0.4653 val_f1_macro=0.8415
+epoch 10/12 loss=0.4135 val_f1_macro=0.8907
+epoch 11/12 loss=0.4263 val_f1_macro=0.8538
+epoch 12/12 loss=0.4311 val_f1_macro=0.8414
+2026-10-20 03:12:25 | C2 search_mlp_18: epoch 6, F1 val 0.8981, 81s
+2026-10-20 03:12:25 | MULAI c2_train_one.py {"name": "search_mlp_19", "model": "mlp", "seed": 42, "params": {"layers": 2, "units": 159, "dropout": 0.155918799251063
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.7850 val_f1_macro=0.7960
+epoch 2/12 loss=0.3804 val_f1_macro=0.8925
+epoch 3/12 loss=0.2273 val_f1_macro=0.9143
+epoch 4/12 loss=0.1744 val_f1_macro=0.9386
+epoch 5/12 loss=0.1481 val_f1_macro=0.9359
+epoch 6/12 loss=0.1338 val_f1_macro=0.9532
+epoch 7/12 loss=0.1249 val_f1_macro=0.9477
+epoch 8/12 loss=0.1157 val_f1_macro=0.9526
+epoch 9/12 loss=0.1120 val_f1_macro=0.9416
+epoch 10/12 loss=0.1069 val_f1_macro=0.9600
+epoch 11/12 loss=0.1035 val_f1_macro=0.9532
+epoch 12/12 loss=0.0995 val_f1_macro=0.9575
+2026-10-20 03:13:44 | C2 search_mlp_19: epoch 10, F1 val 0.9600, 75s
+2026-10-20 03:13:45 | MULAI c2_train_one.py {"name": "mlp_s42", "model": "mlp", "seed": 42, "params": {"layers": 2, "units": 159, "dropout": 0.155918799251063, "lr"
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.7850 val_f1_macro=0.7960
+epoch 2/12 loss=0.3804 val_f1_macro=0.8925
+epoch 3/12 loss=0.2273 val_f1_macro=0.9143
+epoch 4/12 loss=0.1744 val_f1_macro=0.9386
+epoch 5/12 loss=0.1481 val_f1_macro=0.9359
+epoch 6/12 loss=0.1338 val_f1_macro=0.9532
+epoch 7/12 loss=0.1249 val_f1_macro=0.9477
+epoch 8/12 loss=0.1157 val_f1_macro=0.9526
+epoch 9/12 loss=0.1120 val_f1_macro=0.9416
+epoch 10/12 loss=0.1069 val_f1_macro=0.9600
+epoch 11/12 loss=0.1035 val_f1_macro=0.9532
+epoch 12/12 loss=0.0995 val_f1_macro=0.9575
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 03:15:01 | C2 mlp_s42: epoch 10, F1 val 0.9600, 73s
+2026-10-20 03:15:02 | MULAI c2_train_one.py {"name": "mlp_s43", "model": "mlp", "seed": 43, "params": {"layers": 2, "units": 159, "dropout": 0.155918799251063, "lr"
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.7761 val_f1_macro=0.7106
+epoch 2/12 loss=0.3828 val_f1_macro=0.8746
+epoch 3/12 loss=0.2243 val_f1_macro=0.9328
+epoch 4/12 loss=0.1688 val_f1_macro=0.9335
+epoch 5/12 loss=0.1446 val_f1_macro=0.9344
+epoch 6/12 loss=0.1297 val_f1_macro=0.9447
+epoch 7/12 loss=0.1194 val_f1_macro=0.9545
+epoch 8/12 loss=0.1122 val_f1_macro=0.9411
+epoch 9/12 loss=0.1080 val_f1_macro=0.9486
+epoch 10/12 loss=0.1036 val_f1_macro=0.9529
+epoch 11/12 loss=0.0996 val_f1_macro=0.9422
+epoch 12/12 loss=0.0984 val_f1_macro=0.9581
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 03:16:18 | C2 mlp_s43: epoch 12, F1 val 0.9581, 73s
+2026-10-20 03:16:19 | MULAI c2_train_one.py {"name": "mlp_s44", "model": "mlp", "seed": 44, "params": {"layers": 2, "units": 159, "dropout": 0.155918799251063, "lr"
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.7906 val_f1_macro=0.7823
+epoch 2/12 loss=0.3937 val_f1_macro=0.8890
+epoch 3/12 loss=0.2291 val_f1_macro=0.9062
+epoch 4/12 loss=0.1744 val_f1_macro=0.9294
+epoch 5/12 loss=0.1474 val_f1_macro=0.9355
+epoch 6/12 loss=0.1318 val_f1_macro=0.9454
+epoch 7/12 loss=0.1198 val_f1_macro=0.8765
+epoch 8/12 loss=0.1139 val_f1_macro=0.9548
+epoch 9/12 loss=0.1106 val_f1_macro=0.9571
+epoch 10/12 loss=0.1054 val_f1_macro=0.9519
+epoch 11/12 loss=0.1006 val_f1_macro=0.9579
+epoch 12/12 loss=0.0982 val_f1_macro=0.9542
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 03:17:39 | C2 mlp_s44: epoch 11, F1 val 0.9579, 76s
+2026-10-20 03:17:39 | MULAI c2_train_one.py {"name": "search_lstm1_00", "model": "lstm1", "seed": 42, "params": {"units": 40, "dropout": 0.2755513759008209, "lr": 0
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5466 val_f1_macro=0.9046
+epoch 2/12 loss=0.3090 val_f1_macro=0.9323
+epoch 3/12 loss=0.2712 val_f1_macro=0.9311
+epoch 4/12 loss=0.2459 val_f1_macro=0.7129
+epoch 5/12 loss=0.2419 val_f1_macro=0.9470
+epoch 6/12 loss=0.1604 val_f1_macro=0.9432
+epoch 7/12 loss=0.1229 val_f1_macro=0.9459
+epoch 8/12 loss=0.1338 val_f1_macro=0.9372
+epoch 9/12 loss=0.1621 val_f1_macro=0.9471
+epoch 10/12 loss=0.1069 val_f1_macro=0.9610
+epoch 11/12 loss=0.1011 val_f1_macro=0.9391
+epoch 12/12 loss=0.1030 val_f1_macro=0.9442
+2026-10-20 03:20:16 | C2 search_lstm1_00: epoch 10, F1 val 0.9610, 153s
+2026-10-20 03:20:17 | MULAI c2_train_one.py {"name": "search_lstm1_01", "model": "lstm1", "seed": 42, "params": {"units": 107, "dropout": 0.37894721162374556, "lr":
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.6503 val_f1_macro=0.8263
+epoch 2/12 loss=0.3047 val_f1_macro=0.8368
+epoch 3/12 loss=0.2832 val_f1_macro=0.6188
+epoch 4/12 loss=0.2371 val_f1_macro=0.8791
+epoch 5/12 loss=0.1951 val_f1_macro=0.9047
+epoch 6/12 loss=0.1783 val_f1_macro=0.9217
+epoch 7/12 loss=0.1695 val_f1_macro=0.7957
+epoch 8/12 loss=0.1536 val_f1_macro=0.7421
+epoch 9/12 loss=0.1454 val_f1_macro=0.9140
+epoch 10/12 loss=0.1375 val_f1_macro=0.9338
+epoch 11/12 loss=0.1321 val_f1_macro=0.9301
+epoch 12/12 loss=0.1257 val_f1_macro=0.9367
+2026-10-20 03:27:04 | C2 search_lstm1_01: epoch 12, F1 val 0.9367, 404s
+2026-10-20 03:27:05 | MULAI c2_train_one.py {"name": "search_lstm1_02", "model": "lstm1", "seed": 42, "params": {"units": 83, "dropout": 0.40445588079614125, "lr": 
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5828 val_f1_macro=0.6860
+epoch 2/12 loss=0.3889 val_f1_macro=0.7205
+epoch 3/12 loss=0.3492 val_f1_macro=0.7894
+epoch 4/12 loss=0.3055 val_f1_macro=0.9320
+epoch 5/12 loss=0.2754 val_f1_macro=0.9307
+epoch 6/12 loss=0.3464 val_f1_macro=0.9470
+epoch 7/12 loss=0.1960 val_f1_macro=0.9338
+epoch 8/12 loss=0.2002 val_f1_macro=0.9384
+epoch 9/12 loss=0.1564 val_f1_macro=0.9484
+epoch 10/12 loss=0.1440 val_f1_macro=0.9616
+epoch 11/12 loss=0.1304 val_f1_macro=0.9456
+epoch 12/12 loss=0.1531 val_f1_macro=0.9420
+2026-10-20 03:32:20 | C2 search_lstm1_02: epoch 10, F1 val 0.9616, 312s
+2026-10-20 03:32:21 | MULAI c2_train_one.py {"name": "search_lstm1_03", "model": "lstm1", "seed": 42, "params": {"units": 126, "dropout": 0.15124545307021836, "lr":
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5124 val_f1_macro=0.8136
+epoch 2/12 loss=0.3248 val_f1_macro=0.8214
+epoch 3/12 loss=0.2262 val_f1_macro=0.9123
+epoch 4/12 loss=0.1872 val_f1_macro=0.9228
+epoch 5/12 loss=0.1360 val_f1_macro=0.9434
+epoch 6/12 loss=0.1183 val_f1_macro=0.9511
+epoch 7/12 loss=0.1259 val_f1_macro=0.9475
+epoch 8/12 loss=0.1098 val_f1_macro=0.9570
+epoch 9/12 loss=0.1062 val_f1_macro=0.9602
+epoch 10/12 loss=0.0953 val_f1_macro=0.9600
+epoch 11/12 loss=0.1166 val_f1_macro=0.7693
+epoch 12/12 loss=0.0951 val_f1_macro=0.9603
+2026-10-20 03:39:56 | C2 search_lstm1_03: epoch 12, F1 val 0.9603, 451s
+2026-10-20 03:39:57 | MULAI c2_train_one.py {"name": "search_lstm1_04", "model": "lstm1", "seed": 42, "params": {"units": 80, "dropout": 0.4707059955394407, "lr": 0
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5831 val_f1_macro=0.8177
+epoch 2/12 loss=0.4304 val_f1_macro=0.7342
+epoch 3/12 loss=0.3276 val_f1_macro=0.9206
+epoch 4/12 loss=0.3220 val_f1_macro=0.9177
+epoch 5/12 loss=0.3880 val_f1_macro=0.8722
+epoch 6/12 loss=0.3760 val_f1_macro=0.7678
+epoch 7/12 loss=0.3166 val_f1_macro=0.9453
+epoch 8/12 loss=0.2106 val_f1_macro=0.9435
+epoch 9/12 loss=0.2308 val_f1_macro=0.7304
+epoch 10/12 loss=0.1403 val_f1_macro=0.9452
+epoch 11/12 loss=0.1334 val_f1_macro=0.9023
+epoch 12/12 loss=0.1125 val_f1_macro=0.9546
+2026-10-20 03:45:06 | C2 search_lstm1_04: epoch 12, F1 val 0.9546, 305s
+2026-10-20 03:45:06 | MULAI c2_train_one.py {"name": "search_lstm1_05", "model": "lstm1", "seed": 42, "params": {"units": 67, "dropout": 0.42910464530833203, "lr": 
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.6032 val_f1_macro=0.8061
+epoch 2/12 loss=0.3798 val_f1_macro=0.8724
+epoch 3/12 loss=0.3293 val_f1_macro=0.8883
+epoch 4/12 loss=0.2248 val_f1_macro=0.9198
+epoch 5/12 loss=0.1666 val_f1_macro=0.9178
+epoch 6/12 loss=0.1706 val_f1_macro=0.9446
+epoch 7/12 loss=0.1477 val_f1_macro=0.9327
+epoch 8/12 loss=0.1574 val_f1_macro=0.9507
+epoch 9/12 loss=0.1328 val_f1_macro=0.9568
+epoch 10/12 loss=0.1158 val_f1_macro=0.7092
+epoch 11/12 loss=0.1121 val_f1_macro=0.9559
+epoch 12/12 loss=0.1084 val_f1_macro=0.9384
+2026-10-20 03:49:38 | C2 search_lstm1_05: epoch 9, F1 val 0.9568, 267s
+2026-10-20 03:49:38 | MULAI c2_train_one.py {"name": "search_lstm1_06", "model": "lstm1", "seed": 42, "params": {"units": 75, "dropout": 0.32183391480633394, "lr": 
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.7123 val_f1_macro=0.8494
+epoch 2/12 loss=0.3756 val_f1_macro=0.8479
+epoch 3/12 loss=0.2941 val_f1_macro=0.8592
+epoch 4/12 loss=0.2372 val_f1_macro=0.8765
+epoch 5/12 loss=0.2167 val_f1_macro=0.8926
+epoch 6/12 loss=0.2093 val_f1_macro=0.8920
+epoch 7/12 loss=0.1811 val_f1_macro=0.9159
+epoch 8/12 loss=0.1655 val_f1_macro=0.8861
+epoch 9/12 loss=0.1604 val_f1_macro=0.9104
+epoch 10/12 loss=0.1526 val_f1_macro=0.9295
+epoch 11/12 loss=0.1458 val_f1_macro=0.9296
+epoch 12/12 loss=0.1422 val_f1_macro=0.9244
+2026-10-20 03:54:25 | C2 search_lstm1_06: epoch 11, F1 val 0.9296, 283s
+2026-10-20 03:54:25 | MULAI c2_train_one.py {"name": "search_lstm1_07", "model": "lstm1", "seed": 42, "params": {"units": 54, "dropout": 0.43105246879703285, "lr": 
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5222 val_f1_macro=0.8566
+epoch 2/12 loss=0.2979 val_f1_macro=0.9097
+epoch 3/12 loss=0.2457 val_f1_macro=0.9062
+epoch 4/12 loss=0.3309 val_f1_macro=0.9268
+epoch 5/12 loss=0.2282 val_f1_macro=0.9373
+epoch 6/12 loss=0.2002 val_f1_macro=0.9439
+epoch 7/12 loss=0.1695 val_f1_macro=0.9351
+epoch 8/12 loss=0.1638 val_f1_macro=0.9527
+epoch 9/12 loss=0.1633 val_f1_macro=0.7788
+epoch 10/12 loss=0.1635 val_f1_macro=0.9451
+epoch 11/12 loss=0.1983 val_f1_macro=0.9299
+epoch 12/12 loss=0.1295 val_f1_macro=0.9534
+2026-10-20 03:57:40 | C2 search_lstm1_07: epoch 12, F1 val 0.9534, 191s
+2026-10-20 03:57:41 | MULAI c2_train_one.py {"name": "search_lstm1_08", "model": "lstm1", "seed": 42, "params": {"units": 48, "dropout": 0.24181038725194737, "lr": 
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5483 val_f1_macro=0.7537
+epoch 2/12 loss=0.3464 val_f1_macro=0.8238
+epoch 3/12 loss=0.1873 val_f1_macro=0.9415
+epoch 4/12 loss=0.2144 val_f1_macro=0.9325
+epoch 5/12 loss=0.2192 val_f1_macro=0.9392
+epoch 6/12 loss=0.2440 val_f1_macro=0.9147
+epoch 7/12 loss=0.2260 val_f1_macro=0.9461
+epoch 8/12 loss=0.1866 val_f1_macro=0.9439
+epoch 9/12 loss=0.2261 val_f1_macro=0.9473
+epoch 10/12 loss=0.1333 val_f1_macro=0.9484
+epoch 11/12 loss=0.2193 val_f1_macro=0.9363
+epoch 12/12 loss=0.2209 val_f1_macro=0.9566
+2026-10-20 04:00:47 | C2 search_lstm1_08: epoch 12, F1 val 0.9566, 182s
+2026-10-20 04:00:47 | MULAI c2_train_one.py {"name": "search_lstm1_09", "model": "lstm1", "seed": 42, "params": {"units": 105, "dropout": 0.45724844852887914, "lr":
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5622 val_f1_macro=0.9082
+epoch 2/12 loss=0.3669 val_f1_macro=0.8578
+epoch 3/12 loss=0.2143 val_f1_macro=0.9198
+epoch 4/12 loss=0.1613 val_f1_macro=0.9278
+epoch 5/12 loss=0.1733 val_f1_macro=0.9142
+epoch 6/12 loss=0.1713 val_f1_macro=0.9484
+epoch 7/12 loss=0.1403 val_f1_macro=0.9505
+epoch 8/12 loss=0.1270 val_f1_macro=0.9515
+epoch 9/12 loss=0.1133 val_f1_macro=0.9472
+epoch 10/12 loss=0.1821 val_f1_macro=0.9456
+epoch 11/12 loss=0.1544 val_f1_macro=0.9441
+epoch 12/12 loss=0.1077 val_f1_macro=0.9452
+2026-10-20 04:07:14 | C2 search_lstm1_09: epoch 8, F1 val 0.9515, 383s
+2026-10-20 04:07:15 | MULAI c2_train_one.py {"name": "search_lstm1_10", "model": "lstm1", "seed": 42, "params": {"units": 105, "dropout": 0.28668840149081365, "lr":
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.6714 val_f1_macro=0.8276
+epoch 2/12 loss=0.3336 val_f1_macro=0.8458
+epoch 3/12 loss=0.3007 val_f1_macro=0.7794
+epoch 4/12 loss=0.2529 val_f1_macro=0.8749
+epoch 5/12 loss=0.2644 val_f1_macro=0.8965
+epoch 6/12 loss=0.2020 val_f1_macro=0.9043
+epoch 7/12 loss=0.1936 val_f1_macro=0.9130
+epoch 8/12 loss=0.1783 val_f1_macro=0.9146
+epoch 9/12 loss=0.1665 val_f1_macro=0.9146
+epoch 10/12 loss=0.1547 val_f1_macro=0.9049
+epoch 11/12 loss=0.1522 val_f1_macro=0.9236
+epoch 12/12 loss=0.1435 val_f1_macro=0.9119
+2026-10-20 04:13:55 | C2 search_lstm1_10: epoch 11, F1 val 0.9236, 397s
+2026-10-20 04:13:56 | MULAI c2_train_one.py {"name": "search_lstm1_11", "model": "lstm1", "seed": 42, "params": {"units": 50, "dropout": 0.16171579682701914, "lr": 
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5570 val_f1_macro=0.8711
+epoch 2/12 loss=0.2283 val_f1_macro=0.9335
+epoch 3/12 loss=0.2302 val_f1_macro=0.9309
+epoch 4/12 loss=0.1507 val_f1_macro=0.9375
+epoch 5/12 loss=0.1442 val_f1_macro=0.9498
+epoch 6/12 loss=0.1260 val_f1_macro=0.9592
+epoch 7/12 loss=0.1102 val_f1_macro=0.9566
+epoch 8/12 loss=0.1105 val_f1_macro=0.9543
+epoch 9/12 loss=0.0940 val_f1_macro=0.9560
+epoch 10/12 loss=0.0879 val_f1_macro=0.9612
+epoch 11/12 loss=0.0944 val_f1_macro=0.9542
+epoch 12/12 loss=0.1057 val_f1_macro=0.9601
+2026-10-20 04:17:01 | C2 search_lstm1_11: epoch 10, F1 val 0.9612, 181s
+2026-10-20 04:17:01 | MULAI c2_train_one.py {"name": "search_lstm1_12", "model": "lstm1", "seed": 42, "params": {"units": 121, "dropout": 0.48700389297368407, "lr":
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5745 val_f1_macro=0.7101
+epoch 2/12 loss=0.4301 val_f1_macro=0.8785
+epoch 3/12 loss=0.3435 val_f1_macro=0.8330
+epoch 4/12 loss=0.2537 val_f1_macro=0.9219
+epoch 5/12 loss=0.1583 val_f1_macro=0.9154
+epoch 6/12 loss=0.1694 val_f1_macro=0.9403
+epoch 7/12 loss=0.1438 val_f1_macro=0.9370
+epoch 8/12 loss=0.1274 val_f1_macro=0.9251
+epoch 9/12 loss=0.1291 val_f1_macro=0.8150
+epoch 10/12 loss=0.1170 val_f1_macro=0.9367
+epoch 11/12 loss=0.1264 val_f1_macro=0.9485
+epoch 12/12 loss=0.1018 val_f1_macro=0.9547
+2026-10-20 04:24:44 | C2 search_lstm1_12: epoch 12, F1 val 0.9547, 459s
+2026-10-20 04:24:44 | MULAI c2_train_one.py {"name": "search_lstm1_13", "model": "lstm1", "seed": 42, "params": {"units": 104, "dropout": 0.24818388241394757, "lr":
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5514 val_f1_macro=0.6715
+epoch 2/12 loss=0.3903 val_f1_macro=0.9089
+epoch 3/12 loss=0.2524 val_f1_macro=0.9261
+epoch 4/12 loss=0.1717 val_f1_macro=0.9350
+epoch 5/12 loss=0.1918 val_f1_macro=0.9376
+epoch 6/12 loss=0.1572 val_f1_macro=0.9425
+epoch 7/12 loss=0.1439 val_f1_macro=0.9450
+epoch 8/12 loss=0.1187 val_f1_macro=0.9537
+epoch 9/12 loss=0.1171 val_f1_macro=0.9584
+epoch 10/12 loss=0.1197 val_f1_macro=0.9394
+epoch 11/12 loss=0.1090 val_f1_macro=0.9563
+epoch 12/12 loss=0.1053 val_f1_macro=0.9580
+2026-10-20 04:30:58 | C2 search_lstm1_13: epoch 9, F1 val 0.9584, 370s
+2026-10-20 04:30:59 | MULAI c2_train_one.py {"name": "search_lstm1_14", "model": "lstm1", "seed": 42, "params": {"units": 109, "dropout": 0.15196860213418867, "lr":
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5212 val_f1_macro=0.7026
+epoch 2/12 loss=0.3431 val_f1_macro=0.9045
+epoch 3/12 loss=0.2185 val_f1_macro=0.9259
+epoch 4/12 loss=0.2121 val_f1_macro=0.7415
+epoch 5/12 loss=0.1866 val_f1_macro=0.8328
+epoch 6/12 loss=0.1616 val_f1_macro=0.9377
+epoch 7/12 loss=0.1425 val_f1_macro=0.9419
+epoch 8/12 loss=0.1403 val_f1_macro=0.9403
+epoch 9/12 loss=0.1454 val_f1_macro=0.9371
+epoch 10/12 loss=0.1302 val_f1_macro=0.9515
+epoch 11/12 loss=0.1225 val_f1_macro=0.9380
+epoch 12/12 loss=0.1092 val_f1_macro=0.9412
+2026-10-20 04:37:53 | C2 search_lstm1_14: epoch 10, F1 val 0.9515, 411s
+2026-10-20 04:37:54 | MULAI c2_train_one.py {"name": "search_lstm1_15", "model": "lstm1", "seed": 42, "params": {"units": 50, "dropout": 0.19076373962035365, "lr": 
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5324 val_f1_macro=0.8899
+epoch 2/12 loss=0.2822 val_f1_macro=0.9199
+epoch 3/12 loss=0.2727 val_f1_macro=0.9415
+epoch 4/12 loss=0.2361 val_f1_macro=0.9331
+epoch 5/12 loss=0.1817 val_f1_macro=0.9421
+epoch 6/12 loss=0.1765 val_f1_macro=0.9493
+epoch 7/12 loss=0.1590 val_f1_macro=0.9477
+epoch 8/12 loss=0.1424 val_f1_macro=0.9482
+epoch 9/12 loss=0.1182 val_f1_macro=0.9580
+epoch 10/12 loss=0.1150 val_f1_macro=0.7158
+epoch 11/12 loss=0.1219 val_f1_macro=0.9557
+epoch 12/12 loss=0.1349 val_f1_macro=0.9512
+2026-10-20 04:40:58 | C2 search_lstm1_15: epoch 9, F1 val 0.9580, 180s
+2026-10-20 04:40:58 | MULAI c2_train_one.py {"name": "search_lstm1_16", "model": "lstm1", "seed": 42, "params": {"units": 123, "dropout": 0.433071278423135, "lr": 0
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5795 val_f1_macro=0.6642
+epoch 2/12 loss=0.4167 val_f1_macro=0.9186
+epoch 3/12 loss=0.3052 val_f1_macro=0.7951
+epoch 4/12 loss=0.2555 val_f1_macro=0.9244
+epoch 5/12 loss=0.1858 val_f1_macro=0.8384
+epoch 6/12 loss=0.1731 val_f1_macro=0.9380
+epoch 7/12 loss=0.3310 val_f1_macro=0.7232
+epoch 8/12 loss=0.1833 val_f1_macro=0.7897
+epoch 9/12 loss=0.1158 val_f1_macro=0.9614
+epoch 10/12 loss=0.1140 val_f1_macro=0.8211
+epoch 11/12 loss=0.1148 val_f1_macro=0.9440
+epoch 12/12 loss=0.1055 val_f1_macro=0.9611
+2026-10-20 04:49:04 | C2 search_lstm1_16: epoch 9, F1 val 0.9614, 481s
+2026-10-20 04:49:04 | MULAI c2_train_one.py {"name": "search_lstm1_17", "model": "lstm1", "seed": 42, "params": {"units": 74, "dropout": 0.22494665655281643, "lr": 
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5392 val_f1_macro=0.7383
+epoch 2/12 loss=0.2934 val_f1_macro=0.9253
+epoch 3/12 loss=0.2136 val_f1_macro=0.7975
+epoch 4/12 loss=0.1675 val_f1_macro=0.9375
+epoch 5/12 loss=0.1589 val_f1_macro=0.9284
+epoch 6/12 loss=0.1199 val_f1_macro=0.9414
+epoch 7/12 loss=0.1213 val_f1_macro=0.9378
+epoch 8/12 loss=0.1183 val_f1_macro=0.9394
+epoch 9/12 loss=0.1475 val_f1_macro=0.9487
+epoch 10/12 loss=0.1167 val_f1_macro=0.8349
+epoch 11/12 loss=0.1063 val_f1_macro=0.9476
+epoch 12/12 loss=0.1181 val_f1_macro=0.9391
+2026-10-20 04:53:29 | C2 search_lstm1_17: epoch 9, F1 val 0.9487, 261s
+2026-10-20 04:53:30 | MULAI c2_train_one.py {"name": "search_lstm1_18", "model": "lstm1", "seed": 42, "params": {"units": 74, "dropout": 0.25499135161206976, "lr": 
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5143 val_f1_macro=0.7850
+epoch 2/12 loss=0.3005 val_f1_macro=0.7849
+epoch 3/12 loss=0.2346 val_f1_macro=0.9078
+epoch 4/12 loss=0.2105 val_f1_macro=0.7208
+epoch 5/12 loss=0.2315 val_f1_macro=0.9028
+epoch 6/12 loss=0.1987 val_f1_macro=0.9367
+epoch 7/12 loss=0.1772 val_f1_macro=0.9347
+epoch 8/12 loss=0.1618 val_f1_macro=0.9307
+epoch 9/12 loss=0.1448 val_f1_macro=0.9406
+epoch 10/12 loss=0.1197 val_f1_macro=0.9530
+epoch 11/12 loss=0.1108 val_f1_macro=0.9479
+epoch 12/12 loss=0.1222 val_f1_macro=0.9318
+2026-10-20 04:58:11 | C2 search_lstm1_18: epoch 10, F1 val 0.9530, 277s
+2026-10-20 04:58:11 | MULAI c2_train_one.py {"name": "search_lstm1_19", "model": "lstm1", "seed": 42, "params": {"units": 110, "dropout": 0.3729982015899902, "lr": 
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.6260 val_f1_macro=0.8365
+epoch 2/12 loss=0.3690 val_f1_macro=0.8619
+epoch 3/12 loss=0.3233 val_f1_macro=0.8757
+epoch 4/12 loss=0.2925 val_f1_macro=0.9017
+epoch 5/12 loss=0.2507 val_f1_macro=0.8836
+epoch 6/12 loss=0.1882 val_f1_macro=0.7358
+epoch 7/12 loss=0.1862 val_f1_macro=0.9040
+epoch 8/12 loss=0.1586 val_f1_macro=0.9028
+epoch 9/12 loss=0.1507 val_f1_macro=0.9315
+epoch 10/12 loss=0.1482 val_f1_macro=0.9355
+epoch 11/12 loss=0.1380 val_f1_macro=0.9347
+epoch 12/12 loss=0.1533 val_f1_macro=0.9370
+2026-10-20 05:05:05 | C2 search_lstm1_19: epoch 12, F1 val 0.9370, 410s
+2026-10-20 05:05:06 | MULAI c2_train_one.py {"name": "lstm1_s42", "model": "lstm1", "seed": 42, "params": {"units": 83, "dropout": 0.40445588079614125, "lr": 0.0037
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5828 val_f1_macro=0.6860
+epoch 2/12 loss=0.3889 val_f1_macro=0.7205
+epoch 3/12 loss=0.3492 val_f1_macro=0.7894
+epoch 4/12 loss=0.3055 val_f1_macro=0.9320
+epoch 5/12 loss=0.2754 val_f1_macro=0.9307
+epoch 6/12 loss=0.3464 val_f1_macro=0.9470
+epoch 7/12 loss=0.1960 val_f1_macro=0.9338
+epoch 8/12 loss=0.2002 val_f1_macro=0.9384
+epoch 9/12 loss=0.1564 val_f1_macro=0.9484
+epoch 10/12 loss=0.1440 val_f1_macro=0.9616
+epoch 11/12 loss=0.1304 val_f1_macro=0.9456
+epoch 12/12 loss=0.1531 val_f1_macro=0.9420
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 05:10:24 | C2 lstm1_s42: epoch 10, F1 val 0.9616, 314s
+2026-10-20 05:10:24 | MULAI c2_train_one.py {"name": "lstm1_s43", "model": "lstm1", "seed": 43, "params": {"units": 83, "dropout": 0.40445588079614125, "lr": 0.0037
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5135 val_f1_macro=0.9076
+epoch 2/12 loss=0.2839 val_f1_macro=0.8303
+epoch 3/12 loss=0.1678 val_f1_macro=0.9440
+epoch 4/12 loss=0.1857 val_f1_macro=0.9391
+epoch 5/12 loss=0.1616 val_f1_macro=0.9543
+epoch 6/12 loss=0.1520 val_f1_macro=0.9546
+epoch 7/12 loss=0.1348 val_f1_macro=0.9548
+epoch 8/12 loss=0.1343 val_f1_macro=0.9512
+epoch 9/12 loss=0.1101 val_f1_macro=0.9389
+epoch 10/12 loss=0.1237 val_f1_macro=0.9561
+epoch 11/12 loss=0.1047 val_f1_macro=0.9552
+epoch 12/12 loss=0.0950 val_f1_macro=0.9613
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 05:16:04 | C2 lstm1_s43: epoch 12, F1 val 0.9613, 336s
+2026-10-20 05:16:05 | MULAI c2_train_one.py {"name": "lstm1_s44", "model": "lstm1", "seed": 44, "params": {"units": 83, "dropout": 0.40445588079614125, "lr": 0.0037
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5418 val_f1_macro=0.8957
+epoch 2/12 loss=0.3164 val_f1_macro=0.6950
+epoch 3/12 loss=0.2510 val_f1_macro=0.6624
+epoch 4/12 loss=0.2045 val_f1_macro=0.9447
+epoch 5/12 loss=0.1800 val_f1_macro=0.9379
+epoch 6/12 loss=0.2425 val_f1_macro=0.9434
+epoch 7/12 loss=0.1849 val_f1_macro=0.9421
+epoch 8/12 loss=0.1440 val_f1_macro=0.9567
+epoch 9/12 loss=0.1249 val_f1_macro=0.9542
+epoch 10/12 loss=0.1634 val_f1_macro=0.9506
+epoch 11/12 loss=0.1348 val_f1_macro=0.9415
+epoch 12/12 loss=0.1206 val_f1_macro=0.9605
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 05:21:28 | C2 lstm1_s44: epoch 12, F1 val 0.9605, 319s
+2026-10-20 05:21:28 | MULAI c2_summary.py 
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 05:21:32.684314: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 05:21:32.691983: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training_v1.py:2354: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  updates=self.state_updates,
+2026-10-20 05:21:32.720737: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 05:21:33.817423: W tensorflow/c/c_api.cc:305] Operation '{name:'lstm/lstm_cell/bias/Assign' id:41 op device:{requested: '', assigned: ''} def:{{{node lstm/lstm_cell/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](lstm/lstm_cell/bias, lstm/lstm_cell/bias/Initializer/concat)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training_v1.py:2354: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  updates=self.state_updates,
+2026-10-20 05:21:33.847243: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 05:21:35.018690: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/kernel/Assign' id:387 op device:{requested: '', assigned: ''} def:{{{node dense_1/kernel/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/kernel, dense_1/kernel/Initializer/random_uniform)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training_v1.py:2354: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  updates=self.state_updates,
+2026-10-20 05:21:35.046051: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 05:21:36 | C2 ringkasan selesai; T6 rerata dF1=0.0007, p=0.4688, lolos=False; 34 model dibekukan
+2026-10-20 05:21:36 | driver selesai: c2

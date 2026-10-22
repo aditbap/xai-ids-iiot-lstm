@@ -1,0 +1,149 @@
+2026-10-20 21:26:17 | config_d.json ditulis
+2026-10-20 21:26:21 | D0 baca file 0 selesai
+2026-10-20 21:26:24 | D0 baca file 1 selesai
+2026-10-20 21:26:27 | D0 baca file 2 selesai
+2026-10-20 21:26:30 | D0 baca file 3 selesai
+2026-10-20 21:26:34 | D0 baca file 4 selesai
+2026-10-20 21:26:37 | D0 baca file 5 selesai
+2026-10-20 21:26:40 | D0 baca file 6 selesai
+2026-10-20 21:26:44 | D0 baca file 7 selesai
+2026-10-20 21:26:47 | D0 baca file 8 selesai
+2026-10-20 21:26:50 | D0 baca file 9 selesai
+2026-10-20 21:26:53 | D0 baca file 10 selesai
+2026-10-20 21:26:56 | D0 baca file 11 selesai
+2026-10-20 21:27:00 | D0 baca file 12 selesai
+2026-10-20 21:27:03 | D0 baca file 13 selesai
+2026-10-20 21:27:06 | D0 baca file 14 selesai
+2026-10-20 21:27:09 | D0 baca file 15 selesai
+2026-10-20 21:27:13 | D0 baca file 16 selesai
+2026-10-20 21:27:16 | D0 baca file 17 selesai
+2026-10-20 21:27:19 | D0 baca file 18 selesai
+2026-10-20 21:27:22 | D0 baca file 19 selesai
+2026-10-20 21:27:26 | D0 baca file 20 selesai
+2026-10-20 21:27:29 | D0 baca file 21 selesai
+2026-10-20 21:27:30 | D0 baca file 22 selesai
+2026-10-20 21:27:33 | D0 rows_raw/rows_old disimpan; identik rows_main=True, identik stage_b={'train': True, 'val': True, 'test': True}
+2026-10-20 21:45:07 | D1 old_s43: epoch 6, F1 val 0.6311, 1013s
+2026-10-20 22:01:01 | D1 old_s44: epoch 9, F1 val 0.6354, 949s
+2026-10-20 22:01:12 | MULAI d0_prep.py 
+2026-10-20 22:01:12 | config_d.json sudah ada, tidak ditimpa
+2026-10-20 22:01:12 | rows_raw/rows_old sudah ada, dilewati
+2026-10-20 22:01:12 | MULAI d1_train_old.py 43
+2026-10-20 22:01:16 | D1 old_s43: sudah ada, dilewati
+2026-10-20 22:01:17 | MULAI d1_train_old.py 44
+2026-10-20 22:01:19 | D1 old_s44: sudah ada, dilewati
+2026-10-20 22:01:20 | MULAI d_predict.py 
+2026-10-20 22:01:24 | D prediksi val main_s42: n=75280
+2026-10-20 22:01:26 | D prediksi val main_s43: n=75280
+2026-10-20 22:01:28 | D prediksi val main_s44: n=75280
+2026-10-20 22:01:30 | D prediksi val old_s42: n=75280
+2026-10-20 22:01:32 | D prediksi val old_s43: n=75280
+2026-10-20 22:01:34 | D prediksi val old_s44: n=75280
+2026-10-20 22:01:37 | D prediksi test main_s42: n=86496
+2026-10-20 22:01:39 | D prediksi test main_s43: n=86496
+2026-10-20 22:01:42 | D prediksi test main_s44: n=86496
+2026-10-20 22:01:43 | D prediksi test lstm1_s42: n=86496
+2026-10-20 22:01:44 | D prediksi test lstm1_s43: n=86496
+2026-10-20 22:01:45 | D prediksi test lstm1_s44: n=86496
+2026-10-20 22:01:45 | D prediksi test mlp_s42: n=86496
+2026-10-20 22:01:45 | D prediksi test mlp_s43: n=86496
+2026-10-20 22:01:46 | D prediksi test mlp_s44: n=86496
+2026-10-20 22:01:48 | D prediksi test rf_s42: n=86496
+2026-10-20 22:01:50 | D prediksi test rf_s43: n=86496
+2026-10-20 22:01:51 | D prediksi test rf_s44: n=86496
+2026-10-20 22:01:52 | D prediksi test xgb_s42: n=86496
+2026-10-20 22:01:53 | D prediksi test xgb_s43: n=86496
+2026-10-20 22:01:54 | D prediksi test xgb_s44: n=86496
+2026-10-20 22:01:57 | D prediksi test control_s42: n=86496
+2026-10-20 22:02:00 | D prediksi test control_s43: n=86496
+2026-10-20 22:02:02 | D prediksi test control_s44: n=86496
+2026-10-20 22:02:03 | D prediksi test abl_w1_s42: n=119679
+2026-10-20 22:02:03 | D prediksi test abl_w1_s43: n=119679
+2026-10-20 22:02:04 | D prediksi test abl_w1_s44: n=119679
+2026-10-20 22:02:05 | D prediksi test abl_w5_s42: n=104931
+2026-10-20 22:02:07 | D prediksi test abl_w5_s43: n=104931
+2026-10-20 22:02:08 | D prediksi test abl_w5_s44: n=104931
+2026-10-20 22:02:12 | D prediksi test abl_w20_s42: n=57244
+2026-10-20 22:02:15 | D prediksi test abl_w20_s43: n=57244
+2026-10-20 22:02:18 | D prediksi test abl_w20_s44: n=57244
+2026-10-20 22:02:18 | D prediksi selesai
+2026-10-20 22:02:19 | MULAI d12_report.py all
+2026-10-20 22:02:20 | D cek prediksi vs C3: selisih maks 1.11e-16 (27 model)
+2026-10-20 22:02:20 | D1 tabel selesai
+2026-10-20 22:02:23 | D2 hash train: window unik hash=361376 eksak=361376; time-step unik hash=212483 eksak=212483
+2026-10-20 22:02:24 | D2 hash val: window unik hash=67784 eksak=67784; time-step unik hash=40349 eksak=40349
+2026-10-20 22:02:24 | D2 hash test: window unik hash=80826 eksak=80826; time-step unik hash=48616 eksak=48616
+2026-10-20 22:02:24 | D2 within selesai
+2026-10-20 22:02:36 | D2 cross selesai
+2026-10-20 22:02:37 | D2 novel selesai: uji novel 79911/86496, val novel 67109/75280
+2026-10-20 22:02:37 | MULAI d3_select.py 
+2026-10-20 22:02:38 | D3 prosedur seleksi Tahap A tereproduksi persis pada uji penuh (450 & 40)
+2026-10-20 22:02:39 | D3 seleksi v2 selesai; dikeluarkan 8146 window uji dari 40 sesi pilot
+2026-10-20 22:02:39 | MULAI d3_c3.py 
+2026-10-20 22:02:50 | D3 C3 selesai
+2026-10-20 22:02:50 | MULAI d3_c4_xai.py primer
+2026-10-20 22:13:32 | C4 primer selesai: {'additivity_lolos': 450, 'additivity_galat_maks': 1.4872052815917414e-06, 'lime_kode_tidak_valid': 37, 'lime_total_nilai_kategorikal': 180000000, 'lime_pembungkus_selisih_maks': 0.0, 'bentuk': {'deepshap': [450, 10, 22], 'lime_flat': [450, 10, 22], 'kustom_flat': [450, 10, 22], 'per_fitur': [450, 22], 'per_timestep': [450, 10]}, 'nan': 0, 'deepshap_init_detik': 0.03741788864135742}
+2026-10-20 22:13:32 | C4 bagian primer: 637s, puncak memori 1458 MB
+2026-10-20 22:13:33 | MULAI d3_c4_xai.py m4
+2026-10-20 22:24:44 | C4 m4 selesai
+2026-10-20 22:24:44 | C4 bagian m4: 667s, puncak memori 1831 MB
+2026-10-20 22:24:45 | MULAI d3_c4_xai.py m3_proc
+2026-10-20 22:35:27 | C4 m3_proc seed 101 selesai
+2026-10-20 22:45:34 | C4 m3_proc seed 102 selesai
+2026-10-20 22:55:38 | C4 m3_proc seed 103 selesai
+2026-10-20 23:05:34 | C4 m3_proc seed 104 selesai
+2026-10-20 23:15:29 | C4 m3_proc seed 105 selesai
+2026-10-20 23:15:29 | C4 m3_proc selesai
+2026-10-20 23:15:29 | C4 bagian m3_proc: 3038s, puncak memori 1618 MB
+2026-10-20 23:15:31 | MULAI d3_c4_xai.py m3_pert_0.01
+2026-10-20 23:25:38 | C4 m3_pert 0.01 salinan 0 selesai
+2026-10-20 23:35:30 | C4 m3_pert 0.01 salinan 1 selesai
+2026-10-20 23:45:32 | C4 m3_pert 0.01 salinan 2 selesai
+2026-10-20 23:55:34 | C4 m3_pert 0.01 salinan 3 selesai
+2026-10-21 00:05:39 | C4 m3_pert 0.01 salinan 4 selesai
+2026-10-21 00:05:39 | C4 m3_pert 0.01 selesai
+2026-10-21 00:05:39 | C4 bagian m3_pert_0.01: 3003s, puncak memori 1766 MB
+2026-10-21 00:05:39 | MULAI d3_c4_xai.py m3_pert_0.005
+2026-10-21 00:16:06 | C4 m3_pert 0.005 salinan 0 selesai
+2026-10-21 00:26:12 | C4 m3_pert 0.005 salinan 1 selesai
+2026-10-21 00:36:13 | C4 m3_pert 0.005 salinan 2 selesai
+2026-10-21 00:46:24 | C4 m3_pert 0.005 salinan 3 selesai
+2026-10-21 00:56:36 | C4 m3_pert 0.005 salinan 4 selesai
+2026-10-21 00:56:36 | C4 m3_pert 0.005 selesai
+2026-10-21 00:56:36 | C4 bagian m3_pert_0.005: 3051s, puncak memori 1741 MB
+2026-10-21 00:56:37 | MULAI d3_c4_xai.py m3_pert_0.02
+2026-10-21 01:06:49 | C4 m3_pert 0.02 salinan 0 selesai
+2026-10-21 01:16:46 | C4 m3_pert 0.02 salinan 1 selesai
+2026-10-21 01:26:48 | C4 m3_pert 0.02 salinan 2 selesai
+2026-10-21 01:36:55 | C4 m3_pert 0.02 salinan 3 selesai
+2026-10-21 01:46:48 | C4 m3_pert 0.02 salinan 4 selesai
+2026-10-21 01:46:48 | C4 m3_pert 0.02 selesai
+2026-10-21 01:46:48 | C4 bagian m3_pert_0.02: 3007s, puncak memori 1891 MB
+2026-10-21 01:46:49 | MULAI d3_c4_xai.py sens_bg
+2026-10-21 01:53:05 | C4 sens_bg seimbang100 selesai
+2026-10-21 01:58:25 | C4 sens_bg empiris50 selesai
+2026-10-21 02:05:46 | C4 sens_bg empiris200 selesai
+2026-10-21 02:05:46 | C4 sens_bg selesai
+2026-10-21 02:05:46 | C4 bagian sens_bg: 1132s, puncak memori 1279 MB
+2026-10-21 02:05:47 | MULAI d3_c4_xai.py deletion
+2026-10-21 02:05:55 | C4 deletion: lokal/kohort primer selesai
+2026-10-21 02:06:02 | C4 deletion: empiris lokal/kohort selesai
+2026-10-21 02:06:04 | C4 deletion: kepekaan bg & kontrol selesai
+2026-10-21 02:07:40 | C4 deletion: sistem primer selesai
+2026-10-21 02:23:28 | C4 deletion: sistem empiris selesai
+2026-10-21 02:23:28 | C4 deletion selesai
+2026-10-21 02:23:28 | C4 bagian deletion: 1056s, puncak memori 1458 MB
+2026-10-21 02:23:29 | MULAI d3_c4_shortcut.py 
+2026-10-21 02:28:07 | C4 shortcut selesai; additivity maks 3.82e-06; LIME kode tidak valid 37
+2026-10-21 02:28:08 | MULAI d3_c4_report.py 
+2026-10-21 02:29:04 | C4 laporan: bootstrap selesai
+2026-10-21 02:29:05 | C4 laporan selesai
+2026-10-21 02:29:06 | MULAI d4_seed.py 42
+2026-10-21 02:30:37 | D4 seed 42 selesai
+2026-10-21 02:30:37 | MULAI d4_seed.py 43
+2026-10-21 02:32:10 | D4 seed 43 selesai
+2026-10-21 02:32:10 | MULAI d4_seed.py 44
+2026-10-21 02:33:40 | D4 seed 44 selesai
+2026-10-21 02:33:40 | MULAI d4_seed.py report
+2026-10-21 02:33:45 | D4 laporan selesai; cek seed 42 vs D3 {'deepshap': 0.0, 'lime_flat': 0.0, 'kustom_flat': 0.0}
+2026-10-21 02:33:45 | driver selesai: all

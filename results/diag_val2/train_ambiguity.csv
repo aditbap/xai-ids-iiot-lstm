@@ -1,0 +1,12 @@
+bagian,n_window_latih,n_hash_unik,n_hash_multi_label,n_window_di_hash_multi_label,persen_window_di_hash_multi_label,label_a,label_b,n_hash,n_window_kedua_label
+ringkasan,403755.0,241211.0,376.0,111394.0,27.58950353555993,,,,
+pasangan_label_top10,,,,,,dos,scanning,3.0,46966.0
+pasangan_label_top10,,,,,,backdoor,normal,1.0,35720.0
+pasangan_label_top10,,,,,,normal,password,4.0,10095.0
+pasangan_label_top10,,,,,,normal,ransomware,94.0,7045.0
+pasangan_label_top10,,,,,,password,xss,66.0,5387.0
+pasangan_label_top10,,,,,,ransomware,scanning,1.0,3036.0
+pasangan_label_top10,,,,,,normal,scanning,1.0,2740.0
+pasangan_label_top10,,,,,,injection,xss,203.0,2155.0
+pasangan_label_top10,,,,,,ddos,password,1.0,1317.0
+pasangan_label_top10,,,,,,injection,scanning,4.0,8.0

@@ -1,0 +1,7 @@
+[
+ {
+  "galat": "load_model gagal: 'Random ops require a seed to be set when determinism is enabled' (TF_DETERMINISTIC_OPS=1 di graph mode)",
+  "perbaikan": "tf.compat.v1.set_random_seed(42) sebelum load_model",
+  "tahap": "uji asap"
+ }
+]

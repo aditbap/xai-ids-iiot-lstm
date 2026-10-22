@@ -1,0 +1,11 @@
+label_sebenarnya,prediksi,jumlah_salah,persen_dari_kelas_sebenarnya
+injection,xss,6988,68.46952772878699
+normal,ransomware,3024,41.84887904788265
+password,dos,2384,37.44306580807287
+backdoor,dos,2126,99.62511715089035
+password,scanning,1529,24.014449505261506
+ddos,xss,1154,8.28368387050463
+password,xss,828,13.00455473535417
+scanning,dos,444,9.059375637624974
+xss,injection,343,2.3952513966480447
+ransomware,normal,169,2.6816883529038402

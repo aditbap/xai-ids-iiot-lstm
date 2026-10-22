@@ -1,0 +1,10 @@
+kelas,n_window_latih,bobot,sumber
+backdoor,35807,1.2528742052298898,results/stage_b/train_log.json (compute_class_weight balanced)
+ddos,63670,0.7045966179781163,results/stage_b/train_log.json (compute_class_weight balanced)
+dos,45998,0.9752960273635085,results/stage_b/train_log.json (compute_class_weight balanced)
+injection,54820,0.8183448862945397,results/stage_b/train_log.json (compute_class_weight balanced)
+normal,35230,1.2733938877850317,results/stage_b/train_log.json (compute_class_weight balanced)
+password,41190,1.0891397588411427,results/stage_b/train_log.json (compute_class_weight balanced)
+ransomware,36473,1.229996618503185,results/stage_b/train_log.json (compute_class_weight balanced)
+scanning,23806,1.8844689013974067,results/stage_b/train_log.json (compute_class_weight balanced)
+xss,66761,0.6719741565684556,results/stage_b/train_log.json (compute_class_weight balanced)

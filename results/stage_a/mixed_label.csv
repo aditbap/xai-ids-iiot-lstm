@@ -1,0 +1,10 @@
+kelas,n_sesi,n_sesi_campuran,persen_sesi_campuran,n_blok_campuran,n_window,n_window_label_beda_dari_sesi,persen_window_label_beda
+backdoor,46,0,0.0,0,45252,0,0.0
+ddos,1833,0,0.0,0,92052,0,0.0
+dos,6000,0,0.0,0,65791,0,0.0
+injection,1433,0,0.0,0,76183,0,0.0
+normal,5987,0,0.0,0,50178,0,0.0
+password,409,0,0.0,0,57450,0,0.0
+ransomware,378,0,0.0,0,50566,0,0.0
+scanning,5648,0,0.0,0,32458,0,0.0
+xss,2408,0,0.0,0,95601,0,0.0

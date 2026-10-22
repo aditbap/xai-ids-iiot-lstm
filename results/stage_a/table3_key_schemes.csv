@@ -1,0 +1,4 @@
+skema,kelas_cakupan_terendah,cakupan_terendah_persen,kelas_tanpa_sesi_ge10,cakupan_backdoor,cakupan_ddos,cakupan_dos,cakupan_injection,cakupan_normal,cakupan_password,cakupan_ransomware,cakupan_scanning,cakupan_xss,sesi_ge10_backdoor,sesi_ge10_ddos,sesi_ge10_dos,sesi_ge10_injection,sesi_ge10_normal,sesi_ge10_password,sesi_ge10_ransomware,sesi_ge10_scanning,sesi_ge10_xss
+3_atribut,scanning,26.3561,-,99.9673,99.5598,97.8811,99.67,59.3363,99.0627,98.9959,26.3561,99.9211,48,1844,32680,1437,6329,428,382,66760,2418
+5_atribut_src_port,injection,0.0,injection;password;scanning;xss,99.927,2.2021,95.3104,0.0,31.023,0.0,96.0305,0.0,0.0,16933,482,32671,0,2287,0,2516,0,0
+4_atribut,scanning,26.3528,-,99.9673,99.5598,97.8811,99.67,59.3113,99.0627,98.9959,26.3528,99.9211,48,1844,32680,1437,6315,428,382,66751,2418

@@ -1,0 +1,11 @@
+kelas,sesi_uji_sebelum,sesi_dikeluarkan,sesi_uji_final,window_uji_sebelum,window_dikeluarkan,window_uji_final,persen_window_dikeluarkan,catatan
+backdoor,8,5,3,7311,6370,941,87.12898372315689,kelas = label window; sesi dihitung bila punya window berlabel kelas ini
+ddos,277,4,273,14451,224,14227,1.5500657393951975,kelas = label window; sesi dihitung bila punya window berlabel kelas ini
+dos,900,4,896,9900,44,9856,0.4444444444444444,kelas = label window; sesi dihitung bila punya window berlabel kelas ini
+injection,216,5,211,11157,299,10858,2.6799318813301065,kelas = label window; sesi dihitung bila punya window berlabel kelas ini
+normal,900,4,896,7722,44,7678,0.5698005698005698,kelas = label window; sesi dihitung bila punya window berlabel kelas ini
+password,65,5,60,9893,353,9540,3.5681795208733447,kelas = label window; sesi dihitung bila punya window berlabel kelas ini
+ransomware,58,4,54,7791,612,7179,7.855217558721602,kelas = label window; sesi dihitung bila punya window berlabel kelas ini
+scanning,900,5,895,3751,40,3711,1.0663822980538522,kelas = label window; sesi dihitung bila punya window berlabel kelas ini
+xss,363,4,359,14520,160,14360,1.1019283746556474,kelas = label window; sesi dihitung bila punya window berlabel kelas ini
+SEMUA,3687,40,3647,86496,8146,78350,9.417776544580096,"40 sesi pilot; kelas_sesi: backdoor=5, ddos=4, dos=4, injection=5, normal=4, password=5, ransomware=4, scanning=5, xss=4"

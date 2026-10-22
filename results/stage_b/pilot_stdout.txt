@@ -1,0 +1,53 @@
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-18 15:37:29.710436: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-18 15:37:29.723343: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-18 15:37:29.749815: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+[      0s] CEK training_selesai: LOLOS | 12 epoch, epoch terpilih 11, val F1-macro 0.6326
+[      0s] CEK bentuk_masukan_10x22: LOLOS | model input (None, 10, 22), X_train (403755, 10, 22)
+[      0s] CEK src_port_tidak_ada: LOLOS | 22 fitur: src_port absen
+[      0s] --- deepshap
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+[     13s] CEK additivity_deepshap: LOLOS | 40/40 lolos (toleransi 1e-2, prob softmax kelas c_i); galat maks c_i=1.870e-07, galat maks semua kelas=1.870e-07
+[     27s] CEK deepshap_bg_seimbang_jalan: LOLOS | bentuk (40, 10, 22); additivity lolos 40/40, galat maks 1.409e-07
+[     27s] --- lime_flat
+[     34s] CEK lime_pembungkus_identik: LOLOS | selisih maks 0.000e+00 (atol 1e-6)
+[     46s] CEK lime_kode_kategori_valid: LOLOS | 0 nilai tidak valid dari 16,000,000 nilai kategorikal (40 batch); kode -1 (unknown) pada instance asli: 0
+[     46s] --- lime_kustom
+[     74s] CEK bentuk_keluaran_deepshap: LOLOS | (40, 10, 22) (diharapkan (40, 10, 22))
+[     74s] CEK bentuk_keluaran_lime_flat: LOLOS | (40, 10, 22) (diharapkan (40, 10, 22))
+[     74s] CEK bentuk_keluaran_kustom_flat: LOLOS | (40, 10, 22) (diharapkan (40, 10, 22))
+[     74s] CEK bentuk_keluaran_per_fitur: LOLOS | (40, 22) (diharapkan (40, 22))
+[     74s] CEK bentuk_keluaran_per_timestep: LOLOS | (40, 10) (diharapkan (40, 10))
+[     74s] --- m1
+[     76s] --- m2_lokal_kohort
+[     76s] CEK deletion_lokal: LOLOS | 4 metode + acak 5 ulangan; p_i(0)=prob asli: True; semua p di [0,1]
+[     76s] CEK deletion_kohort: LOLOS | 54 nilai F1 kohort terhitung, semua di [0,1] (nilai tidak dicetak: instance dari partisi uji)
+[     76s] --- m2_sistem
+[    126s] CEK deletion_sistem_jalan: LOLOS | 86,496 window uji x 21 konfigurasi, 50s; nilai disegel, tidak dibuka
+[    126s] --- m2_empiris
+[    127s] CEK deletion_empiris: LOLOS | 4 metode x 10 ulangan x 40 instance
+[    127s] --- temporal_deletion
+[    127s] CEK temporal_deletion: LOLOS | 4 metode + acak, k=[0, 1, 2, 3, 5]
+[    127s] --- m3_prosedural
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+[    422s] --- m3_perturbasi
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+[   1981s] CEK m3_prosedural: LOLOS | 5 metode x 40 instance, R=5, k=10; Jaccard di [0,1]; Spearman NaN: 0
+[   1981s] CEK m3_perturbasi: LOLOS | 5 metode x 40 instance, R=5, k=10; Jaccard di [0,1]; Spearman NaN: 0
+[   1981s] --- m4
+[   2004s] CEK m4_timing: LOLOS | 5 metode; 5 pemanasan dibuang, 10 diukur, batch 1, thread intra=inter=4
+[   2004s] --- bootstrap
+[   2005s] CEK bootstrap_jalan: LOLOS | 1000 ulangan, sesi diambil ulang per kelas (40 sesi); statistik tersimpan di bootstrap_contoh.csv (tidak ditafsirkan)
+[   2005s] CEK tidak_ada_NaN: LOLOS | array berisi NaN/inf: tidak ada (Spearman NaN dari vektor konstan dihitung terpisah di m1/m3)
+[   2005s] SELESAI

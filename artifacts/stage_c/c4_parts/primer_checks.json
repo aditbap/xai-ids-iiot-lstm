@@ -1,0 +1,34 @@
+{
+ "additivity_lolos": 450,
+ "additivity_galat_maks": 2.497797140676994e-06,
+ "lime_kode_tidak_valid": 16,
+ "lime_total_nilai_kategorikal": 180000000,
+ "lime_pembungkus_selisih_maks": 0.0,
+ "bentuk": {
+  "deepshap": [
+   450,
+   10,
+   22
+  ],
+  "lime_flat": [
+   450,
+   10,
+   22
+  ],
+  "kustom_flat": [
+   450,
+   10,
+   22
+  ],
+  "per_fitur": [
+   450,
+   22
+  ],
+  "per_timestep": [
+   450,
+   10
+  ]
+ },
+ "nan": 0,
+ "deepshap_init_detik": 0.03617501258850098
+}

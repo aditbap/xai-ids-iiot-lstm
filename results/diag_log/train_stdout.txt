@@ -1,0 +1,18 @@
+[    83s] train: (403755, 10, 22)
+[    83s] val: (75280, 10, 22)
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=0.5548 val_f1_macro=0.7360
+epoch 2/12 loss=0.3740 val_f1_macro=0.8985
+epoch 3/12 loss=0.3567 val_f1_macro=0.8356
+epoch 4/12 loss=0.3431 val_f1_macro=0.6483
+epoch 5/12 loss=0.2336 val_f1_macro=0.9288
+epoch 6/12 loss=0.1874 val_f1_macro=0.9317
+epoch 7/12 loss=0.1604 val_f1_macro=0.9467
+epoch 8/12 loss=0.1413 val_f1_macro=0.9563
+epoch 9/12 loss=0.1455 val_f1_macro=0.9406
+epoch 10/12 loss=0.1376 val_f1_macro=0.9496
+epoch 11/12 loss=0.1150 val_f1_macro=0.9467
+epoch 12/12 loss=0.1199 val_f1_macro=0.9403
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+epoch terpilih 8, val F1 0.9563, waktu 1112s

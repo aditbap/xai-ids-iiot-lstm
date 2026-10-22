@@ -1,0 +1,55 @@
+uji,kelas,metrik,nilai,status,lolos,n,sumber
+T1,SEMUA,n_session_id_di_>1_partisi,0.0,Utama,True,,
+T2,backdoor,persen_kunci_di_>1_partisi,100.0,Dilaporkan,,5.0,test+train+val=46
+T2,backdoor,persen_sesi_dgn_kunci_di_>1_partisi,100.0,Dilaporkan,,46.0,
+T2,ddos,persen_kunci_di_>1_partisi,12.578616352201259,Dilaporkan,,159.0,train+val=951; test+train+val=517; test+val=201; test+train=1
+T2,ddos,persen_sesi_dgn_kunci_di_>1_partisi,91.1074740861975,Dilaporkan,,1833.0,
+T2,dos,persen_kunci_di_>1_partisi,0.08333333333333334,Dilaporkan,,6000.0,train+val=2; test+train=2; test+train+val=1
+T2,dos,persen_sesi_dgn_kunci_di_>1_partisi,0.08333333333333334,Dilaporkan,,6000.0,
+T2,injection,persen_kunci_di_>1_partisi,62.0,Dilaporkan,,50.0,train+val=816; test+train+val=340; test+val=45; test+train=18
+T2,injection,persen_sesi_dgn_kunci_di_>1_partisi,85.06629448709002,Dilaporkan,,1433.0,
+T2,normal,persen_kunci_di_>1_partisi,5.524553571428571,Dilaporkan,,1792.0,test+train+val=3031; test+train=398; train+val=78; test+val=12
+T2,normal,persen_sesi_dgn_kunci_di_>1_partisi,58.77735092700852,Dilaporkan,,5987.0,
+T2,password,persen_kunci_di_>1_partisi,43.42105263157895,Dilaporkan,,76.0,train+val=112; test+train+val=108; test+train=18; test+val=11
+T2,password,persen_sesi_dgn_kunci_di_>1_partisi,60.880195599022,Dilaporkan,,409.0,
+T2,ransomware,persen_kunci_di_>1_partisi,29.629629629629626,Dilaporkan,,54.0,test+train+val=239; test+train=13; train+val=11; test+val=8
+T2,ransomware,persen_sesi_dgn_kunci_di_>1_partisi,71.6931216931217,Dilaporkan,,378.0,
+T2,scanning,persen_kunci_di_>1_partisi,5.4661716171617165,Dilaporkan,,4848.0,train+val=335; test+train=208; test+train+val=30; test+val=30
+T2,scanning,persen_sesi_dgn_kunci_di_>1_partisi,10.676345609065157,Dilaporkan,,5648.0,
+T2,xss,persen_kunci_di_>1_partisi,77.41935483870968,Dilaporkan,,31.0,test+train+val=2144; train+val=102; test+train=37
+T2,xss,persen_sesi_dgn_kunci_di_>1_partisi,94.80897009966777,Dilaporkan,,2408.0,
+T2,SEMUA,persen_kunci_di_>1_partisi,3.39258114374034,Dilaporkan,,12940.0,test+train+val=6456; train+val=2407; test+train=695; test+val=307
+T2,SEMUA,persen_sesi_dgn_kunci_di_>1_partisi,40.86239748156739,Dilaporkan,,24142.0,
+T3,SEMUA,label_sesi_semua_batas_lolos,18.0,Utama,True,18.0,results/stage_a/t3_audit.csv; window melanggar=0
+T3,SEMUA,label_window_semua_batas_lolos,18.0,Dilaporkan,True,18.0,results/stage_a/t3_audit.csv; window melanggar=0
+T4,backdoor,persen_window_val_identik_dgn_train,0.0,Dilaporkan,,2134.0,identik dgn label berbeda: 0.0000%
+T4,ddos,persen_window_val_identik_dgn_train,1.8376283109611657,Dilaporkan,,13931.0,identik dgn label berbeda: 1.3710%
+T4,dos,persen_window_val_identik_dgn_train,12.150005054078642,Dilaporkan,,9893.0,identik dgn label berbeda: 0.0000%
+T4,injection,persen_window_val_identik_dgn_train,0.0,Dilaporkan,,10206.0,identik dgn label berbeda: 0.0000%
+T4,normal,persen_window_val_identik_dgn_train,25.297536673124828,Dilaporkan,,7226.0,identik dgn label berbeda: 6.4905%
+T4,password,persen_window_val_identik_dgn_train,1.8061881576880792,Dilaporkan,,6367.0,identik dgn label berbeda: 1.4764%
+T4,ransomware,persen_window_val_identik_dgn_train,37.876864487464296,Dilaporkan,,6302.0,identik dgn label berbeda: 21.9772%
+T4,scanning,persen_window_val_identik_dgn_train,73.57682105692716,Dilaporkan,,4901.0,identik dgn label berbeda: 0.0816%
+T4,xss,persen_window_val_identik_dgn_train,0.0,Dilaporkan,,14320.0,identik dgn label berbeda: 0.0000%
+T4,SEMUA,persen_window_val_identik_dgn_train,12.478746014877789,Dilaporkan,,75280.0,identik dgn label berbeda: 2.8467%
+T4,backdoor,persen_window_test_identik_dgn_train,0.0,Dilaporkan,,7311.0,identik dgn label berbeda: 0.0000%
+T4,ddos,persen_window_test_identik_dgn_train,0.6850736973219846,Dilaporkan,,14451.0,identik dgn label berbeda: 0.5467%
+T4,dos,persen_window_test_identik_dgn_train,11.545454545454545,Dilaporkan,,9900.0,identik dgn label berbeda: 0.0000%
+T4,injection,persen_window_test_identik_dgn_train,0.0,Dilaporkan,,11157.0,identik dgn label berbeda: 0.0000%
+T4,normal,persen_window_test_identik_dgn_train,8.896658896658897,Dilaporkan,,7722.0,identik dgn label berbeda: 2.2015%
+T4,password,persen_window_test_identik_dgn_train,2.446174062468412,Dilaporkan,,9893.0,identik dgn label berbeda: 2.1126%
+T4,ransomware,persen_window_test_identik_dgn_train,37.31228340392761,Dilaporkan,,7791.0,identik dgn label berbeda: 21.6917%
+T4,scanning,persen_window_test_identik_dgn_train,67.60863769661424,Dilaporkan,,3751.0,identik dgn label berbeda: 0.0533%
+T4,xss,persen_window_test_identik_dgn_train,0.0,Dilaporkan,,14520.0,identik dgn label berbeda: 0.0000%
+T4,SEMUA,persen_window_test_identik_dgn_train,8.802719200887903,Dilaporkan,,86496.0,identik dgn label berbeda: 2.4857%
+T4,backdoor,persen_window_test_identik_dgn_val,0.0,Dilaporkan,,7311.0,identik dgn label berbeda: 0.0000%
+T4,ddos,persen_window_test_identik_dgn_val,0.6504740156390562,Dilaporkan,,14451.0,identik dgn label berbeda: 0.0000%
+T4,dos,persen_window_test_identik_dgn_val,8.030303030303031,Dilaporkan,,9900.0,identik dgn label berbeda: 0.0000%
+T4,injection,persen_window_test_identik_dgn_val,0.0,Dilaporkan,,11157.0,identik dgn label berbeda: 0.0000%
+T4,normal,persen_window_test_identik_dgn_val,9.03910903910904,Dilaporkan,,7722.0,identik dgn label berbeda: 1.7483%
+T4,password,persen_window_test_identik_dgn_val,2.324876175073284,Dilaporkan,,9893.0,identik dgn label berbeda: 0.0000%
+T4,ransomware,persen_window_test_identik_dgn_val,33.5515338210756,Dilaporkan,,7791.0,identik dgn label berbeda: 22.1538%
+T4,scanning,persen_window_test_identik_dgn_val,66.80885097307385,Dilaporkan,,3751.0,identik dgn label berbeda: 0.0000%
+T4,xss,persen_window_test_identik_dgn_val,0.0,Dilaporkan,,14520.0,identik dgn label berbeda: 0.0000%
+T4,SEMUA,persen_window_test_identik_dgn_val,8.020024047354791,Dilaporkan,,86496.0,identik dgn label berbeda: 2.1515%
+T5,SEMUA,f1_macro_validasi_logreg,0.7766464608753011,Sanity check,,,"multinomial lbfgs, max_iter 1000, class_weight balanced, seed 42; n_iter=1000; 179s"

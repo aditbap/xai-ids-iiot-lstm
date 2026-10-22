@@ -1,0 +1,103 @@
+# =====================================================================
+# .gitignore — xai-ids-iiot-lstm (naskah rev13)
+# Pola pengecualian dulu, lalu pengecualian eksplisit (!) untuk artefak
+# kecil yang diperlukan reproduksi. Hash SEMUA berkas artifacts/ dan
+# results/ (termasuk yang dikecualikan di sini) ada di MANIFEST.sha256.
+# =====================================================================
+
+# --- 1. Data TON_IoT mentah & turunan yang memuat baris data ---------
+/Dataset/
+/data/
+X_*.npy
+y_*.npy
+rows_*.npy
+rows_meta.csv
+*.csv.gz
+selected_rows.pkl
+# sampel 200.000 x 80 kode kategorikal dari data train (perturbasi LIME)
+lime_perturbation_cat_codes.npz
+# atribusi .npz berukuran besar (saat ini tidak ada yang > 25 MB)
+*_large.npz
+
+# --- 2. Artefak besar (> 25 MB) & model pohon -------------------------
+# rf_s4{2,3,4}.joblib (53 MB) -> GitHub Release / Zenodo
+*.joblib
+# duplikat results/stage_c & results/stage_d (tercatat di MANIFEST)
+/results/*.zip
+__MACOSX/
+
+# --- 3. Sisa pipeline v1/v2 yang tidak dipakai naskah rev13 -----------
+/artifacts/model_final.h5
+/artifacts/shap_values_*.npy
+/artifacts/lime_values_raw.npy
+# catatan & tabel v1/v2, cache v3 (871 MB), checkpoint per-epoch v1 (81 MB)
+/notes/
+# gambar Bab 4 skripsi v1 (gambar-4-*.png) dan README-nya; yang ikut hanya
+# gambar naskah rev13: gambar1_*, gambar2_*, gambar3_*
+/docs/figures/*
+!/docs/figures/gambar[0-9]_*.png
+# skrip lama yang tidak diimpor oleh Tahap A-D maupun diag_*
+/scripts/*.py
+!/scripts/pipeline_common.py
+/scripts/v3/
+/colab/
+/spike/
+/audit_dataset.py
+/test_shap_compat.py
+
+# --- 4. Draf naskah & catatan pribadi ---------------------------------
+/CLAUDE.md
+/CLAUDE LAMA.md
+/REVISI_PLAN.md
+/docs/BAB4*
+/docs/v3/
+/.claude/
+
+# --- 5. Sistem, editor, environment lokal -----------------------------
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.idea/
+/.venv/
+/.venv312/
+
+# --- 6. Rahasia --------------------------------------------------------
+.env
+.env.*
+*.key
+*token*
+
+# --- 7. Keluaran sementara ---------------------------------------------
+*.log
+!/results/**/*.log
+tmp/
+cache/
+
+# --- 8. Pengecualian eksplisit: artefak kecil kategori (c) -------------
+!/artifacts/stage_a/encoder.pkl
+!/artifacts/stage_a/scaler.pkl
+!/artifacts/stage_a/categorical_codes.json
+!/artifacts/stage_a/session_index.csv
+!/artifacts/stage_a/session_index.pkl
+!/artifacts/stage_a/main_450_index.csv
+!/artifacts/stage_a/pilot_40_index.csv
+!/artifacts/stage_b/lime_perturbation_examples.npz
+!/artifacts/stage_b2/lime_perturbation_examples.npz
+!/artifacts/stage_b*/meta_*.csv
+!/artifacts/stage_b*/features.json
+!/artifacts/stage_b*/bg_*_idx.npy
+!/artifacts/stage_b*/lstm_main_seed42.h5
+!/artifacts/diag_log/scaler_log.pkl
+!/artifacts/diag_log/lstm_main_seed42_log.h5
+!/artifacts/stage_c/models/*.h5
+!/artifacts/stage_c/models/xgb_*.ubj
+!/artifacts/stage_c/scaler_srcport.pkl
+!/artifacts/stage_c/rows/rows_info.json
+!/artifacts/stage_d/main_450_index_v2.csv
+!/artifacts/stage_d/models/*.h5
+!/artifacts/stage_d/preds/*.npz
+!/artifacts/stage_d/test_final_mask.npz
+!/artifacts/stage_d/d2_novel_masks.npz
+!/artifacts/stage_d/rows_info_d.json

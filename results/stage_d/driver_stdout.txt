@@ -1,0 +1,318 @@
+2026-10-20 22:01:12 | MULAI d0_prep.py 
+2026-10-20 22:01:12 | config_d.json sudah ada, tidak ditimpa
+2026-10-20 22:01:12 | rows_raw/rows_old sudah ada, dilewati
+2026-10-20 22:01:12 | MULAI d1_train_old.py 43
+2026-10-20 22:01:16 | D1 old_s43: sudah ada, dilewati
+2026-10-20 22:01:17 | MULAI d1_train_old.py 44
+2026-10-20 22:01:19 | D1 old_s44: sudah ada, dilewati
+2026-10-20 22:01:20 | MULAI d_predict.py 
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:22.829520: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 22:01:22.840822: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training_v1.py:2354: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  updates=self.state_updates,
+2026-10-20 22:01:22.869297: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:24 | D prediksi val main_s42: n=75280
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:24.720304: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:24.744172: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:26 | D prediksi val main_s43: n=75280
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:26.648472: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:26.670740: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:28 | D prediksi val main_s44: n=75280
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:28.714021: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/kernel/Assign' id:366 op device:{requested: '', assigned: ''} def:{{{node dense/kernel/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/kernel, dense/kernel/Initializer/random_uniform)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:28.737200: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:30 | D prediksi val old_s42: n=75280
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:30.842189: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/kernel/Assign' id:366 op device:{requested: '', assigned: ''} def:{{{node dense/kernel/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/kernel, dense/kernel/Initializer/random_uniform)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:30.865475: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:32 | D prediksi val old_s43: n=75280
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:33.009671: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:33.034582: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:34 | D prediksi val old_s44: n=75280
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:35.153244: W tensorflow/c/c_api.cc:305] Operation '{name:'lstm_1/lstm_cell/kernel/Assign' id:190 op device:{requested: '', assigned: ''} def:{{{node lstm_1/lstm_cell/kernel/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](lstm_1/lstm_cell/kernel, lstm_1/lstm_cell/kernel/Initializer/random_uniform)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:35.176027: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:37 | D prediksi test main_s42: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:37.485008: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:37.512100: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:39 | D prediksi test main_s43: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:40.045280: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/kernel/Assign' id:387 op device:{requested: '', assigned: ''} def:{{{node dense_1/kernel/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/kernel, dense_1/kernel/Initializer/random_uniform)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:40.067560: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:42 | D prediksi test main_s44: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:42.403430: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:216 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:42.418331: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:222 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:43 | D prediksi test lstm1_s42: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:43.464782: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/kernel/Assign' id:190 op device:{requested: '', assigned: ''} def:{{{node dense/kernel/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/kernel, dense/kernel/Initializer/random_uniform)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:43.479671: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:222 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:44 | D prediksi test lstm1_s43: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:44.532221: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:216 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:44.547138: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:222 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:45 | D prediksi test lstm1_s44: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:45.609784: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_2/bias/Assign' id:93 op device:{requested: '', assigned: ''} def:{{{node dense_2/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_2/bias, dense_2/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:45.620374: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_2/Softmax' id:99 op device:{requested: '', assigned: ''} def:{{{node dense_2/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_2/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:45 | D prediksi test mlp_s42: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:45.807900: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_2/bias/Assign' id:93 op device:{requested: '', assigned: ''} def:{{{node dense_2/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_2/bias, dense_2/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:45.819220: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_2/Softmax' id:99 op device:{requested: '', assigned: ''} def:{{{node dense_2/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_2/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:45 | D prediksi test mlp_s43: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:46.007381: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:56 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:46.018300: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_2/Softmax' id:99 op device:{requested: '', assigned: ''} def:{{{node dense_2/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_2/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:46 | D prediksi test mlp_s44: n=86496
+2026-10-20 22:01:48 | D prediksi test rf_s42: n=86496
+2026-10-20 22:01:50 | D prediksi test rf_s43: n=86496
+2026-10-20 22:01:51 | D prediksi test rf_s44: n=86496
+2026-10-20 22:01:52 | D prediksi test xgb_s42: n=86496
+2026-10-20 22:01:53 | D prediksi test xgb_s43: n=86496
+2026-10-20 22:01:54 | D prediksi test xgb_s44: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:55.111668: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training_v1.py:2354: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  updates=self.state_updates,
+2026-10-20 22:01:55.136912: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:57 | D prediksi test control_s42: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:01:57.913191: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/kernel/Assign' id:387 op device:{requested: '', assigned: ''} def:{{{node dense_1/kernel/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/kernel, dense_1/kernel/Initializer/random_uniform)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:01:57.938270: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:00 | D prediksi test control_s43: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:02:00.156696: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:00.180196: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:02 | D prediksi test control_s44: n=86496
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:02:02.711453: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:02.736109: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:03 | D prediksi test abl_w1_s42: n=119679
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:02:03.265002: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:03.289376: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:03 | D prediksi test abl_w1_s43: n=119679
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:02:03.820376: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:03.842746: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:04 | D prediksi test abl_w1_s44: n=119679
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:02:04.402974: W tensorflow/c/c_api.cc:305] Operation '{name:'lstm_1/lstm_cell/bias/Assign' id:219 op device:{requested: '', assigned: ''} def:{{{node lstm_1/lstm_cell/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](lstm_1/lstm_cell/bias, lstm_1/lstm_cell/bias/Initializer/concat)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:04.425818: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:05 | D prediksi test abl_w5_s42: n=104931
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:02:05.943048: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:05.965890: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:07 | D prediksi test abl_w5_s43: n=104931
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:02:07.463984: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:07.487447: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:08 | D prediksi test abl_w5_s44: n=104931
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:02:09.110705: W tensorflow/c/c_api.cc:305] Operation '{name:'lstm_1/lstm_cell/bias/Assign' id:219 op device:{requested: '', assigned: ''} def:{{{node lstm_1/lstm_cell/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](lstm_1/lstm_cell/bias, lstm_1/lstm_cell/bias/Initializer/concat)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:09.135386: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:12 | D prediksi test abl_w20_s42: n=57244
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:02:12.336368: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:12.361201: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:15 | D prediksi test abl_w20_s43: n=57244
+WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default TF-Keras config. To configure the number of threads, use tf.config.threading APIs.
+2026-10-20 22:02:15.633914: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:15.656794: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 22:02:18 | D prediksi test abl_w20_s44: n=57244
+2026-10-20 22:02:18 | D prediksi selesai
+2026-10-20 22:02:19 | MULAI d12_report.py all
+2026-10-20 22:02:20 | D cek prediksi vs C3: selisih maks 1.11e-16 (27 model)
+2026-10-20 22:02:20 | D1 tabel selesai
+2026-10-20 22:02:23 | D2 hash train: window unik hash=361376 eksak=361376; time-step unik hash=212483 eksak=212483
+2026-10-20 22:02:24 | D2 hash val: window unik hash=67784 eksak=67784; time-step unik hash=40349 eksak=40349
+2026-10-20 22:02:24 | D2 hash test: window unik hash=80826 eksak=80826; time-step unik hash=48616 eksak=48616
+2026-10-20 22:02:24 | D2 within selesai
+2026-10-20 22:02:36 | D2 cross selesai
+2026-10-20 22:02:37 | D2 novel selesai: uji novel 79911/86496, val novel 67109/75280
+2026-10-20 22:02:37 | MULAI d3_select.py 
+2026-10-20 22:02:38 | D3 prosedur seleksi Tahap A tereproduksi persis pada uji penuh (450 & 40)
+2026-10-20 22:02:39 | D3 seleksi v2 selesai; dikeluarkan 8146 window uji dari 40 sesi pilot
+2026-10-20 22:02:39 | MULAI d3_c3.py 
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 22:02:50 | D3 C3 selesai
+2026-10-20 22:02:50 | MULAI d3_c4_xai.py primer
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 22:02:55.453971: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 22:02:55.501138: W tensorflow/c/c_api.cc:305] Operation '{name:'lstm_1/lstm_cell/recurrent_kernel/Assign' id:210 op device:{requested: '', assigned: ''} def:{{{node lstm_1/lstm_cell/recurrent_kernel/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](lstm_1/lstm_cell/recurrent_kernel, lstm_1/lstm_cell/recurrent_kernel/Initializer/mul_1)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 22:02:55.535680: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 22:13:32 | C4 primer selesai: {'additivity_lolos': 450, 'additivity_galat_maks': 1.4872052815917414e-06, 'lime_kode_tidak_valid': 37, 'lime_total_nilai_kategorikal': 180000000, 'lime_pembungkus_selisih_maks': 0.0, 'bentuk': {'deepshap': [450, 10, 22], 'lime_flat': [450, 10, 22], 'kustom_flat': [450, 10, 22], 'per_fitur': [450, 22], 'per_timestep': [450, 10]}, 'nan': 0, 'deepshap_init_detik': 0.03741788864135742}
+2026-10-20 22:13:32 | C4 bagian primer: 637s, puncak memori 1458 MB
+2026-10-20 22:13:33 | MULAI d3_c4_xai.py m4
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 22:13:38.638337: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 22:13:38.688956: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 22:13:38.775353: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 22:24:44 | C4 m4 selesai
+2026-10-20 22:24:44 | C4 bagian m4: 667s, puncak memori 1831 MB
+2026-10-20 22:24:45 | MULAI d3_c4_xai.py m3_proc
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 22:24:51.881011: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 22:24:51.930345: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 22:24:52.021248: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 22:35:27 | C4 m3_proc seed 101 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 22:45:34 | C4 m3_proc seed 102 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 22:55:38 | C4 m3_proc seed 103 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 23:05:34 | C4 m3_proc seed 104 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 23:15:29 | C4 m3_proc seed 105 selesai
+2026-10-20 23:15:29 | C4 m3_proc selesai
+2026-10-20 23:15:29 | C4 bagian m3_proc: 3038s, puncak memori 1618 MB
+2026-10-20 23:15:31 | MULAI d3_c4_xai.py m3_pert_0.01
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 23:15:36.490070: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 23:15:36.502792: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 23:15:36.588133: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 23:25:38 | C4 m3_pert 0.01 salinan 0 selesai
+2026-10-20 23:35:30 | C4 m3_pert 0.01 salinan 1 selesai
+2026-10-20 23:45:32 | C4 m3_pert 0.01 salinan 2 selesai
+2026-10-20 23:55:34 | C4 m3_pert 0.01 salinan 3 selesai
+2026-10-21 00:05:39 | C4 m3_pert 0.01 salinan 4 selesai
+2026-10-21 00:05:39 | C4 m3_pert 0.01 selesai
+2026-10-21 00:05:39 | C4 bagian m3_pert_0.01: 3003s, puncak memori 1766 MB
+2026-10-21 00:05:39 | MULAI d3_c4_xai.py m3_pert_0.005
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-21 00:05:45.262318: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-21 00:05:45.311039: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-21 00:05:45.400722: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-21 00:16:06 | C4 m3_pert 0.005 salinan 0 selesai
+2026-10-21 00:26:12 | C4 m3_pert 0.005 salinan 1 selesai
+2026-10-21 00:36:13 | C4 m3_pert 0.005 salinan 2 selesai
+2026-10-21 00:46:24 | C4 m3_pert 0.005 salinan 3 selesai
+2026-10-21 00:56:36 | C4 m3_pert 0.005 salinan 4 selesai
+2026-10-21 00:56:36 | C4 m3_pert 0.005 selesai
+2026-10-21 00:56:36 | C4 bagian m3_pert_0.005: 3051s, puncak memori 1741 MB
+2026-10-21 00:56:37 | MULAI d3_c4_xai.py m3_pert_0.02
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-21 00:56:42.419312: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-21 00:56:42.471884: W tensorflow/c/c_api.cc:305] Operation '{name:'lstm_1/lstm_cell/bias/Assign' id:219 op device:{requested: '', assigned: ''} def:{{{node lstm_1/lstm_cell/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](lstm_1/lstm_cell/bias, lstm_1/lstm_cell/bias/Initializer/concat)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-21 00:56:42.559729: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-21 01:06:49 | C4 m3_pert 0.02 salinan 0 selesai
+2026-10-21 01:16:46 | C4 m3_pert 0.02 salinan 1 selesai
+2026-10-21 01:26:48 | C4 m3_pert 0.02 salinan 2 selesai
+2026-10-21 01:36:55 | C4 m3_pert 0.02 salinan 3 selesai
+2026-10-21 01:46:48 | C4 m3_pert 0.02 salinan 4 selesai
+2026-10-21 01:46:48 | C4 m3_pert 0.02 selesai
+2026-10-21 01:46:48 | C4 bagian m3_pert_0.02: 3007s, puncak memori 1891 MB
+2026-10-21 01:46:49 | MULAI d3_c4_xai.py sens_bg
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-21 01:46:54.786837: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-21 01:46:54.836550: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-21 01:46:54.923084: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-21 01:53:05 | C4 sens_bg seimbang100 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-21 01:58:25 | C4 sens_bg empiris50 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-21 02:05:46 | C4 sens_bg empiris200 selesai
+2026-10-21 02:05:46 | C4 sens_bg selesai
+2026-10-21 02:05:46 | C4 bagian sens_bg: 1132s, puncak memori 1279 MB
+2026-10-21 02:05:47 | MULAI d3_c4_xai.py deletion
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-21 02:05:52.988515: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-21 02:05:53.037924: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-21 02:05:53.123219: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-21 02:05:55 | C4 deletion: lokal/kohort primer selesai
+2026-10-21 02:06:02 | C4 deletion: empiris lokal/kohort selesai
+2026-10-21 02:06:04 | C4 deletion: kepekaan bg & kontrol selesai
+2026-10-21 02:07:40 | C4 deletion: sistem primer selesai
+2026-10-21 02:23:28 | C4 deletion: sistem empiris selesai
+2026-10-21 02:23:28 | C4 deletion selesai
+2026-10-21 02:23:28 | C4 bagian deletion: 1056s, puncak memori 1458 MB
+2026-10-21 02:23:29 | MULAI d3_c4_shortcut.py 
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-21 02:23:34.686431: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-21 02:23:34.732375: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/kernel/Assign' id:387 op device:{requested: '', assigned: ''} def:{{{node dense_1/kernel/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/kernel, dense_1/kernel/Initializer/random_uniform)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-21 02:23:34.761301: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-21 02:28:07 | C4 shortcut selesai; additivity maks 3.82e-06; LIME kode tidak valid 37
+2026-10-21 02:28:08 | MULAI d3_c4_report.py 
+2026-10-21 02:29:04 | C4 laporan: bootstrap selesai
+2026-10-21 02:29:05 | C4 laporan selesai
+2026-10-21 02:29:06 | MULAI d4_seed.py 42
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-21 02:29:10.268431: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-21 02:29:10.277090: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-21 02:29:10.313688: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-21 02:30:37 | D4 seed 42 selesai
+2026-10-21 02:30:37 | MULAI d4_seed.py 43
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-21 02:30:42.219924: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-21 02:30:42.227383: W tensorflow/c/c_api.cc:305] Operation '{name:'lstm/lstm_cell/recurrent_kernel/Assign' id:32 op device:{requested: '', assigned: ''} def:{{{node lstm/lstm_cell/recurrent_kernel/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](lstm/lstm_cell/recurrent_kernel, lstm/lstm_cell/recurrent_kernel/Initializer/mul_1)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-21 02:30:42.251012: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-21 02:32:10 | D4 seed 43 selesai
+2026-10-21 02:32:10 | MULAI d4_seed.py 44
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-21 02:32:15.100560: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-21 02:32:15.108063: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-21 02:32:15.131801: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-21 02:33:40 | D4 seed 44 selesai
+2026-10-21 02:33:40 | MULAI d4_seed.py report
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-21 02:33:45 | D4 laporan selesai; cek seed 42 vs D3 {'deepshap': 0.0, 'lime_flat': 0.0, 'kustom_flat': 0.0}
+2026-10-21 02:33:45 | driver selesai: all

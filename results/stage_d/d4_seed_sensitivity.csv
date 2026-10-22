@@ -1,0 +1,25 @@
+seed,metrik,metode,nilai,sd,n,catatan
+42,m2_lokal_dauc_mean,deepshap,5.570178528070276,3.090669108669845,90,"seed 42 dihitung ulang; selisih maks I_f vs D3: {'deepshap': 0.0, 'lime_flat': 0.0, 'kustom_flat': 0.0}"
+42,m2_lokal_dauc_mean,lime_flat,4.16070903432918,3.4887235279467848,90,"seed 42 dihitung ulang; selisih maks I_f vs D3: {'deepshap': 0.0, 'lime_flat': 0.0, 'kustom_flat': 0.0}"
+42,m2_lokal_dauc_mean,kustom_flat,5.247148934741774,3.2137607591703516,90,"seed 42 dihitung ulang; selisih maks I_f vs D3: {'deepshap': 0.0, 'lime_flat': 0.0, 'kustom_flat': 0.0}"
+42,P1_selisih_deepshap_minus_lime_flat,deepshap-lime_flat,1.4094694937410954,2.8735059291615785,90,"seed 42 dihitung ulang; selisih maks I_f vs D3: {'deepshap': 0.0, 'lime_flat': 0.0, 'kustom_flat': 0.0}"
+42,spearman_global_If_vs_seed42,deepshap,1.0,,22,"seed 42 dihitung ulang; selisih maks I_f vs D3: {'deepshap': 0.0, 'lime_flat': 0.0, 'kustom_flat': 0.0}"
+42,spearman_global_If_vs_seed42,lime_flat,1.0,,22,"seed 42 dihitung ulang; selisih maks I_f vs D3: {'deepshap': 0.0, 'lime_flat': 0.0, 'kustom_flat': 0.0}"
+42,spearman_global_If_vs_seed42,kustom_flat,1.0,,22,"seed 42 dihitung ulang; selisih maks I_f vs D3: {'deepshap': 0.0, 'lime_flat': 0.0, 'kustom_flat': 0.0}"
+42,persen_c_pred_sama_dgn_seed42,model,100.0,,90,"seed 42 dihitung ulang; selisih maks I_f vs D3: {'deepshap': 0.0, 'lime_flat': 0.0, 'kustom_flat': 0.0}"
+43,m2_lokal_dauc_mean,deepshap,5.775577676543668,2.6251305907214872,90,
+43,m2_lokal_dauc_mean,lime_flat,4.846007811471004,3.0282830206258047,90,
+43,m2_lokal_dauc_mean,kustom_flat,5.800049538967122,2.738165610877262,90,
+43,P1_selisih_deepshap_minus_lime_flat,deepshap-lime_flat,0.9295698650726641,2.1483301108849027,90,
+43,spearman_global_If_vs_seed42,deepshap,0.9920903954802262,,22,
+43,spearman_global_If_vs_seed42,lime_flat,0.9243365330321853,,22,
+43,spearman_global_If_vs_seed42,kustom_flat,0.9412761151891589,,22,
+43,persen_c_pred_sama_dgn_seed42,model,100.0,,90,
+44,m2_lokal_dauc_mean,deepshap,5.56681027895571,2.739589398858359,90,
+44,m2_lokal_dauc_mean,lime_flat,4.406258602516148,3.1560061620630844,90,
+44,m2_lokal_dauc_mean,kustom_flat,5.656483983111736,2.9381960610379316,90,
+44,P1_selisih_deepshap_minus_lime_flat,deepshap-lime_flat,1.160551676439562,2.633852645629635,90,
+44,spearman_global_If_vs_seed42,deepshap,0.9796610169491525,,22,
+44,spearman_global_If_vs_seed42,lime_flat,0.9378881987577641,,22,
+44,spearman_global_If_vs_seed42,kustom_flat,0.9446640316205535,,22,
+44,persen_c_pred_sama_dgn_seed42,model,97.77777777777777,,90,

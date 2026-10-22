@@ -1,0 +1,96 @@
+skenario,metrik,objek,nilai,catatan
+bg_seimbang100,m1_jaccard@10_global,deepshap_vs_lime_flat,0.25,
+bg_seimbang100,m1_jaccard@10_per_instance_mean,deepshap_vs_lime_flat,0.36076312576312575,
+bg_seimbang100,m1_spearman_per_instance_mean,deepshap_vs_lime_flat,0.4053704749356924,
+bg_seimbang100,m1_jaccard@10_global,deepshap_vs_kustom_flat,0.8181818181818182,
+bg_seimbang100,m1_jaccard@10_per_instance_mean,deepshap_vs_kustom_flat,0.48425814925814925,
+bg_seimbang100,m1_spearman_per_instance_mean,deepshap_vs_kustom_flat,0.47134701047744537,
+bg_seimbang100,m2_lokal_dauc_mean,deepshap,5.340895871038837,
+bg_seimbang100,m2_lokal_dauc_mean,lime_flat,4.296239450936457,lime_flat tidak memakai background (= primer)
+bg_seimbang100,m2_lokal_dauc_mean,kustom_flat,5.316569801568903,
+bg_seimbang100,m2_lokal_dauc_mean,per_fitur,5.596007533666802,
+bg_seimbang100,P1_selisih_titik,deepshap-lime_flat,1.04465642010238,
+bg_seimbang100,P2_selisih_titik,kustom_flat-per_fitur,-0.2794377320978993,
+bg_seimbang100,additivity_galat_maks,deepshap,8.029965670175443e-07,
+bg_empiris50,m1_jaccard@10_global,deepshap_vs_lime_flat,0.25,
+bg_empiris50,m1_jaccard@10_per_instance_mean,deepshap_vs_lime_flat,0.3645136345136345,
+bg_empiris50,m1_spearman_per_instance_mean,deepshap_vs_lime_flat,0.4252511261026024,
+bg_empiris50,m1_jaccard@10_global,deepshap_vs_kustom_flat,0.8181818181818182,
+bg_empiris50,m1_jaccard@10_per_instance_mean,deepshap_vs_kustom_flat,0.5031818181818182,
+bg_empiris50,m1_spearman_per_instance_mean,deepshap_vs_kustom_flat,0.4977982801516952,
+bg_empiris50,m2_lokal_dauc_mean,deepshap,5.4556403857358235,
+bg_empiris50,m2_lokal_dauc_mean,lime_flat,4.296239450936457,lime_flat tidak memakai background (= primer)
+bg_empiris50,m2_lokal_dauc_mean,kustom_flat,5.284207297704893,
+bg_empiris50,m2_lokal_dauc_mean,per_fitur,5.487131263574956,
+bg_empiris50,P1_selisih_titik,deepshap-lime_flat,1.1594009347993672,
+bg_empiris50,P2_selisih_titik,kustom_flat-per_fitur,-0.2029239658700633,
+bg_empiris50,additivity_galat_maks,deepshap,1.3020544429309666e-06,
+bg_empiris200,m1_jaccard@10_global,deepshap_vs_lime_flat,0.25,
+bg_empiris200,m1_jaccard@10_per_instance_mean,deepshap_vs_lime_flat,0.3646764346764346,
+bg_empiris200,m1_spearman_per_instance_mean,deepshap_vs_lime_flat,0.39619149299114614,
+bg_empiris200,m1_jaccard@10_global,deepshap_vs_kustom_flat,1.0,
+bg_empiris200,m1_jaccard@10_per_instance_mean,deepshap_vs_kustom_flat,0.5336350686350686,
+bg_empiris200,m1_spearman_per_instance_mean,deepshap_vs_kustom_flat,0.5223656193361893,
+bg_empiris200,m2_lokal_dauc_mean,deepshap,5.389738386212122,
+bg_empiris200,m2_lokal_dauc_mean,lime_flat,4.296239450936457,lime_flat tidak memakai background (= primer)
+bg_empiris200,m2_lokal_dauc_mean,kustom_flat,5.488519488159291,
+bg_empiris200,m2_lokal_dauc_mean,per_fitur,5.422999850471695,
+bg_empiris200,P1_selisih_titik,deepshap-lime_flat,1.0934989352756666,
+bg_empiris200,P2_selisih_titik,kustom_flat-per_fitur,0.06551963768759762,
+bg_empiris200,additivity_galat_maks,deepshap,1.1120677072540275e-06,
+pengganti_empiris_10,m2_lokal_dauc,deepshap,4.3707209896567685,primer (median/modus) = 5.382620; sd antar-ulangan = 0.484658
+pengganti_empiris_10,m2_lokal_dauc,lime_flat,2.6749401710020666,primer (median/modus) = 4.296239; sd antar-ulangan = 0.699330
+pengganti_empiris_10,m2_lokal_dauc,kustom_flat,4.144503382214184,primer (median/modus) = 5.282646; sd antar-ulangan = 0.827090
+pengganti_empiris_10,m2_lokal_dauc,per_fitur,4.5510228444442085,primer (median/modus) = 5.486065; sd antar-ulangan = 0.566321
+pengganti_empiris_10,m2_lokal_urutan_metode_sama,per_fitur>deepshap>kustom_flat>lime_flat,1.0,urutan primer: per_fitur>deepshap>kustom_flat>lime_flat
+pengganti_empiris_10,m2_kohort_dauc,deepshap,4.793661390999223,primer (median/modus) = 5.838485; sd antar-ulangan = 0.555542
+pengganti_empiris_10,m2_kohort_dauc,lime_flat,2.9633088002367898,primer (median/modus) = 4.851592; sd antar-ulangan = 0.744403
+pengganti_empiris_10,m2_kohort_dauc,kustom_flat,4.273873901047231,primer (median/modus) = 5.811998; sd antar-ulangan = 1.009095
+pengganti_empiris_10,m2_kohort_dauc,per_fitur,4.764932312775497,primer (median/modus) = 5.796303; sd antar-ulangan = 0.696601
+pengganti_empiris_10,m2_kohort_urutan_metode_sama,deepshap>per_fitur>kustom_flat>lime_flat,0.0,urutan primer: deepshap>kustom_flat>per_fitur>lime_flat
+pengganti_empiris_10,m2_sistem_dauc,deepshap,4.0105581326786,primer (median/modus) = 4.045347; sd antar-ulangan = 0.502132
+pengganti_empiris_10,m2_sistem_dauc,lime_flat,1.1561000803696153,primer (median/modus) = 1.061507; sd antar-ulangan = 0.326186
+pengganti_empiris_10,m2_sistem_dauc,kustom_flat,3.736045113671294,primer (median/modus) = 3.844939; sd antar-ulangan = 0.634818
+pengganti_empiris_10,m2_sistem_dauc,per_fitur,3.9441083329022604,primer (median/modus) = 4.204619; sd antar-ulangan = 0.571439
+pengganti_empiris_10,m2_sistem_urutan_metode_sama,deepshap>per_fitur>kustom_flat>lime_flat,0.0,urutan primer: per_fitur>deepshap>kustom_flat>lime_flat
+sigma_0.005,m3_perturbasi_stab_mean,deepshap,0.9143304843304844,
+sigma_0.005,m3_perturbasi_stab_mean,lime_flat,0.9924900284900285,
+sigma_0.005,m3_perturbasi_stab_mean,kustom_flat,0.8568729788729791,
+sigma_0.005,m3_perturbasi_stab_mean,per_fitur,0.8745925000925002,
+sigma_0.005,m3_perturbasi_stab_mean,per_timestep,0.9007111111111112,
+sigma_0.005,P3_selisih_titik,deepshap-lime_flat,-0.07815954415954415,
+sigma_0.005,P4_selisih_titik,kustom_flat-per_fitur,-0.017719521219521216,
+sigma_0.01,m3_perturbasi_stab_mean,deepshap,0.8610120620120619,
+sigma_0.01,m3_perturbasi_stab_mean,lime_flat,0.9753338513338514,
+sigma_0.01,m3_perturbasi_stab_mean,kustom_flat,0.768930402930403,
+sigma_0.01,m3_perturbasi_stab_mean,per_fitur,0.8114066489066489,
+sigma_0.01,m3_perturbasi_stab_mean,per_timestep,0.8206222222222221,
+sigma_0.01,P3_selisih_titik,deepshap-lime_flat,-0.11432178932178931,
+sigma_0.01,P4_selisih_titik,kustom_flat-per_fitur,-0.04247624597624598,
+sigma_0.02,m3_perturbasi_stab_mean,deepshap,0.8045404551875142,
+sigma_0.02,m3_perturbasi_stab_mean,lime_flat,0.9322121582121583,
+sigma_0.02,m3_perturbasi_stab_mean,kustom_flat,0.6834672440848912,
+sigma_0.02,m3_perturbasi_stab_mean,per_fitur,0.744372164872165,
+sigma_0.02,m3_perturbasi_stab_mean,per_timestep,0.7082666666666667,
+sigma_0.02,P3_selisih_titik,deepshap-lime_flat,-0.12767170302464423,
+sigma_0.02,P4_selisih_titik,kustom_flat-per_fitur,-0.06090492078727374,
+kontrol_tanpa_fitur_99,m1_jaccard@5_global,deepshap_vs_lime_flat,0.1111111111111111,"dikeluarkan: http_request_body_len,http_response_body_len,http_status_code"
+kontrol_tanpa_fitur_99,m1_jaccard@5_per_instance_mean,deepshap_vs_lime_flat,0.1818959435626102,
+kontrol_tanpa_fitur_99,m1_jaccard@10_global,deepshap_vs_lime_flat,0.25,"dikeluarkan: http_request_body_len,http_response_body_len,http_status_code"
+kontrol_tanpa_fitur_99,m1_jaccard@10_per_instance_mean,deepshap_vs_lime_flat,0.3786243386243386,
+kontrol_tanpa_fitur_99,m1_jaccard@15_global,deepshap_vs_lime_flat,0.7647058823529411,"dikeluarkan: http_request_body_len,http_response_body_len,http_status_code"
+kontrol_tanpa_fitur_99,m1_jaccard@15_per_instance_mean,deepshap_vs_lime_flat,0.7475871459694988,
+kontrol_tanpa_fitur_99,m1_spearman_global,deepshap_vs_lime_flat,0.14385964912280702,
+kontrol_tanpa_fitur_99,m1_spearman_per_instance_mean,deepshap_vs_lime_flat,0.1937309941520468,
+kontrol_tanpa_fitur_99,m1_jaccard@5_global,deepshap_vs_kustom_flat,0.6666666666666666,"dikeluarkan: http_request_body_len,http_response_body_len,http_status_code"
+kontrol_tanpa_fitur_99,m1_jaccard@5_per_instance_mean,deepshap_vs_kustom_flat,0.4540123456790124,
+kontrol_tanpa_fitur_99,m1_jaccard@10_global,deepshap_vs_kustom_flat,1.0,"dikeluarkan: http_request_body_len,http_response_body_len,http_status_code"
+kontrol_tanpa_fitur_99,m1_jaccard@10_per_instance_mean,deepshap_vs_kustom_flat,0.5630895030895031,
+kontrol_tanpa_fitur_99,m1_jaccard@15_global,deepshap_vs_kustom_flat,0.7647058823529411,"dikeluarkan: http_request_body_len,http_response_body_len,http_status_code"
+kontrol_tanpa_fitur_99,m1_jaccard@15_per_instance_mean,deepshap_vs_kustom_flat,0.6944719642242863,
+kontrol_tanpa_fitur_99,m1_spearman_global,deepshap_vs_kustom_flat,0.8789473684210527,
+kontrol_tanpa_fitur_99,m1_spearman_per_instance_mean,deepshap_vs_kustom_flat,0.490280701754386,
+kontrol_tanpa_fitur_99,m2_lokal_dauc_mean,deepshap,4.806487281776584,"k=[0, 1, 3, 5, 10, 15]; dikeluarkan: http_request_body_len,http_response_body_len,http_status_code"
+kontrol_tanpa_fitur_99,m2_lokal_dauc_mean,lime_flat,3.723365005129344,"k=[0, 1, 3, 5, 10, 15]; dikeluarkan: http_request_body_len,http_response_body_len,http_status_code"
+kontrol_tanpa_fitur_99,m2_lokal_dauc_mean,kustom_flat,4.705403049113886,"k=[0, 1, 3, 5, 10, 15]; dikeluarkan: http_request_body_len,http_response_body_len,http_status_code"
+kontrol_tanpa_fitur_99,m2_lokal_dauc_mean,per_fitur,4.912049334860215,"k=[0, 1, 3, 5, 10, 15]; dikeluarkan: http_request_body_len,http_response_body_len,http_status_code"

@@ -1,0 +1,11 @@
+kelas,n_baru,sesi_berbeda_baru,sesi_berbeda_lama,sesi_uji_final_tersedia,window_sama_dgn_lama,sesi_sama_dgn_lama
+backdoor,50,3,8,3,7,3
+ddos,50,50,50,273,0,10
+dos,50,50,50,896,0,0
+injection,50,50,50,211,0,11
+normal,50,50,50,896,0,4
+password,50,50,50,60,1,43
+ransomware,50,50,50,54,14,46
+scanning,50,50,50,895,1,2
+xss,50,50,50,359,0,10
+SEMUA,450,403,408,3647,23,129

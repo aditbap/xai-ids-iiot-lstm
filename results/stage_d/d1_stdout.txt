@@ -1,0 +1,32 @@
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=1.0988 val_f1_macro=0.4945
+epoch 2/12 loss=0.9868 val_f1_macro=0.5103
+epoch 3/12 loss=0.9266 val_f1_macro=0.5361
+epoch 4/12 loss=0.8903 val_f1_macro=0.6064
+epoch 5/12 loss=0.8757 val_f1_macro=0.6201
+epoch 6/12 loss=0.8626 val_f1_macro=0.6311
+epoch 7/12 loss=0.8572 val_f1_macro=0.5687
+epoch 8/12 loss=0.8504 val_f1_macro=0.6165
+epoch 9/12 loss=0.8454 val_f1_macro=0.5608
+epoch 10/12 loss=0.8409 val_f1_macro=0.6247
+epoch 11/12 loss=0.8359 val_f1_macro=0.5712
+epoch 12/12 loss=0.8320 val_f1_macro=0.6242
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 21:45:07 | D1 old_s43: epoch 6, F1 val 0.6311, 1013s
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy TF-Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+epoch 1/12 loss=1.0763 val_f1_macro=0.4791
+epoch 2/12 loss=0.9607 val_f1_macro=0.5837
+epoch 3/12 loss=0.9307 val_f1_macro=0.5298
+epoch 4/12 loss=0.8926 val_f1_macro=0.6219
+epoch 5/12 loss=0.8797 val_f1_macro=0.6224
+epoch 6/12 loss=0.8652 val_f1_macro=0.5620
+epoch 7/12 loss=0.8524 val_f1_macro=0.5649
+epoch 8/12 loss=0.8479 val_f1_macro=0.6254
+epoch 9/12 loss=0.8451 val_f1_macro=0.6354
+epoch 10/12 loss=0.8374 val_f1_macro=0.6296
+epoch 11/12 loss=0.8342 val_f1_macro=0.5610
+epoch 12/12 loss=0.8297 val_f1_macro=0.6332
+/opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tf_keras/src/engine/training.py:3098: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native TF-Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2026-10-20 22:01:01 | D1 old_s44: epoch 9, F1 val 0.6354, 949s

@@ -1,0 +1,35 @@
+model,seed,konfigurasi,w,epoch_terpilih,f1_macro_val,waktu_latih_detik,berkas_model
+abl_w1,42,{},1,12.0,0.8945326762389922,196.5,artifacts/stage_c/models/abl_w1_s42.h5
+abl_w1,43,{},1,11.0,0.8878479794559901,201.8,artifacts/stage_c/models/abl_w1_s43.h5
+abl_w1,44,{},1,12.0,0.8892340181127201,219.4,artifacts/stage_c/models/abl_w1_s44.h5
+abl_w20,42,{},20,7.0,0.9090175068949681,1160.2,artifacts/stage_c/models/abl_w20_s42.h5
+abl_w20,43,{},20,10.0,0.9068307219754903,1152.1,artifacts/stage_c/models/abl_w20_s43.h5
+abl_w20,44,{},20,7.0,0.9127981306527221,1194.7,artifacts/stage_c/models/abl_w20_s44.h5
+abl_w5,42,{},5,8.0,0.9239014918646115,599.9,artifacts/stage_c/models/abl_w5_s42.h5
+abl_w5,43,{},5,11.0,0.9363648729250426,595.4,artifacts/stage_c/models/abl_w5_s43.h5
+abl_w5,44,{},5,10.0,0.9342552720022995,609.3,artifacts/stage_c/models/abl_w5_s44.h5
+control,42,{},10,12.0,0.9770740304488049,964.5,artifacts/stage_c/models/control_s42.h5
+control,43,{},10,12.0,0.9810977640836523,871.4,artifacts/stage_c/models/control_s43.h5
+control,44,{},10,8.0,0.9673650036923339,955.4,artifacts/stage_c/models/control_s44.h5
+lstm1,42,"{""units"": 83, ""dropout"": 0.40445588079614125, ""lr"": 0.0037336070725030317}",10,10.0,0.9616499965697086,313.9,artifacts/stage_c/models/lstm1_s42.h5
+lstm1,43,"{""units"": 83, ""dropout"": 0.40445588079614125, ""lr"": 0.0037336070725030317}",10,12.0,0.9612922093741619,336.0,artifacts/stage_c/models/lstm1_s43.h5
+lstm1,44,"{""units"": 83, ""dropout"": 0.40445588079614125, ""lr"": 0.0037336070725030317}",10,12.0,0.9604713594647222,319.0,artifacts/stage_c/models/lstm1_s44.h5
+main,42,{},10,8.0,0.9563021235228454,1111.5,artifacts/stage_c/models/main_s42.h5
+main,43,{},10,10.0,0.9453905479023066,879.5,artifacts/stage_c/models/main_s43.h5
+main,44,{},10,6.0,0.9514829284641597,951.3,artifacts/stage_c/models/main_s44.h5
+mlp,42,"{""layers"": 2, ""units"": 159, ""dropout"": 0.155918799251063, ""lr"": 0.0001694572471895091}",10,10.0,0.9599957395959733,72.7,artifacts/stage_c/models/mlp_s42.h5
+mlp,43,"{""layers"": 2, ""units"": 159, ""dropout"": 0.155918799251063, ""lr"": 0.0001694572471895091}",10,12.0,0.9581020789130223,72.5,artifacts/stage_c/models/mlp_s43.h5
+mlp,44,"{""layers"": 2, ""units"": 159, ""dropout"": 0.155918799251063, ""lr"": 0.0001694572471895091}",10,11.0,0.9579045759713006,76.1,artifacts/stage_c/models/mlp_s44.h5
+rf,42,"{""n_estimators"": 300, ""max_depth"": 45, ""min_samples_leaf"": 2}",10,,0.966970921378898,81.3,artifacts/stage_c/models/rf_s42.joblib
+rf,43,"{""n_estimators"": 300, ""max_depth"": 45, ""min_samples_leaf"": 2}",10,,0.9670944730188233,80.5,artifacts/stage_c/models/rf_s43.joblib
+rf,44,"{""n_estimators"": 300, ""max_depth"": 45, ""min_samples_leaf"": 2}",10,,0.966861969154079,80.8,artifacts/stage_c/models/rf_s44.joblib
+t6_acak,42,{},10,11.0,0.9558421668743519,940.0,artifacts/stage_c/models/t6_acak_s42.h5
+t6_acak,43,{},10,12.0,0.9571537076726846,930.9,artifacts/stage_c/models/t6_acak_s43.h5
+t6_acak,44,{},10,12.0,0.9586676287062262,1051.0,artifacts/stage_c/models/t6_acak_s44.h5
+t6_acak,45,{},10,11.0,0.9523581462052698,924.9,artifacts/stage_c/models/t6_acak_s45.h5
+t6_acak,46,{},10,12.0,0.9417737000085551,935.6,artifacts/stage_c/models/t6_acak_s46.h5
+t6_urut,45,{},10,9.0,0.95638206529679,971.9,artifacts/stage_c/models/t6_urut_s45.h5
+t6_urut,46,{},10,8.0,0.9596519636543545,934.9,artifacts/stage_c/models/t6_urut_s46.h5
+xgb,42,"{""n_estimators"": 428, ""max_depth"": 8, ""learning_rate"": 0.11753142702744855, ""subsample"": 0.9633824944243009}",10,,0.978519391343831,165.0,artifacts/stage_c/models/xgb_s42.ubj
+xgb,43,"{""n_estimators"": 428, ""max_depth"": 8, ""learning_rate"": 0.11753142702744855, ""subsample"": 0.9633824944243009}",10,,0.978385441863598,164.3,artifacts/stage_c/models/xgb_s43.ubj
+xgb,44,"{""n_estimators"": 428, ""max_depth"": 8, ""learning_rate"": 0.11753142702744855, ""subsample"": 0.9633824944243009}",10,,0.9783712064784861,165.0,artifacts/stage_c/models/xgb_s44.ubj

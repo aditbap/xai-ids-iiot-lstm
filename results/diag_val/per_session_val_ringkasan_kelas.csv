@@ -1,0 +1,10 @@
+kelas,n_sesi,median_akurasi_sesi,min_akurasi_sesi,n_sesi_akurasi_lt_0_5
+backdoor,5,0.0,0.0,5
+ddos,272,1.0,0.0,22
+dos,900,1.0,1.0,0
+injection,214,0.26126126126126126,0.0,112
+normal,895,0.8333333333333334,0.0,338
+password,58,0.0,0.0,52
+ransomware,55,1.0,0.42857142857142855,1
+scanning,775,1.0,0.0,112
+xss,358,1.0,0.0,3

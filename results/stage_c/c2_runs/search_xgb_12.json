@@ -1,0 +1,20 @@
+{
+ "spec": {
+  "name": "search_xgb_12",
+  "model": "xgb",
+  "seed": 42,
+  "params": {
+   "n_estimators": 258,
+   "max_depth": 4,
+   "learning_rate": 0.14795442860552077,
+   "subsample": 0.6134546745254421
+  },
+  "save": false
+ },
+ "epoch_terpilih": null,
+ "val_f1_macro": 0.9706334438731972,
+ "waktu_latih_detik": 80.7,
+ "model": null,
+ "n_train": 403755,
+ "n_val": 75280
+}

@@ -1,0 +1,138 @@
+{
+ "val_f1_macro_per_epoch": [
+  0.7359805546177717,
+  0.8984642132705619,
+  0.8355502231015373,
+  0.6482945193766577,
+  0.9287570264108506,
+  0.9316985459750646,
+  0.9466568835505851,
+  0.9563021235228454,
+  0.9405829217333075,
+  0.9495540297256387,
+  0.9466572668997727,
+  0.9402527130321575
+ ],
+ "train_curve": [
+  {
+   "epoch": 1,
+   "train_loss": 0.554835319519043,
+   "val_f1_macro": 0.7359805546177717,
+   "detik": 100.5
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.3740234971046448,
+   "val_f1_macro": 0.8984642132705619,
+   "detik": 96.3
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.3567381501197815,
+   "val_f1_macro": 0.8355502231015373,
+   "detik": 86.5
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.34308087825775146,
+   "val_f1_macro": 0.6482945193766577,
+   "detik": 80.8
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.23355495929718018,
+   "val_f1_macro": 0.9287570264108506,
+   "detik": 86.0
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.18740476667881012,
+   "val_f1_macro": 0.9316985459750646,
+   "detik": 86.3
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.16039635241031647,
+   "val_f1_macro": 0.9466568835505851,
+   "detik": 93.1
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.14132167398929596,
+   "val_f1_macro": 0.9563021235228454,
+   "detik": 93.4
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.14545464515686035,
+   "val_f1_macro": 0.9405829217333075,
+   "detik": 93.2
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.1376291811466217,
+   "val_f1_macro": 0.9495540297256387,
+   "detik": 96.0
+  },
+  {
+   "epoch": 11,
+   "train_loss": 0.11503896117210388,
+   "val_f1_macro": 0.9466572668997727,
+   "detik": 102.5
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.11992798745632172,
+   "val_f1_macro": 0.9402527130321575,
+   "detik": 96.3
+  }
+ ],
+ "epoch_terpilih": 8,
+ "val_f1_macro_terpilih": 0.9563021235228454,
+ "waktu_latih_detik": 1111.5,
+ "puncak_memori_mb": 2122.7,
+ "waktu_per_langkah_detik": {
+  "deepshap": 25.6,
+  "lime_flat": 19.16,
+  "lime_kustom": 31.7,
+  "m1": 0.02,
+  "m2_lokal_kohort": 0.19,
+  "m2_sistem": 52.55,
+  "m2_empiris": 0.57,
+  "temporal_deletion": 0.11,
+  "m4": 550.13,
+  "m3_prosedural": 297.56,
+  "m3_perturbasi": 258.37,
+  "bootstrap": 0.12
+ },
+ "waktu_total_detik": 1236.4,
+ "n_instance": 40,
+ "n_lime_samples": 5000,
+ "seeds": {
+  "utama": 42,
+  "prosedural": [
+   101,
+   102,
+   103,
+   104,
+   105
+  ]
+ },
+ "galat_diperbaiki": [],
+ "keputusan_implementasi": "Tahap B2 (ulang pilot dengan prapemrosesan final log1p): salinan\nscripts/stage_b/b2_pilot_xai.py dengan perubahan:\n- model = salinan artifacts/diag_log/lstm_main_seed42_log.h5 (epoch 8), tidak\n  dilatih ulang; tensor & features.json dari scripts/stage_b2/b2_0_tensors_log.py\n  (kode kategorikal -> log1p 10 fitur -> Min-Max scaler_log.pkl).\n- LIME flat: dimensi numerik di ruang masukan model; pembungkus hanya\n  mengubah dimensi kategorikal (kode -> Min-Max).\n- Pengganti M2 dari data latih dalam satuan asli lalu diprapemrosesan\n  (artifacts/stage_b2/deletion_baseline.csv).\n- M3 varian per time-step memakai k = 3; varian lain k = 10.\n- M4: 5 instance pemanasan dibuang, lalu 40 instance x 10 pengulangan, batch 1;\n  statistik dihitung atas rerata per instance (n = 40). M4 dijalankan SEBELUM\n  M3 (urutan saja, untuk menghindari pembesaran graf TF dari explainer M3).\n- M3 perturbasi DeepSHAP memakai ulang explainer primer (background sama).\n\nTahap B: pilot XAI pada 40 instance (artifacts/stage_a/pilot_40_index.csv).\nTujuan: memeriksa jalur pipeline, BUKAN membandingkan metode.\n\nMetode: DeepSHAP; LIME flat (LimeTabularExplainer, 220 dim); LIME kustom\n(Algoritma 1) varian flat (m=220), per fitur (m=22), per time-step (m=10).\n\nKeputusan implementasi yang tidak dirinci rancangan (dicatat juga di log):\n- Background \"empiris\": 100 window latih, alokasi proporsional per kelas\n  (largest remainder), acak tanpa pengembalian di dalam kelas.\n- Background seimbang: 100 dibagi rata ke 9 kelas (11 per kelas, sisa 1\n  ke satu kelas acak).\n- LIME flat: random_state explainer di-reset ke RandomState(seed) sebelum\n  tiap instance, supaya penjelasan tidak bergantung pada urutan instance.\n- Importance global I_f = rerata atas instance dari I_{i,f} yang dinormalisasi\n  (jumlah = 1 per instance).\n- Top-k: urut menurun, seri dipecah oleh indeks fitur terkecil (sort stabil).\n- M2 \"biner\" = fitur numerik dengan <= 2 nilai unik di data latih.\n- M3: Jaccard@k berpasangan (10 pasang dari R=5) di tingkat I_{i,f} (22\n  fitur, k=10); varian per time-step di tingkat I_{i,t} (10 langkah, k=3;\n  Spearman berpasangan dilaporkan juga). Pada M3 perturbasi, kelas yang\n  dijelaskan tetap c_i dari instance asli.\n- M4: lihat bagian perubahan B2 di atas.\n- Data UJI: performa (F1) kohort pilot disimpan ke CSV tanpa dicetak; F1\n  sistem disegel di _sealed_system_check.npz.",
+ "versi": {
+  "python": "3.11.16",
+  "tensorflow": "2.16.2",
+  "shap": "0.44.1",
+  "lime": "0.2.0.1",
+  "numpy": "1.26.4",
+  "pandas": "3.0.5",
+  "sklearn": "1.9.0",
+  "scipy": "1.17.1"
+ },
+ "threads": {
+  "intra": 4,
+  "inter": 4,
+  "omp": 4
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "verifikasi_identik_stage_b2": {
+  "train": true,
+  "val": true,
+  "test": true
+ },
+ "src_port_median_asli": 45960.0,
+ "src_port_median_ruang_model": 0.7013107899836724,
+ "n_baris": 799661
+}

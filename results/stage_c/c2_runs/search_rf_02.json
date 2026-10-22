@@ -1,0 +1,19 @@
+{
+ "spec": {
+  "name": "search_rf_02",
+  "model": "rf",
+  "seed": 42,
+  "params": {
+   "n_estimators": 88,
+   "max_depth": 37,
+   "min_samples_leaf": 5
+  },
+  "save": false
+ },
+ "epoch_terpilih": null,
+ "val_f1_macro": 0.9625464939609815,
+ "waktu_latih_detik": 22.8,
+ "model": null,
+ "n_train": 403755,
+ "n_val": 75280
+}

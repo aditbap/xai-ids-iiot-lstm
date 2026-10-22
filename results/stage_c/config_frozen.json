@@ -1,0 +1,216 @@
+{
+ "dibekukan_pada": "2026-10-19T20:30:52.461966",
+ "naskah": "Paper_RABIT_Benediktus_rev8 (rev10 tidak tersedia di mesin; Tabel 6-8 dibaca dari rev8)",
+ "prapemrosesan": {
+  "kategorikal": "kode bilangan bulat encoder Tahap A",
+  "log1p": [
+   "duration",
+   "src_bytes",
+   "dst_bytes",
+   "missed_bytes",
+   "src_pkts",
+   "src_ip_bytes",
+   "dst_pkts",
+   "dst_ip_bytes",
+   "http_request_body_len",
+   "http_response_body_len"
+  ],
+  "minmax": "artifacts/diag_log/scaler_log.pkl",
+  "src_port_kontrol": "Min-Max tanpa log, fit latih"
+ },
+ "partisi_indeks": "artifacts/stage_a/",
+ "window": 10,
+ "epoch": 12,
+ "batch": 64,
+ "optimizer": "Adam lr 0.001 (model utama & kontrol)",
+ "loss": "categorical_crossentropy",
+ "class_weight": "balanced dari y latih",
+ "pemilihan_epoch": "F1-macro validasi terbaik",
+ "seed": {
+  "utama": [
+   42,
+   43,
+   44
+  ],
+  "t6": [
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "kontrol": [
+   42,
+   43,
+   44
+  ],
+  "ablasi": [
+   42,
+   43,
+   44
+  ],
+  "pembanding_final": [
+   42,
+   43,
+   44
+  ],
+  "random_search": 42,
+  "xai": 42,
+  "bootstrap": 42,
+  "m3_prosedural": [
+   101,
+   102,
+   103,
+   104,
+   105
+  ]
+ },
+ "model_utama_seed42": "artifacts/stage_b2/lstm_main_seed42.h5",
+ "t6": {
+  "kriteria": "uji permutasi berpasangan eksak satu sisi (32 tanda) p <= 0.05 dan rerata dF1 >= 0.01",
+  "acak": "urutan baris di dalam sesi diacak (seed = seed model) pada latih & validasi sebelum window"
+ },
+ "ablasi": {
+  "w": [
+   1,
+   5,
+   10,
+   20
+  ],
+  "subset": "window yang sesinya (blok) >= 20 baris DAN posisi akhir >= 19 (target time-step identik untuk semua w)"
+ },
+ "pembanding": {
+  "random_search": "20 konfigurasi per model, rng numpy default_rng(42), seed latih 42; terpilih = F1-macro val tertinggi, lalu dilatih ulang seed 42, 43, 44",
+  "rf": {
+   "n_estimators": [
+    50,
+    500
+   ],
+   "max_depth": [
+    5,
+    50
+   ],
+   "min_samples_leaf": [
+    1,
+    20
+   ],
+   "lain": "class_weight balanced, n_jobs 4"
+  },
+  "xgb": {
+   "n_estimators": [
+    50,
+    500
+   ],
+   "max_depth": [
+    3,
+    15
+   ],
+   "learning_rate": "uniform [0.01, 0.3]",
+   "subsample": [
+    0.5,
+    1.0
+   ],
+   "lain": "tree_method hist, n_jobs 4, sample_weight balanced"
+  },
+  "mlp": {
+   "lapis": [
+    1,
+    3
+   ],
+   "unit": [
+    32,
+    256
+   ],
+   "dropout": [
+    0.1,
+    0.5
+   ],
+   "learning_rate": "log-uniform [1e-4, 1e-2]",
+   "arsitektur": "(Dense unit ReLU -> Dropout) x lapis -> Dense 9 softmax; masukan 220"
+  },
+  "lstm1": {
+   "unit": [
+    32,
+    128
+   ],
+   "dropout": [
+    0.1,
+    0.5
+   ],
+   "learning_rate": "log-uniform [1e-4, 1e-2]",
+   "arsitektur": "LSTM unit -> Dropout -> Dense 64 ReLU -> Dense 9 softmax (model utama tanpa lapis LSTM kedua)"
+  },
+  "protokol_saraf": "12 epoch, batch 64, Adam, categorical CE, class_weight balanced, epoch terbaik F1-macro val"
+ },
+ "mode_pelatihan": "Pelatihan Keras dijalankan dalam mode eager (tanpa disable_v2_behavior), satu model per proses, identik dengan skrip yang menghasilkan model seed 42 (scripts/diag_log/dl1_prep_train.py), agar protokol antar-seed sama. Semua XAI dan evaluasi memakai urutan impor wajib (graph mode).",
+ "threads": {
+  "intra": 4,
+  "inter": 4,
+  "omp": 4
+ },
+ "deterministic_ops": true,
+ "xai": {
+  "rincian": "results/stage_b2/pilot_log.json -> keputusan_implementasi (berlaku tanpa perubahan)",
+  "n_instance": 450,
+  "indeks": "artifacts/stage_a/main_450_index.csv",
+  "bg_primer": "empiris 100 proporsional, seed 42",
+  "lime_n": 5000,
+  "ks_fitur": [
+   0,
+   1,
+   3,
+   5,
+   10,
+   15
+  ],
+  "ks_time": [
+   0,
+   1,
+   2,
+   3,
+   5
+  ],
+  "acak_ulangan": 5,
+  "m3": {
+   "R": 5,
+   "k": 10,
+   "k_per_timestep": 3,
+   "sigma": 0.01,
+   "sigma_kepekaan": [
+    0.005,
+    0.02
+   ]
+  },
+  "m4": {
+   "instance": "45 (5 pertama per kelas dari indeks 450)",
+   "pemanasan": 5,
+   "ulangan": 10,
+   "batch": 1,
+   "thread": 4
+  },
+  "m2_dAUC": "AUC(acak, rerata 5 ulangan) - AUC(metode); positif = lebih setia",
+  "bootstrap": {
+   "ulangan": 1000,
+   "unit": "sesi di dalam kelas, bobot r",
+   "primer_tingkat": 98.75,
+   "eksploratori_tingkat": 95
+  },
+  "kepekaan": [
+   "bg seimbang 100",
+   "bg empiris 50",
+   "bg empiris 200",
+   "pengganti empiris 10 ulangan",
+   "sigma 0.005",
+   "sigma 0.02",
+   "kontrol tanpa fitur >=99% nilai sama"
+  ]
+ },
+ "hash_sha256": {
+  "artifacts/diag_log/scaler_log.pkl": "6a61c96fa48f603d5fe0d2758863c0f017afb70085f34fb56ce0de55a5354d26",
+  "artifacts/stage_a/encoder.pkl": "9564f59ed26abfd958fd6c4be3a0198b17706cf101eb5dda66d0aaa7f9b5c66c",
+  "artifacts/stage_b2/lstm_main_seed42.h5": "6cc4f74ac720be5eed1725180104b99a3683bd351b1704216526ba37b13a0220",
+  "artifacts/stage_a/main_450_index.csv": "50e9639e70be74d1ec6f69a5f2d0b26fa98c952d8ec6d79ac940259339ad3f8e",
+  "artifacts/stage_a/block_rows.csv.gz": "ea13e3c32ddee70331e1ed285e4da34048d8b5f8c01ef7d25d1265af5321121d",
+  "artifacts/stage_a/session_index.pkl": "1112ef59e4b782edbbd7e5d6863faa3785e0c303155531cca616df5d4e586aa9"
+ }
+}

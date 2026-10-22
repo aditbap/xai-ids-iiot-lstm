@@ -1,0 +1,13 @@
+python: 3.11.16
+tensorflow: 2.16.2
+tf-keras: 2.16.0
+shap: 0.44.1
+lime: 0.2.0.1
+scikit-learn: 1.9.0
+xgboost: 3.2.0
+numpy: 1.26.4
+pandas: 3.0.5
+scipy: 1.17.1
+os: macOS 26.0.1 (arm64)
+chip: Apple M1
+ram_gb: 8

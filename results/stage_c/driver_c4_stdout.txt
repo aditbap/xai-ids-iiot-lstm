@@ -1,0 +1,135 @@
+2026-10-20 07:26:03 | MULAI c4_xai.py primer
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 07:26:08.746371: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 07:26:08.754377: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 07:26:08.869586: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 07:39:17 | C4 primer selesai: {'additivity_lolos': 450, 'additivity_galat_maks': 2.497797140676994e-06, 'lime_kode_tidak_valid': 16, 'lime_total_nilai_kategorikal': 180000000, 'lime_pembungkus_selisih_maks': 0.0, 'bentuk': {'deepshap': [450, 10, 22], 'lime_flat': [450, 10, 22], 'kustom_flat': [450, 10, 22], 'per_fitur': [450, 22], 'per_timestep': [450, 10]}, 'nan': 0, 'deepshap_init_detik': 0.03617501258850098}
+2026-10-20 07:39:17 | C4 bagian primer: 790s, puncak memori 1441 MB
+2026-10-20 07:39:18 | MULAI c4_xai.py m4
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 07:39:25.263959: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 07:39:25.321586: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 07:39:25.415176: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 07:51:08 | C4 m4 selesai
+2026-10-20 07:51:08 | C4 bagian m4: 703s, puncak memori 1855 MB
+2026-10-20 07:51:08 | MULAI c4_xai.py m3_proc
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 07:51:14.136174: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 07:51:14.181691: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 07:51:14.263587: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 08:02:19 | C4 m3_proc seed 101 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 08:13:39 | C4 m3_proc seed 102 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 08:48:36 | C4 m3_proc seed 103 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 08:58:41 | C4 m3_proc seed 104 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 09:08:51 | C4 m3_proc seed 105 selesai
+2026-10-20 09:08:51 | C4 m3_proc selesai
+2026-10-20 09:08:51 | C4 bagian m3_proc: 4658s, puncak memori 2117 MB
+2026-10-20 09:08:53 | MULAI c4_xai.py m3_pert_0.01
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 09:08:59.162543: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 09:08:59.225434: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 09:08:59.313752: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 09:19:54 | C4 m3_pert 0.01 salinan 0 selesai
+2026-10-20 09:30:17 | C4 m3_pert 0.01 salinan 1 selesai
+2026-10-20 09:41:09 | C4 m3_pert 0.01 salinan 2 selesai
+2026-10-20 09:51:23 | C4 m3_pert 0.01 salinan 3 selesai
+2026-10-20 10:02:29 | C4 m3_pert 0.01 salinan 4 selesai
+2026-10-20 10:02:29 | C4 m3_pert 0.01 selesai
+2026-10-20 10:02:29 | C4 bagian m3_pert_0.01: 3211s, puncak memori 1589 MB
+2026-10-20 10:02:31 | MULAI c4_xai.py m3_pert_0.005
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 10:02:37.150979: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 10:02:37.204974: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 10:02:37.307907: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 10:13:35 | C4 m3_pert 0.005 salinan 0 selesai
+2026-10-20 10:24:01 | C4 m3_pert 0.005 salinan 1 selesai
+2026-10-20 10:34:35 | C4 m3_pert 0.005 salinan 2 selesai
+2026-10-20 10:44:52 | C4 m3_pert 0.005 salinan 3 selesai
+2026-10-20 10:55:22 | C4 m3_pert 0.005 salinan 4 selesai
+2026-10-20 10:55:22 | C4 m3_pert 0.005 selesai
+2026-10-20 10:55:22 | C4 bagian m3_pert_0.005: 3165s, puncak memori 1623 MB
+2026-10-20 10:55:23 | MULAI c4_xai.py m3_pert_0.02
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 10:55:28.630856: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 10:55:28.681837: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 10:55:28.768009: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 11:05:55 | C4 m3_pert 0.02 salinan 0 selesai
+2026-10-20 11:16:21 | C4 m3_pert 0.02 salinan 1 selesai
+2026-10-20 11:26:37 | C4 m3_pert 0.02 salinan 2 selesai
+2026-10-20 11:36:55 | C4 m3_pert 0.02 salinan 3 selesai
+2026-10-20 11:47:10 | C4 m3_pert 0.02 salinan 4 selesai
+2026-10-20 11:47:10 | C4 m3_pert 0.02 selesai
+2026-10-20 11:47:10 | C4 bagian m3_pert_0.02: 3102s, puncak memori 1559 MB
+2026-10-20 11:47:11 | MULAI c4_xai.py sens_bg
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 11:47:16.812661: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 11:47:16.861653: W tensorflow/c/c_api.cc:305] Operation '{name:'dense/bias/Assign' id:371 op device:{requested: '', assigned: ''} def:{{{node dense/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense/bias, dense/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 11:47:16.942938: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 11:53:11 | C4 sens_bg seimbang100 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 11:58:30 | C4 sens_bg empiris50 selesai
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 12:05:44 | C4 sens_bg empiris200 selesai
+2026-10-20 12:05:44 | C4 sens_bg selesai
+2026-10-20 12:05:44 | C4 bagian sens_bg: 1108s, puncak memori 1004 MB
+2026-10-20 12:05:45 | MULAI c4_xai.py deletion
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 12:05:50.883926: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 12:05:50.895305: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 12:05:50.970647: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+2026-10-20 12:05:53 | C4 deletion: lokal/kohort primer selesai
+2026-10-20 12:06:01 | C4 deletion: empiris lokal/kohort selesai
+2026-10-20 12:06:02 | C4 deletion: kepekaan bg & kontrol selesai
+2026-10-20 12:07:51 | C4 deletion: sistem primer selesai
+2026-10-20 12:24:38 | C4 deletion: sistem empiris selesai
+2026-10-20 12:24:39 | C4 deletion selesai
+2026-10-20 12:24:39 | C4 bagian deletion: 1129s, puncak memori 1484 MB
+2026-10-20 12:24:39 | MULAI c4_shortcut.py 
+WARNING:tensorflow:From /opt/homebrew/Caskroom/miniforge/base/envs/skripsi-shap/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2026-10-20 12:24:45.915037: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2026-10-20 12:24:45.960508: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/bias/Assign' id:392 op device:{requested: '', assigned: ''} def:{{{node dense_1/bias/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](dense_1/bias, dense_1/bias/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+`Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+2026-10-20 12:24:45.989169: W tensorflow/c/c_api.cc:305] Operation '{name:'dense_1/Softmax' id:398 op device:{requested: '', assigned: ''} def:{{{node dense_1/Softmax}} = Softmax[T=DT_FLOAT, _has_manual_control_dependencies=true](dense_1/BiasAdd)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
+Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+2026-10-20 12:29:04 | C4 shortcut selesai; additivity maks 4.22e-06; LIME kode tidak valid 16
+2026-10-20 12:29:04 | MULAI c4_report.py 
+2026-10-20 12:30:05 | C4 laporan: bootstrap selesai
+2026-10-20 12:30:06 | C4 laporan selesai
+2026-10-20 12:30:06 | driver selesai: c4

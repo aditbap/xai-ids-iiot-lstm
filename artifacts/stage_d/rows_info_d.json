@@ -1,0 +1,43 @@
+{
+ "fitur": [
+  "proto",
+  "service",
+  "duration",
+  "src_bytes",
+  "dst_bytes",
+  "conn_state",
+  "missed_bytes",
+  "src_pkts",
+  "src_ip_bytes",
+  "dst_pkts",
+  "dst_ip_bytes",
+  "dns_query",
+  "dns_qclass",
+  "dns_qtype",
+  "dns_rcode",
+  "dns_AA",
+  "dns_RD",
+  "dns_RA",
+  "dns_rejected",
+  "http_request_body_len",
+  "http_response_body_len",
+  "http_status_code"
+ ],
+ "identik_rows_main": true,
+ "identik_stage_b": {
+  "train": true,
+  "val": true,
+  "test": true
+ },
+ "n_baris": 799661,
+ "n_kode_minus1_per_fitur": {
+  "proto": 0,
+  "service": 54,
+  "conn_state": 0,
+  "dns_query": 509,
+  "dns_AA": 0,
+  "dns_RD": 0,
+  "dns_RA": 0,
+  "dns_rejected": 0
+ }
+}

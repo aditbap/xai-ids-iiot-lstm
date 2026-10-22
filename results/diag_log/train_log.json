@@ -1,0 +1,97 @@
+{
+ "aturan_keputusan": "log1p dipakai untuk eksperimen penuh bila F1-macro validasi baru > 0,6326; bila tidak, prapemrosesan lama dipertahankan. Tidak ada percobaan ketiga.",
+ "seed": 42,
+ "class_weight": {
+  "0": 1.2528742052298898,
+  "1": 0.7045966179781163,
+  "2": 0.9752960273635085,
+  "3": 0.8183448862945397,
+  "4": 1.2733938877850317,
+  "5": 1.0891397588411427,
+  "6": 1.229996618503185,
+  "7": 1.8844689013974067,
+  "8": 0.6719741565684556
+ },
+ "curve": [
+  {
+   "epoch": 1,
+   "train_loss": 0.554835319519043,
+   "val_f1_macro": 0.7359805546177717,
+   "detik": 100.5
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.3740234971046448,
+   "val_f1_macro": 0.8984642132705619,
+   "detik": 96.3
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.3567381501197815,
+   "val_f1_macro": 0.8355502231015373,
+   "detik": 86.5
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.34308087825775146,
+   "val_f1_macro": 0.6482945193766577,
+   "detik": 80.8
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.23355495929718018,
+   "val_f1_macro": 0.9287570264108506,
+   "detik": 86.0
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.18740476667881012,
+   "val_f1_macro": 0.9316985459750646,
+   "detik": 86.3
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.16039635241031647,
+   "val_f1_macro": 0.9466568835505851,
+   "detik": 93.1
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.14132167398929596,
+   "val_f1_macro": 0.9563021235228454,
+   "detik": 93.4
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.14545464515686035,
+   "val_f1_macro": 0.9405829217333075,
+   "detik": 93.2
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.1376291811466217,
+   "val_f1_macro": 0.9495540297256387,
+   "detik": 96.0
+  },
+  {
+   "epoch": 11,
+   "train_loss": 0.11503896117210388,
+   "val_f1_macro": 0.9466572668997727,
+   "detik": 102.5
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.11992798745632172,
+   "val_f1_macro": 0.9402527130321575,
+   "detik": 96.3
+  }
+ ],
+ "epoch_terpilih": 8,
+ "val_f1_macro_terpilih": 0.9563021235228454,
+ "waktu_latih_detik": 1111.5,
+ "hasil_aturan_keputusan": {
+  "f1_macro_val_baru": 0.9563021235228454,
+  "ambang": 0.6326,
+  "log1p_dipakai": true
+ }
+}

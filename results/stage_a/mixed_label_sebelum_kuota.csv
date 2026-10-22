@@ -1,0 +1,10 @@
+kelas,n_sesi_ge10,n_sesi_campuran,persen_sesi_campuran
+backdoor,48,0,0.0
+ddos,1844,0,0.0
+dos,32680,0,0.0
+injection,1437,0,0.0
+normal,6315,0,0.0
+password,428,0,0.0
+ransomware,382,0,0.0
+scanning,66751,0,0.0
+xss,2418,0,0.0

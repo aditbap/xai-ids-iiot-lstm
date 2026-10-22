@@ -1,0 +1,102 @@
+[
+ {
+  "n_estimators": 90,
+  "max_depth": 40,
+  "min_samples_leaf": 14
+ },
+ {
+  "n_estimators": 247,
+  "max_depth": 24,
+  "min_samples_leaf": 18
+ },
+ {
+  "n_estimators": 88,
+  "max_depth": 37,
+  "min_samples_leaf": 5
+ },
+ {
+  "n_estimators": 92,
+  "max_depth": 29,
+  "min_samples_leaf": 20
+ },
+ {
+  "n_estimators": 381,
+  "max_depth": 40,
+  "min_samples_leaf": 15
+ },
+ {
+  "n_estimators": 404,
+  "max_depth": 28,
+  "min_samples_leaf": 3
+ },
+ {
+  "n_estimators": 428,
+  "max_depth": 25,
+  "min_samples_leaf": 11
+ },
+ {
+  "n_estimators": 217,
+  "max_depth": 13,
+  "min_samples_leaf": 19
+ },
+ {
+  "n_estimators": 402,
+  "max_depth": 34,
+  "min_samples_leaf": 9
+ },
+ {
+  "n_estimators": 421,
+  "max_depth": 30,
+  "min_samples_leaf": 9
+ },
+ {
+  "n_estimators": 253,
+  "max_depth": 15,
+  "min_samples_leaf": 2
+ },
+ {
+  "n_estimators": 300,
+  "max_depth": 45,
+  "min_samples_leaf": 2
+ },
+ {
+  "n_estimators": 437,
+  "max_depth": 43,
+  "min_samples_leaf": 6
+ },
+ {
+  "n_estimators": 334,
+  "max_depth": 12,
+  "min_samples_leaf": 16
+ },
+ {
+  "n_estimators": 365,
+  "max_depth": 21,
+  "min_samples_leaf": 2
+ },
+ {
+  "n_estimators": 487,
+  "max_depth": 25,
+  "min_samples_leaf": 18
+ },
+ {
+  "n_estimators": 355,
+  "max_depth": 40,
+  "min_samples_leaf": 16
+ },
+ {
+  "n_estimators": 137,
+  "max_depth": 21,
+  "min_samples_leaf": 10
+ },
+ {
+  "n_estimators": 274,
+  "max_depth": 7,
+  "min_samples_leaf": 11
+ },
+ {
+  "n_estimators": 119,
+  "max_depth": 39,
+  "min_samples_leaf": 14
+ }
+]

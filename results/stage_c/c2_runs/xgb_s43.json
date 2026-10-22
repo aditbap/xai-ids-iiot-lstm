@@ -1,0 +1,20 @@
+{
+ "spec": {
+  "name": "xgb_s43",
+  "model": "xgb",
+  "seed": 43,
+  "params": {
+   "n_estimators": 428,
+   "max_depth": 8,
+   "learning_rate": 0.11753142702744855,
+   "subsample": 0.9633824944243009
+  },
+  "search_index": 3
+ },
+ "epoch_terpilih": null,
+ "val_f1_macro": 0.978385441863598,
+ "waktu_latih_detik": 164.3,
+ "model": "artifacts/stage_c/models/xgb_s43.ubj",
+ "n_train": 403755,
+ "n_val": 75280
+}

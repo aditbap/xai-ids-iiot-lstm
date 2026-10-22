@@ -1,0 +1,24 @@
+nama_cek,lolos,detail
+training_selesai,True,"model = salinan diag_log (sha256 6cc4f74ac720be5e..., identik: True); 12 epoch, epoch terpilih 8, val F1-macro 0.9563; tidak dilatih ulang"
+bentuk_masukan_10x22,True,"model input (None, 10, 22), X_train (403755, 10, 22)"
+src_port_tidak_ada,True,22 fitur: src_port absen
+additivity_deepshap,True,"40/40 lolos (toleransi 1e-2, prob softmax kelas c_i); galat maks c_i=2.879e-07, galat maks semua kelas=2.879e-07"
+deepshap_bg_seimbang_jalan,True,"bentuk (40, 10, 22); additivity lolos 40/40, galat maks 4.050e-07"
+lime_pembungkus_identik,True,selisih maks 0.000e+00 (atol 1e-6)
+prapemrosesan_log1p_konsisten,True,"prediksi pembungkus vs langsung pada 40 instance identik persis: True; src_ip_bytes 44 -> 0.23841482, 52 -> 0.24866308 sama dgn precision_check.csv: True; parameter scaler features.json = scaler_log.pkl: True"
+lime_kode_kategori_valid,True,"0 nilai tidak valid dari 16,000,000 nilai kategorikal (40 batch); kode -1 (unknown) pada instance asli: 0"
+bentuk_keluaran_deepshap,True,"(40, 10, 22) (diharapkan (40, 10, 22))"
+bentuk_keluaran_lime_flat,True,"(40, 10, 22) (diharapkan (40, 10, 22))"
+bentuk_keluaran_kustom_flat,True,"(40, 10, 22) (diharapkan (40, 10, 22))"
+bentuk_keluaran_per_fitur,True,"(40, 22) (diharapkan (40, 22))"
+bentuk_keluaran_per_timestep,True,"(40, 10) (diharapkan (40, 10))"
+deletion_lokal,True,"4 metode + acak 5 ulangan; p_i(0)=prob asli: True; semua p di [0,1]"
+deletion_kohort,True,"54 nilai F1 kohort terhitung, semua di [0,1] (nilai tidak dicetak: instance dari partisi uji)"
+deletion_sistem_jalan,True,"86,496 window uji x 21 konfigurasi, 53s; nilai disegel, tidak dibuka"
+deletion_empiris,True,4 metode x 10 ulangan x 40 instance
+temporal_deletion,True,"4 metode + acak, k=[0, 1, 2, 3, 5]"
+m4_timing,True,"5 metode; 5 pemanasan dibuang, 40 instance x 10 pengulangan, batch 1, thread intra=inter=4"
+m3_prosedural,True,"5 metode x 40 instance, R=5, k=10 (per time-step k=3); Jaccard di [0,1]; Spearman NaN: 0"
+m3_perturbasi,True,"5 metode x 40 instance, R=5, k=10 (per time-step k=3); Jaccard di [0,1]; Spearman NaN: 0"
+bootstrap_jalan,True,"1000 ulangan, sesi diambil ulang per kelas (40 sesi); statistik tersimpan di bootstrap_contoh.csv (tidak ditafsirkan)"
+tidak_ada_NaN,True,array berisi NaN/inf: tidak ada (Spearman NaN dari vektor konstan dihitung terpisah di m1/m3)

@@ -1,0 +1,16 @@
+peringkat,ukuran_kelompok,pmax,kelas_prediksi,distribusi_label_sebenarnya,n_label_berbeda,n_window_unik_hash_masukan
+1,3462,0.997006,dos,dos=3462,1,2862
+2,3280,0.999291,scanning,scanning=3280,1,1
+3,3175,1.0,xss,xss=3175,1,3175
+4,2062,0.999973,ddos,ddos=2062,1,2062
+5,1713,0.999993,ddos,ddos=1713,1,1713
+6,1626,1.0,password,password=1626,1,1626
+7,1544,0.998527,password,password=1541; injection=3,2,1544
+8,1309,0.999999,xss,xss=1309,1,1309
+9,1202,0.999998,ddos,ddos=1202,1,1202
+10,1163,0.999997,ddos,ddos=1163,1,1163
+11,1056,0.95378,ransomware,ransomware=994; normal=62,2,1
+12,967,0.999998,xss,xss=967,1,967
+13,847,0.999998,ddos,ddos=847,1,847
+14,836,0.999996,normal,normal=836,1,693
+15,829,0.997005,dos,dos=829,1,822

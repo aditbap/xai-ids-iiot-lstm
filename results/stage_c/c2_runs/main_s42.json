@@ -1,0 +1,88 @@
+{
+ "spec": {
+  "name": "main_s42",
+  "arch": "lstm2",
+  "inputs": "main",
+  "w": 10,
+  "seed": 42,
+  "sumber": "salinan artifacts/stage_b2/lstm_main_seed42.h5 (tidak dilatih ulang)"
+ },
+ "curve": [
+  {
+   "epoch": 1,
+   "train_loss": 0.554835319519043,
+   "val_f1_macro": 0.7359805546177717,
+   "detik": 100.5
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.3740234971046448,
+   "val_f1_macro": 0.8984642132705619,
+   "detik": 96.3
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.3567381501197815,
+   "val_f1_macro": 0.8355502231015373,
+   "detik": 86.5
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.34308087825775146,
+   "val_f1_macro": 0.6482945193766577,
+   "detik": 80.8
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.23355495929718018,
+   "val_f1_macro": 0.9287570264108506,
+   "detik": 86.0
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.18740476667881012,
+   "val_f1_macro": 0.9316985459750646,
+   "detik": 86.3
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.16039635241031647,
+   "val_f1_macro": 0.9466568835505851,
+   "detik": 93.1
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.14132167398929596,
+   "val_f1_macro": 0.9563021235228454,
+   "detik": 93.4
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.14545464515686035,
+   "val_f1_macro": 0.9405829217333075,
+   "detik": 93.2
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.1376291811466217,
+   "val_f1_macro": 0.9495540297256387,
+   "detik": 96.0
+  },
+  {
+   "epoch": 11,
+   "train_loss": 0.11503896117210388,
+   "val_f1_macro": 0.9466572668997727,
+   "detik": 102.5
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.11992798745632172,
+   "val_f1_macro": 0.9402527130321575,
+   "detik": 96.3
+  }
+ ],
+ "epoch_terpilih": 8,
+ "val_f1_macro": 0.9563021235228454,
+ "waktu_latih_detik": 1111.5,
+ "model": "artifacts/stage_c/models/main_s42.h5"
+}

@@ -1,0 +1,19 @@
+{
+ "spec": {
+  "name": "rf_s42",
+  "model": "rf",
+  "seed": 42,
+  "params": {
+   "n_estimators": 300,
+   "max_depth": 45,
+   "min_samples_leaf": 2
+  },
+  "search_index": 11
+ },
+ "epoch_terpilih": null,
+ "val_f1_macro": 0.966970921378898,
+ "waktu_latih_detik": 81.3,
+ "model": "artifacts/stage_c/models/rf_s42.joblib",
+ "n_train": 403755,
+ "n_val": 75280
+}

@@ -1,0 +1,289 @@
+{
+ "seed": 42,
+ "classes": [
+  "backdoor",
+  "ddos",
+  "dos",
+  "injection",
+  "normal",
+  "password",
+  "ransomware",
+  "scanning",
+  "xss"
+ ],
+ "total_baris_per_tahap": {
+  "1_mentah_gabungan": 22339021,
+  "2_buang_baris_rusak": 22338152,
+  "baris_rusak_dibuang": 869,
+  "3_buang_mitm": 22337100,
+  "mitm_dibuang": 1052,
+  "4_buang_kolom_dash": 22337100
+ },
+ "invarian": {
+  "t1_sama_22339021": true,
+  "baris_rusak_sama_869": true,
+  "t1_minus_rusak_eq_t2": true,
+  "t2_minus_mitm_eq_t3": true,
+  "jumlah_baris_array_eq_t3": true,
+  "per_kelas_t2_eq_t3_kecuali_mitm": true
+ },
+ "kolom": {
+  "total_setelah_buang_uid": 46,
+  "dibuang_dash95": [
+   "ssl_version",
+   "ssl_cipher",
+   "ssl_resumed",
+   "ssl_established",
+   "ssl_subject",
+   "ssl_issuer",
+   "http_trans_depth",
+   "http_method",
+   "http_uri",
+   "http_referrer",
+   "http_version",
+   "http_user_agent",
+   "http_orig_mime_types",
+   "http_resp_mime_types",
+   "weird_name",
+   "weird_addl",
+   "weird_notice"
+  ],
+  "n_dibuang_dash95": 17,
+  "n_dibuang_sama_17": true,
+  "kept": [
+   "ts",
+   "src_ip",
+   "src_port",
+   "dst_ip",
+   "dst_port",
+   "proto",
+   "service",
+   "duration",
+   "src_bytes",
+   "dst_bytes",
+   "conn_state",
+   "missed_bytes",
+   "src_pkts",
+   "src_ip_bytes",
+   "dst_pkts",
+   "dst_ip_bytes",
+   "dns_query",
+   "dns_qclass",
+   "dns_qtype",
+   "dns_rcode",
+   "dns_AA",
+   "dns_RD",
+   "dns_RA",
+   "dns_rejected",
+   "http_request_body_len",
+   "http_response_body_len",
+   "http_status_code",
+   "label",
+   "type"
+  ]
+ },
+ "kuota": {
+  "backdoor": {
+   "N_c": 48,
+   "K_c": 2500,
+   "mode": "semua_sesi",
+   "sesi_terpilih": 48
+  },
+  "ddos": {
+   "N_c": 1844,
+   "K_c": 65,
+   "mode": "semua_sesi",
+   "sesi_terpilih": 1844
+  },
+  "dos": {
+   "N_c": 32680,
+   "K_c": 20,
+   "mode": "acak_6000_sesi",
+   "sesi_terpilih": 6000
+  },
+  "injection": {
+   "N_c": 1437,
+   "K_c": 83,
+   "mode": "semua_sesi",
+   "sesi_terpilih": 1437
+  },
+  "normal": {
+   "N_c": 6315,
+   "K_c": 20,
+   "mode": "acak_6000_sesi",
+   "sesi_terpilih": 6000
+  },
+  "password": {
+   "N_c": 428,
+   "K_c": 280,
+   "mode": "semua_sesi",
+   "sesi_terpilih": 428
+  },
+  "ransomware": {
+   "N_c": 382,
+   "K_c": 314,
+   "mode": "semua_sesi",
+   "sesi_terpilih": 382
+  },
+  "scanning": {
+   "N_c": 66751,
+   "K_c": 20,
+   "mode": "acak_6000_sesi",
+   "sesi_terpilih": 6000
+  },
+  "xss": {
+   "N_c": 2418,
+   "K_c": 49,
+   "mode": "semua_sesi",
+   "sesi_terpilih": 2418
+  }
+ },
+ "seleksi_instance": {
+  "backdoor": {
+   "window_uji_tersedia": 7311,
+   "sesi_uji_tersedia": 8,
+   "utama_terpilih": 50,
+   "utama_sesi_berbeda": 8,
+   "pilot_terpilih": 5,
+   "pilot_sesi_berbeda": 5
+  },
+  "ddos": {
+   "window_uji_tersedia": 14451,
+   "sesi_uji_tersedia": 277,
+   "utama_terpilih": 50,
+   "utama_sesi_berbeda": 50,
+   "pilot_terpilih": 4,
+   "pilot_sesi_berbeda": 4
+  },
+  "dos": {
+   "window_uji_tersedia": 9900,
+   "sesi_uji_tersedia": 900,
+   "utama_terpilih": 50,
+   "utama_sesi_berbeda": 50,
+   "pilot_terpilih": 4,
+   "pilot_sesi_berbeda": 4
+  },
+  "injection": {
+   "window_uji_tersedia": 11157,
+   "sesi_uji_tersedia": 216,
+   "utama_terpilih": 50,
+   "utama_sesi_berbeda": 50,
+   "pilot_terpilih": 5,
+   "pilot_sesi_berbeda": 5
+  },
+  "normal": {
+   "window_uji_tersedia": 7722,
+   "sesi_uji_tersedia": 900,
+   "utama_terpilih": 50,
+   "utama_sesi_berbeda": 50,
+   "pilot_terpilih": 4,
+   "pilot_sesi_berbeda": 4
+  },
+  "password": {
+   "window_uji_tersedia": 9893,
+   "sesi_uji_tersedia": 65,
+   "utama_terpilih": 50,
+   "utama_sesi_berbeda": 50,
+   "pilot_terpilih": 5,
+   "pilot_sesi_berbeda": 5
+  },
+  "ransomware": {
+   "window_uji_tersedia": 7791,
+   "sesi_uji_tersedia": 58,
+   "utama_terpilih": 50,
+   "utama_sesi_berbeda": 50,
+   "pilot_terpilih": 4,
+   "pilot_sesi_berbeda": 4
+  },
+  "scanning": {
+   "window_uji_tersedia": 3751,
+   "sesi_uji_tersedia": 900,
+   "utama_terpilih": 50,
+   "utama_sesi_berbeda": 50,
+   "pilot_terpilih": 5,
+   "pilot_sesi_berbeda": 5
+  },
+  "xss": {
+   "window_uji_tersedia": 14520,
+   "sesi_uji_tersedia": 363,
+   "utama_terpilih": 50,
+   "utama_sesi_berbeda": 50,
+   "pilot_terpilih": 4,
+   "pilot_sesi_berbeda": 4
+  }
+ },
+ "pilot_kelas_dapat_5": [
+  "backdoor",
+  "injection",
+  "password",
+  "scanning"
+ ],
+ "fitur": {
+  "n_features": 23,
+  "feature_order": [
+   "src_port",
+   "proto",
+   "service",
+   "duration",
+   "src_bytes",
+   "dst_bytes",
+   "conn_state",
+   "missed_bytes",
+   "src_pkts",
+   "src_ip_bytes",
+   "dst_pkts",
+   "dst_ip_bytes",
+   "dns_query",
+   "dns_qclass",
+   "dns_qtype",
+   "dns_rcode",
+   "dns_AA",
+   "dns_RD",
+   "dns_RA",
+   "dns_rejected",
+   "http_request_body_len",
+   "http_response_body_len",
+   "http_status_code"
+  ],
+  "kategorikal": [
+   "proto",
+   "service",
+   "conn_state",
+   "dns_query",
+   "dns_AA",
+   "dns_RD",
+   "dns_RA",
+   "dns_rejected"
+  ],
+  "scaler_fit_pada_baris_latih": 556062
+ },
+ "baris_dalam_sesi_ge10": 16636070,
+ "sesi_ge10": 112303,
+ "baris_sesudah_kuota_crop": 799661,
+ "baris_sesudah_purging": 782809,
+ "window_sesudah_purging": {
+  "train": 403755,
+  "val": 75280,
+  "test": 86496
+ },
+ "sesi_uji_backdoor_sesudah_purging": 8,
+ "persen_sesi_campuran_tertinggi": {
+  "kelas": "backdoor",
+  "persen": 0.0
+ },
+ "ada_kelas_window_label_beda_gt5": false,
+ "kelas_window_label_beda_gt5": [],
+ "t3_lolos_semua": {
+  "label_sesi": true,
+  "label_window": true
+ },
+ "definisi": "Tahap A (rancangan paper rev6): sesionisasi final TANPA LABEL + hitung ulang\nTabel 2-5. TIDAK melatih model apa pun. Kode lama hanya dibaca.\n\nKeluaran: results/stage_a/*.csv + summary.json, artifacts/stage_a/*.\n\nDefinisi yang dipakai (dicatat juga di summary.json):\n- Sesi: kunci (src_ip, dst_ip, dst_port, proto), urut ts (tie -> urutan baris\n  asli, sort stabil), potong bila jeda > 15 detik. Label TIDAK dipakai.\n- Label sesi = modus label baris; seri -> kelas urutan alfabetis pertama.\n- Cakupan kelas c = baris berlabel-baris c yang berada di sesi >=10 baris\n  / seluruh baris berlabel c setelah pembersihan.\n- Jumlah sesi per kelas dihitung menurut label sesi.\n- Split per kelas (label sesi): urut t_mulai_asli (tie -> session_id),\n  n_train = floor(0.70 n), n_val = floor(0.85 n) - n_train, sisanya uji.\n- Purging: sesi partisi awal dibuang bila t_akhir_asli > t_mulai_asli sesi\n  pertama partisi berikutnya (strict >).",
+ "catatan": "session_index disimpan CSV+pickle (pyarrow tidak terpasang; aturan larang install).",
+ "versi": {
+  "python": "3.11.16",
+  "pandas": "3.0.5",
+  "numpy": "1.26.4",
+  "sklearn": "1.9.0"
+ },
+ "waktu_eksekusi_detik": 242.8
+}

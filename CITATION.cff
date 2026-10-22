@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "Bila memakai kode atau hasil ini, mohon sitasi sebagai berikut."
+title: "Evaluasi Kualitas Penjelasan SHAP dan LIME pada Sistem Deteksi Intrusi Berbasis LSTM untuk Industrial IoT"
+type: software
+authors:
+  - family-names: Pratama
+    given-names: Benediktus Aditya
+    affiliation: Universitas Pembangunan Jaya
+  - family-names: Hermawan
+    given-names: Hendi
+    affiliation: Universitas Pembangunan Jaya
+date-released: 2026-10-22
+version: rev13
+license: MIT
+repository-code: "https://github.com/aditbap/xai-ids-iiot-lstm"
+url: "https://github.com/aditbap/xai-ids-iiot-lstm"
+keywords:
+  - explainable AI
+  - SHAP
+  - LIME
+  - LSTM
+  - intrusion detection
+  - Industrial IoT
+  - TON_IoT
+abstract: >-
+  Kode, tabel hasil, dan artefak kecil untuk naskah "Assessing SHAP and LIME
+  Explanation Quality in LSTM-Based Intrusion Detection for Industrial IoT".
+  Dataset TON_IoT tidak didistribusikan ulang.
+references:
+  - type: article
+    title: "A new distributed architecture for evaluating AI-based security systems at the edge: Network TON_IoT datasets"
+    authors:
+      - family-names: Moustafa
+        given-names: Nour
+    journal: "Sustainable Cities and Society"
+    volume: 72
+    number: "102994"
+    year: 2021
+    doi: "10.1016/j.scs.2021.102994"

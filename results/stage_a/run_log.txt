@@ -1,0 +1,11 @@
+[      0s] PASS 1: baca 23 berkas, hitung invarian, hash kunci sesi
+[    127s] PASS 1 selesai: 22,337,100 baris bersih
+[    127s] Invarian: {'t1_sama_22339021': True, 'baris_rusak_sama_869': True, 't1_minus_rusak_eq_t2': True, 't2_minus_mitm_eq_t3': True, 'jumlah_baris_array_eq_t3': True, 'per_kelas_t2_eq_t3_kecuali_mitm': True}; kolom dash dibuang = 17
+[    133s] skema 3_atribut gap 15: sesi=4,210,162 sesi>=10=112,326
+[    142s] skema 5_atribut_src_port gap 15: sesi=17,940,828 sesi>=10=54,889
+[    148s] skema 4_atribut gap 10: sesi=4,511,997 sesi>=10=103,759
+[    149s] skema 4_atribut gap 15: sesi=4,210,623 sesi>=10=112,303
+[    150s] skema 4_atribut gap 30: sesi=3,756,488 sesi>=10=129,803
+[    150s] skema 4_atribut gap 60: sesi=3,362,362 sesi>=10=133,529
+[    152s] PASS 2: ambil fitur baris terpilih
+[    243s] SELESAI
