@@ -1,4 +1,4 @@
-"""Gambar 3 naskah rev13: kurva deletion tingkat kohort pada 450 instance uji.
+"""Gambar 3 naskah rev14: kurva deletion tingkat kohort pada 450 instance uji.
 Masukan : results/stage_d/d3_c4_m2_cohort.csv
 Keluaran: docs/figures/gambar3_deletion_kohort.png
 Pemakaian: python scripts/figures/plot_gambar3.py [jalur_csv] [jalur_png]

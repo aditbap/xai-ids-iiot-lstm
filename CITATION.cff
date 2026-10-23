@@ -10,7 +10,7 @@ authors:
     given-names: Hendi
     affiliation: Universitas Pembangunan Jaya
 date-released: 2026-10-22
-version: rev13
+version: rev14
 license: MIT
 repository-code: "https://github.com/aditbap/xai-ids-iiot-lstm"
 url: "https://github.com/aditbap/xai-ids-iiot-lstm"

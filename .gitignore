@@ -1,5 +1,5 @@
 # =====================================================================
-# .gitignore — xai-ids-iiot-lstm (naskah rev13)
+# .gitignore — xai-ids-iiot-lstm (naskah rev14)
 # Pola pengecualian dulu, lalu pengecualian eksplisit (!) untuk artefak
 # kecil yang diperlukan reproduksi. Hash SEMUA berkas artifacts/ dan
 # results/ (termasuk yang dikecualikan di sini) ada di MANIFEST.sha256.
@@ -26,14 +26,14 @@ lime_perturbation_cat_codes.npz
 /results/*.zip
 __MACOSX/
 
-# --- 3. Sisa pipeline v1/v2 yang tidak dipakai naskah rev13 -----------
+# --- 3. Sisa pipeline v1/v2 yang tidak dipakai naskah rev14 -----------
 /artifacts/model_final.h5
 /artifacts/shap_values_*.npy
 /artifacts/lime_values_raw.npy
 # catatan & tabel v1/v2, cache v3 (871 MB), checkpoint per-epoch v1 (81 MB)
 /notes/
 # gambar Bab 4 skripsi v1 (gambar-4-*.png) dan README-nya; yang ikut hanya
-# gambar naskah rev13: gambar1_*, gambar2_*, gambar3_*
+# gambar naskah rev14: gambar1_*, gambar2_*, gambar3_*
 /docs/figures/*
 !/docs/figures/gambar[0-9]_*.png
 # skrip lama yang tidak diimpor oleh Tahap A-D maupun diag_*
