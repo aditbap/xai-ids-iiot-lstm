@@ -2,7 +2,7 @@
 
 **English summary.** This repository contains the code, result tables, and small
 artifacts behind the manuscript *"Assessing SHAP and LIME Explanation Quality in
-LSTM-Based Intrusion Detection for Industrial IoT"* (rev13). A two-layer LSTM is
+LSTM-Based Intrusion Detection for Industrial IoT"* (rev14). A two-layer LSTM is
 trained on session-based, leakage-controlled windows (w = 10) built from the
 TON_IoT network dataset, and DeepSHAP, LIME (flat), and a custom LIME are
 compared with four explanation metrics (agreement, faithfulness via deletion,
@@ -92,7 +92,7 @@ proses sekaligus, dengan `caffeinate -i` agar mesin tidak tidur.
 
 | # | Tahap | Perintah | Keluaran utama |
 |---|---|---|---|
-| 1 | **A**: sesionisasi tanpa label (kunci `src_ip, dst_ip, dst_port, proto`, jeda 15 detik), kuota, pembagian per kelas 70/15/15 kronologis, purging; pemilihan 450 instance utama dan 40 pilot | `python scripts/stage_a/stage_a.py` | `artifacts/stage_a/`, `results/stage_a/` (Tabel 2–5) |
+| 1 | **A**: sesionisasi tanpa label (kunci `src_ip, dst_ip, dst_port, proto`, jeda 15 detik), kuota, pembagian per kelas 70/15/15 kronologis, purging; pemilihan 450 instance utama dan 40 pilot | `python scripts/stage_a/stage_a.py` | `artifacts/stage_a/`, `results/stage_a/` (Tabel S3.1, S3.2, S3.12, S3.13) |
 | 2 | **B0/B1**: tensor window w=10 (prapemrosesan lama), latih model utama seed 42 | `python scripts/stage_b/b0_tensors.py`<br>`python scripts/stage_b/b1_train.py` | `artifacts/stage_b/` |
 | 3 | **Pilot B**: pilot XAI 40 instance | `python scripts/stage_b/b2_pilot_xai.py` | `results/stage_b/` |
 | 4 | **diag_val**: diagnostik model B1 pada validasi | `python scripts/diag_val/diag_val.py`<br>`python scripts/diag_val/diag_val2.py` | `results/diag_val/`, `results/diag_val2/` |
@@ -131,7 +131,7 @@ tercatat di docstring tiap skrip dan di `run_log.txt`.
   - C1 (T4) hanya meng-hash window uji.
   - `d_predict.py` mengulang prediksi uji model C3 dan memeriksa bahwa hasilnya
     identik (`d_predict_check.csv`).
-  - D2 membandingkan window lintas partisi (Tabel 8).
+  - D2 membandingkan window lintas partisi (Tabel 4).
 
 ## 5. Memverifikasi hash
 
@@ -165,7 +165,7 @@ saat eksperimen (`results/stage_c/config_frozen.json`,
 ├── environment/            ekspor conda + pip, versi paket, chip
 ├── docs/
 │   ├── peta_hasil.md       tabel/gambar naskah -> berkas hasil -> skrip
-│   └── figures/            Gambar 1-3 naskah rev13
+│   └── figures/            Gambar 1-3 naskah rev14
 ├── scripts/
 │   ├── pipeline_common.py  pembacaan 23 berkas CSV (dipakai A, B0, B2-0, C0, D0, diag_log)
 │   ├── figures/            plot_gambar3.py (Gambar 3 dari d3_c4_m2_cohort.csv)
@@ -181,12 +181,12 @@ saat eksperimen (`results/stage_c/config_frozen.json`,
 └── results/                semua tabel hasil (CSV/JSON/log) per tahap
 ```
 
-## 7. Arsip yang tidak dipakai naskah rev13
+## 7. Arsip yang tidak dipakai naskah rev14
 
 - `scripts/pipeline_common.py` berasal dari pipeline v1. Skrip Tahap A sampai D
   dan diag_log hanya mengimpor `CHUNKSIZE` dan `sorted_network_files` darinya.
   Konstanta lain di berkas itu (misalnya `GROUP_COLS` 3 atribut, `BUFFER_ROWS`)
-  milik v1 dan **tidak dipakai** naskah rev13.
+  milik v1 dan **tidak dipakai** naskah rev14.
 - `artifacts/encoders.pkl` dan `artifacts/scaler.pkl` (tingkat atas) adalah
   encoder/scaler pipeline v1.
 
